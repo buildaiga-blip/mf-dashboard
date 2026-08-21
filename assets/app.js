@@ -2,8 +2,11 @@ const MFAPI_BASE = "https://api.mfapi.in/mf";
 const PERIODS = ["1M", "3M", "6M", "1Y", "3Y", "5Y"];
 const RETURN_PERIOD_DAYS = { "1M": 30, "3M": 91, "6M": 182, "1Y": 365, "3Y": 1095, "5Y": 1825 };
 const LIVE_REFRESH_CONCURRENCY = 6; // be polite to the free API
+const ACTIVE_MAX_STALE_DAYS = 15; // NAVs publish on every business day; older than this suggests a matured/wound-up scheme
+// Which category "group" values (from data.json) show up under which tab.
+const TAB_GROUPS = { equity: ["Equity", "Hybrid"], debt: ["Debt"] };
 let DATA = null;
-let currentSort = "1Y";
+let sortState = { equity: "1Y", debt: "3M" };
 
 // ---------- Tabs ----------
 document.querySelectorAll(".tab").forEach((tab) => {
@@ -110,9 +113,11 @@ async function refreshAllLive() {
     }
   });
 
-  // Recompute each category's average for the currently ranked metric
+  // Recompute each category's average for the currently ranked metric, active funds only
   DATA.categories.forEach((cat) => {
-    const withMetric = cat.funds.filter((f) => f[cat.rank_metric] !== null && f[cat.rank_metric] !== undefined);
+    const withMetric = cat.funds.filter(
+      (f) => isFundActive(f) && f[cat.rank_metric] !== null && f[cat.rank_metric] !== undefined
+    );
     cat.avg = withMetric.length
       ? Math.round((withMetric.reduce((s, f) => s + f[cat.rank_metric], 0) / withMetric.length) * 100) / 100
       : null;
@@ -149,73 +154,120 @@ function fmtPct(v) {
   return v.toFixed(2) + "%";
 }
 
-// ---------- Sort pills ----------
+// ---------- Active-fund filter ----------
+// Parses display dates like "16-Aug-2026" (the format nav_date is stored in) into a Date.
+function parseDisplayDate(str) {
+  if (!str) return null;
+  const d = new Date(str);
+  return isNaN(d.getTime()) ? null : d;
+}
+
+// A fund only counts as "active" if it has a NAV date and that date isn't stale
+// (matured / wound-up / delisted schemes stop publishing NAVs and fall behind).
+function isFundActive(f) {
+  const d = parseDisplayDate(f.nav_date);
+  if (!d) return false;
+  const ageDays = (Date.now() - d.getTime()) / 86400000;
+  return ageDays <= ACTIVE_MAX_STALE_DAYS;
+}
+
+// ---------- Sort pills (independent per tab) ----------
 document.querySelectorAll(".pill[data-period]").forEach((pill) => {
   pill.addEventListener("click", () => {
-    document.querySelectorAll(".pill[data-period]").forEach((p) => p.classList.remove("active"));
+    const group = pill.dataset.tabgroup;
+    document
+      .querySelectorAll(`.pill[data-tabgroup="${group}"]`)
+      .forEach((p) => p.classList.remove("active"));
     pill.classList.add("active");
-    currentSort = pill.dataset.period;
+    sortState[group] = pill.dataset.period;
     renderRankings();
   });
 });
 
 function renderRankings() {
-  const container = document.getElementById("rankings-container");
-  container.innerHTML = "";
+  const containers = {
+    equity: document.getElementById("equity-rankings-container"),
+    debt: document.getElementById("debt-rankings-container"),
+  };
+  Object.values(containers).forEach((c) => (c.innerHTML = ""));
+
   if (!DATA || !DATA.categories) {
-    container.innerHTML = '<div class="empty-state">No data yet — run fetch_universe.py or wait for the next scheduled refresh.</div>';
+    Object.values(containers).forEach((c) => {
+      c.innerHTML = '<div class="empty-state">No data yet — run fetch_universe.py or wait for the next scheduled refresh.</div>';
+    });
     return;
   }
 
-  DATA.categories.forEach((cat) => {
-    const funds = [...cat.funds].sort((a, b) => {
-      const av = a[currentSort] ?? -999;
-      const bv = b[currentSort] ?? -999;
-      return bv - av;
-    });
+  Object.entries(TAB_GROUPS).forEach(([tabKey, groups]) => {
+    const container = containers[tabKey];
+    const currentSort = sortState[tabKey];
+    const cats = DATA.categories.filter((cat) => groups.includes(cat.group));
 
-    const card = document.createElement("div");
-    card.className = "category-card";
+    if (cats.length === 0) {
+      container.innerHTML = '<div class="empty-state">No categories in this tab yet.</div>';
+      return;
+    }
 
-    const title = document.createElement("div");
-    title.className = "category-title";
-    title.innerHTML = `
-      <div>
-        <span class="group-tag group-${cat.group}">${cat.group}</span>
-        <h3 style="display:inline">${cat.label}</h3>
-      </div>
-      <div class="category-meta">${cat.rating} &nbsp;|&nbsp; ${cat.horizon} &nbsp;|&nbsp; Avg ${cat.rank_metric}: <strong style="color:var(--gold)">${fmtPct(cat.avg)}</strong></div>
-    `;
-    card.appendChild(title);
+    cats.forEach((cat) => {
+      const activeFunds = cat.funds.filter(isFundActive);
+      const funds = [...activeFunds].sort((a, b) => {
+        const av = a[currentSort] ?? -999;
+        const bv = b[currentSort] ?? -999;
+        return bv - av;
+      });
 
-    const table = document.createElement("table");
-    const thead = document.createElement("thead");
-    thead.innerHTML = `<tr>
-      <th>#</th><th>Fund</th><th>NAV</th><th>Date</th>
-      ${PERIODS.map((p) => `<th style="text-align:right">${p}</th>`).join("")}
-    </tr>`;
-    table.appendChild(thead);
+      const card = document.createElement("div");
+      card.className = "category-card";
 
-    const tbody = document.createElement("tbody");
-    funds.forEach((f, i) => {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td><span class="rank-badge">${i + 1}</span></td>
-        <td class="fund-name">${f.fund}</td>
-        <td>₹${f.nav?.toFixed ? f.nav.toFixed(2) : f.nav}</td>
-        <td>${f.nav_date || ""}</td>
-        ${PERIODS.map((p) => {
-          const v = f[p];
-          const bg = colorForReturn(v, cat.group);
-          const highlight = p === currentSort ? "outline:1px solid var(--gold);" : "";
-          return `<td class="ret-cell" style="background:${bg};${highlight}">${fmtPct(v)}</td>`;
-        }).join("")}
+      const title = document.createElement("div");
+      title.className = "category-title";
+      title.innerHTML = `
+        <div>
+          <span class="group-tag group-${cat.group}">${cat.group}</span>
+          <h3 style="display:inline">${cat.label}</h3>
+        </div>
+        <div class="category-meta">${cat.rating} &nbsp;|&nbsp; ${cat.horizon} &nbsp;|&nbsp; Avg ${cat.rank_metric}: <strong style="color:var(--gold)">${fmtPct(cat.avg)}</strong></div>
       `;
-      tbody.appendChild(tr);
+      card.appendChild(title);
+
+      if (funds.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.textContent = "No active funds currently on record for this category — run a data refresh.";
+        card.appendChild(empty);
+        container.appendChild(card);
+        return;
+      }
+
+      const table = document.createElement("table");
+      const thead = document.createElement("thead");
+      thead.innerHTML = `<tr>
+        <th>#</th><th>Fund</th><th>NAV</th><th>Date</th>
+        ${PERIODS.map((p) => `<th style="text-align:right">${p}</th>`).join("")}
+      </tr>`;
+      table.appendChild(thead);
+
+      const tbody = document.createElement("tbody");
+      funds.forEach((f, i) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><span class="rank-badge">${i + 1}</span></td>
+          <td class="fund-name">${f.fund}</td>
+          <td>₹${f.nav?.toFixed ? f.nav.toFixed(2) : f.nav}</td>
+          <td>${f.nav_date || ""}</td>
+          ${PERIODS.map((p) => {
+            const v = f[p];
+            const bg = colorForReturn(v, cat.group);
+            const highlight = p === currentSort ? "outline:1px solid var(--gold);" : "";
+            return `<td class="ret-cell" style="background:${bg};${highlight}">${fmtPct(v)}</td>`;
+          }).join("")}
+        `;
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+      card.appendChild(table);
+      container.appendChild(card);
     });
-    table.appendChild(tbody);
-    card.appendChild(table);
-    container.appendChild(card);
   });
 }
 
@@ -238,7 +290,7 @@ function populateSchemeDropdownHint() {
   const hint = document.getElementById("scheme-code-hint");
   if (!DATA || !hint) return;
   hint.textContent =
-    "Tip: scheme codes are visible in Fund Rankings (hover a row) or search the scheme name at mfapi.in.";
+    "Tip: scheme codes are visible in the Equity/Debt tabs (per fund row) or search the scheme name at mfapi.in.";
 }
 
 async function fetchLatestNav(schemeCode) {

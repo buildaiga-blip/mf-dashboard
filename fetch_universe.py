@@ -36,6 +36,7 @@ OUTPUT_PATH = HERE / "data" / "data.json"
 TOP_N_PER_CATEGORY = 10
 REQUEST_DELAY_SEC = 0.15          # be polite to the free API
 NAV_HISTORY_TIMEOUT = 15
+ACTIVE_MAX_STALE_DAYS = 15         # NAVs publish every business day; older than this = likely matured/wound-up
 RETURN_PERIODS = {                # label -> approx days to look back
     "1M": 30,
     "3M": 91,
@@ -78,11 +79,14 @@ def classify_scheme(name_lower, categories):
     return None
 
 
-def fetch_nav_history(session, scheme_code):
+def fetch_scheme_detail(session, scheme_code):
+    """Returns (meta_dict, history) where history is a newest-first list of (date, nav),
+    or (None, None) if the request fails."""
     r = session.get(f"{BASE}/mf/{scheme_code}", timeout=NAV_HISTORY_TIMEOUT)
     if r.status_code != 200:
-        return None
+        return None, None
     payload = r.json()
+    meta = payload.get("meta", {})
     # payload["data"] is newest-first: [{"date": "16-08-2026", "nav": "123.45"}, ...]
     data = payload.get("data", [])
     parsed = []
@@ -93,7 +97,22 @@ def fetch_nav_history(session, scheme_code):
             parsed.append((d, nav))
         except (ValueError, KeyError):
             continue
-    return parsed  # newest-first
+    return meta, parsed  # newest-first
+
+
+def is_scheme_active(meta, history):
+    """A scheme is treated as 'active' only if:
+    - it's an Open Ended scheme (Close Ended / Interval Fund schemes have fixed maturities
+      and aren't something a personal investor can buy into freely today), and
+    - its most recent NAV isn't stale (matured/wound-up schemes stop publishing NAVs)."""
+    scheme_type = (meta or {}).get("scheme_type", "") or ""
+    if "open ended" not in scheme_type.lower():
+        return False
+    if not history:
+        return False
+    latest_date, _ = history[0]
+    age_days = (datetime.now() - latest_date).days
+    return age_days <= ACTIVE_MAX_STALE_DAYS
 
 
 def nav_on_or_before(history, target_date):
@@ -157,12 +176,16 @@ def main():
 
     print(f"Candidate Direct-Growth schemes matched to a category: {len(candidates)}")
 
+    skipped_inactive = 0
     for i, (code, name, cat) in enumerate(candidates, 1):
         if i % 25 == 0:
-            print(f"  ... {i}/{len(candidates)} NAV histories fetched")
-        history = fetch_nav_history(session, code)
+            print(f"  ... {i}/{len(candidates)} schemes checked ({skipped_inactive} inactive/stale skipped)")
+        meta, history = fetch_scheme_detail(session, code)
         time.sleep(REQUEST_DELAY_SEC)
         if not history:
+            continue
+        if not is_scheme_active(meta, history):
+            skipped_inactive += 1
             continue
         returns = compute_returns(history)
         if not returns:
@@ -174,6 +197,8 @@ def main():
                 **returns,
             }
         )
+
+    print(f"Skipped {skipped_inactive} inactive/closed/stale schemes")
 
     # Rank each bucket. Equity/Hybrid rank by 1Y (more meaningful than 1M for
     # long-horizon assets); Debt/Liquid rank by 3M (matches the original

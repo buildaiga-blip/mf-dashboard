@@ -1,9 +1,18 @@
 # My MF Intelligence — Personal Portfolio Dashboard
 
 A personal-investor version of a "Treasury MF Intelligence" style dashboard: scans the mutual
-fund universe (via [api.mfapi.in](https://www.mfapi.in/)), ranks the top Direct-Growth funds per
-category (Equity, Hybrid, Debt), and gives you a simple goal-based allocation guide plus a live
-portfolio value tracker — all as a static site you can host free on GitHub Pages.
+fund universe (via [api.mfapi.in](https://www.mfapi.in/)), ranks the top Direct-Growth **active**
+funds per category, and gives you a simple goal-based allocation guide plus a live portfolio value
+tracker — all as a static site you can host free on GitHub Pages.
+
+The dashboard has two ranking tabs:
+- **Equity** — includes both Equity categories (Large/Mid/Small/Flexi Cap, ELSS) and Hybrid
+  categories (Balanced Advantage, Aggressive Hybrid), since hybrid funds are usually considered
+  alongside equity in a growth allocation.
+- **Debt** — Short Duration, Corporate Bond, Liquid/Overnight.
+
+Each tab sorts independently (Equity defaults to 1Y, Debt to 3M, matching how each asset class is
+normally compared), and **only active funds are shown** — see "Active funds only" below.
 
 ## What's inside
 
@@ -66,6 +75,19 @@ scheduled Action is what keeps `data.json` "live" without needing a server you p
    ```
    (Opening `index.html` directly via `file://` will fail the `fetch('data/data.json')` call in
    most browsers due to CORS — always use a local server or GitHub Pages.)
+
+## Active funds only
+
+A fund is only included if it passes two checks:
+1. **Open Ended** — Close Ended and Interval Fund schemes have fixed maturities and aren't
+   something you can freely buy into today, so they're excluded even if still technically "live".
+2. **Recent NAV** — NAVs publish every business day; if a scheme's most recent NAV is more than
+   `ACTIVE_MAX_STALE_DAYS` (15) days old, it's treated as matured/wound-up/delisted and dropped.
+
+This check runs in `fetch_universe.py` (server-side, so inactive funds never even make it into
+`data.json`) and again client-side in `assets/app.js` (`isFundActive()`) as a safety net for the
+"⟳ Refresh Live Data" button and for old cached data. Both thresholds are one constant at the top
+of each file if you want to loosen or tighten it.
 
 ## Two ways the data stays "live"
 

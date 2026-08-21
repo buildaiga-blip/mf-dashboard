@@ -10,37 +10,59 @@
 
 <div class="header">
   <h1>My MF Intelligence</h1>
-  <div class="sub">Personal Portfolio | Equity + Hybrid + Debt | Direct-Growth Plans Only | Live via api.mfapi.in</div>
+  <div class="sub">Personal Portfolio | Equity + Hybrid + Debt | Direct-Growth Plans Only | Active Funds Only | Live via api.mfapi.in</div>
 </div>
 
 <div class="updated-bar">
   <span>Data updated: <strong id="updated-label">loading...</strong></span>
   <span>Source: api.mfapi.in (AMFI NAV data)</span>
+  <button id="live-refresh-btn" class="refresh-btn" style="margin-left:auto">⟳ Refresh Live Data</button>
 </div>
 
 <div class="tabs">
-  <div class="tab active" data-target="tab-rankings">Fund Rankings</div>
+  <div class="tab active" data-target="tab-equity">Equity</div>
+  <div class="tab" data-target="tab-debt">Debt</div>
   <div class="tab" data-target="tab-guide">Allocation Guide</div>
   <div class="tab" data-target="tab-portfolio">My Portfolio</div>
 </div>
 
 <div class="content">
 
-  <!-- FUND RANKINGS -->
-  <div id="tab-rankings" class="tab-panel">
+  <!-- EQUITY (includes Hybrid) -->
+  <div id="tab-equity" class="tab-panel">
     <div class="sort-row">
       <label>Sort every category by:</label>
-      <span class="pill" data-period="1M">1M</span>
-      <span class="pill" data-period="3M">3M</span>
-      <span class="pill" data-period="6M">6M</span>
-      <span class="pill active" data-period="1Y">1Y</span>
-      <span class="pill" data-period="3Y">3Y</span>
-      <span class="pill" data-period="5Y">5Y</span>
-      <button id="live-refresh-btn" class="refresh-btn" style="margin-left:auto">⟳ Refresh Live Data</button>
+      <span class="pill" data-tabgroup="equity" data-period="1M">1M</span>
+      <span class="pill" data-tabgroup="equity" data-period="3M">3M</span>
+      <span class="pill" data-tabgroup="equity" data-period="6M">6M</span>
+      <span class="pill active" data-tabgroup="equity" data-period="1Y">1Y</span>
+      <span class="pill" data-tabgroup="equity" data-period="3Y">3Y</span>
+      <span class="pill" data-tabgroup="equity" data-period="5Y">5Y</span>
     </div>
-    <div id="rankings-container"></div>
+    <div id="equity-rankings-container"></div>
     <div class="footer-note">
-      Equity/Hybrid returns beyond 1Y are annualized (CAGR); Debt/Liquid returns follow simple trailing % change.
+      Equity/Hybrid returns beyond 1Y are annualized (CAGR). Only actively-traded Open Ended Direct-Growth schemes
+      with a recently-published NAV are shown — matured, closed, or stale-NAV schemes are excluded automatically.
+      This is informational data, not investment advice — please consider your own risk profile, or consult a
+      SEBI-registered advisor before investing.
+    </div>
+  </div>
+
+  <!-- DEBT -->
+  <div id="tab-debt" class="tab-panel" style="display:none">
+    <div class="sort-row">
+      <label>Sort every category by:</label>
+      <span class="pill" data-tabgroup="debt" data-period="1M">1M</span>
+      <span class="pill active" data-tabgroup="debt" data-period="3M">3M</span>
+      <span class="pill" data-tabgroup="debt" data-period="6M">6M</span>
+      <span class="pill" data-tabgroup="debt" data-period="1Y">1Y</span>
+      <span class="pill" data-tabgroup="debt" data-period="3Y">3Y</span>
+      <span class="pill" data-tabgroup="debt" data-period="5Y">5Y</span>
+    </div>
+    <div id="debt-rankings-container"></div>
+    <div class="footer-note">
+      Debt/Liquid returns follow simple trailing % change (not annualized) for periods up to 1Y, CAGR beyond that.
+      Only actively-traded Open Ended Direct-Growth schemes with a recently-published NAV are shown.
       This is informational data, not investment advice — please consider your own risk profile, or consult a
       SEBI-registered advisor before investing.
     </div>
@@ -51,7 +73,7 @@
     <div class="guide-card">
       <h4>🚨 Emergency Fund (3–6 months of expenses)</h4>
       <p>Keep this in <strong>Liquid or Overnight Funds</strong>. Priority is safety and instant access, not returns —
-      check the Liquid/Overnight table under Fund Rankings.</p>
+      check the Liquid/Overnight table under the Debt tab.</p>
     </div>
     <div class="guide-card">
       <h4>🎯 Short-Term Goals (1–3 years)</h4>
