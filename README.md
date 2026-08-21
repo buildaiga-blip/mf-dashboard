@@ -67,6 +67,24 @@ scheduled Action is what keeps `data.json` "live" without needing a server you p
    (Opening `index.html` directly via `file://` will fail the `fetch('data/data.json')` call in
    most browsers due to CORS — always use a local server or GitHub Pages.)
 
+## Two ways the data stays "live"
+
+1. **Automatic, zero-device (default)** — the GitHub Action in `.github/workflows/refresh-data.yml`
+   runs `fetch_universe.py` daily on GitHub's own servers and commits a fresh `data.json`. Your
+   GitHub Pages link always reflects that, with nothing running on your machine and no clicks
+   needed. This is what makes the *link itself* always current.
+2. **On-demand, instant (the "⟳ Refresh Live Data" button)** — anyone viewing the page can click
+   this button in the Fund Rankings tab to pull fresh NAV history straight from `api.mfapi.in`
+   *in their own browser* for every fund currently shown, recompute all six return periods, and
+   re-render immediately — without waiting for the next scheduled Action run. This runs entirely
+   client-side (no server, no device setup); it just takes a few seconds since it's fetching NAV
+   history for every listed fund with limited concurrency to stay polite to the free API.
+
+Note the refresh button only re-scores the funds *already present* in `data.json` — it doesn't
+re-scan the entire mutual fund universe for new entrants (that full scan is what
+`fetch_universe.py` does, and it's what the daily Action keeps current). So new funds appearing in
+a category, or funds dropping out of the top 10, still show up via the daily automated refresh.
+
 ## Customizing categories
 
 Edit `data/category_map.json` — each category has `include`/`exclude` keyword lists matched

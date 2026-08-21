@@ -1,5 +1,7 @@
 const MFAPI_BASE = "https://api.mfapi.in/mf";
 const PERIODS = ["1M", "3M", "6M", "1Y", "3Y", "5Y"];
+const RETURN_PERIOD_DAYS = { "1M": 30, "3M": 91, "6M": 182, "1Y": 365, "3Y": 1095, "5Y": 1825 };
+const LIVE_REFRESH_CONCURRENCY = 6; // be polite to the free API
 let DATA = null;
 let currentSort = "1Y";
 
@@ -20,6 +22,108 @@ async function loadData() {
   document.getElementById("updated-label").textContent = DATA.updated;
   renderRankings();
   populateSchemeDropdownHint();
+}
+
+// ---------- Live refresh (runs entirely in the visitor's browser, no server) ----------
+// Parses date strings like "16-08-2026" (mfapi.in format) into Date objects.
+function parseMfapiDate(str) {
+  const [d, m, y] = str.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function navOnOrBefore(historyNewestFirst, targetDate) {
+  for (const [d, nav] of historyNewestFirst) {
+    if (d <= targetDate) return nav;
+  }
+  return null;
+}
+
+// Mirrors compute_returns() in fetch_universe.py, run client-side.
+function computeReturnsFromHistory(historyNewestFirst) {
+  if (!historyNewestFirst || historyNewestFirst.length < 2) return null;
+  const [latestDate, latestNav] = historyNewestFirst[0];
+  const out = {};
+  for (const [label, days] of Object.entries(RETURN_PERIOD_DAYS)) {
+    const target = new Date(latestDate);
+    target.setDate(target.getDate() - days);
+    const pastNav = navOnOrBefore(historyNewestFirst, target);
+    if (!pastNav || pastNav <= 0) {
+      out[label] = null;
+      continue;
+    }
+    const simpleChange = (latestNav - pastNav) / pastNav;
+    if (days > 365) {
+      const years = days / 365;
+      out[label] = Math.round((Math.pow(latestNav / pastNav, 1 / years) - 1) * 10000) / 100;
+    } else {
+      out[label] = Math.round(simpleChange * 10000) / 100;
+    }
+  }
+  out.nav = latestNav;
+  out.nav_date = `${String(latestDate.getDate()).padStart(2, "0")}-${latestDate.toLocaleString("en-US", { month: "short" })}-${latestDate.getFullYear()}`;
+  return out;
+}
+
+async function fetchFullNavHistory(schemeCode) {
+  const res = await fetch(`${MFAPI_BASE}/${schemeCode}`);
+  if (!res.ok) return null;
+  const json = await res.json();
+  const rows = (json.data || [])
+    .map((r) => [parseMfapiDate(r.date), parseFloat(r.nav)])
+    .filter(([d, nav]) => !isNaN(d.getTime()) && !isNaN(nav));
+  return rows; // newest-first, matching mfapi.in's own ordering
+}
+
+// Simple concurrency-limited map so we don't fire 80 requests at once.
+async function mapWithConcurrency(items, limit, worker) {
+  const results = new Array(items.length);
+  let next = 0;
+  async function runOne() {
+    while (next < items.length) {
+      const i = next++;
+      results[i] = await worker(items[i], i);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, runOne));
+  return results;
+}
+
+async function refreshAllLive() {
+  if (!DATA || !DATA.categories) return;
+  const btn = document.getElementById("live-refresh-btn");
+  const originalLabel = btn.textContent;
+  btn.disabled = true;
+
+  const allFunds = DATA.categories.flatMap((cat) => cat.funds.map((f) => ({ cat, f })));
+  let done = 0;
+
+  await mapWithConcurrency(allFunds, LIVE_REFRESH_CONCURRENCY, async ({ f }) => {
+    try {
+      const history = await fetchFullNavHistory(f.schemeCode);
+      const fresh = computeReturnsFromHistory(history);
+      if (fresh) Object.assign(f, fresh);
+    } catch {
+      // leave the fund's last-known values in place on failure
+    } finally {
+      done++;
+      btn.textContent = `Refreshing... ${done}/${allFunds.length}`;
+    }
+  });
+
+  // Recompute each category's average for the currently ranked metric
+  DATA.categories.forEach((cat) => {
+    const withMetric = cat.funds.filter((f) => f[cat.rank_metric] !== null && f[cat.rank_metric] !== undefined);
+    cat.avg = withMetric.length
+      ? Math.round((withMetric.reduce((s, f) => s + f[cat.rank_metric], 0) / withMetric.length) * 100) / 100
+      : null;
+  });
+
+  DATA.updated = "Live — refreshed just now in your browser (" + new Date().toLocaleTimeString() + ")";
+  document.getElementById("updated-label").textContent = DATA.updated;
+  renderRankings();
+
+  btn.disabled = false;
+  btn.textContent = originalLabel;
 }
 
 function colorForReturn(value, group) {
@@ -219,6 +323,8 @@ document.getElementById("add-holding-form").addEventListener("submit", (e) => {
 });
 
 document.getElementById("refresh-portfolio-btn").addEventListener("click", renderPortfolio);
+
+document.getElementById("live-refresh-btn").addEventListener("click", refreshAllLive);
 
 // ---------- Init ----------
 loadData();
