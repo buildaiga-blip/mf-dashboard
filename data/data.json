@@ -1,0 +1,67 @@
+{
+  "updated": "SAMPLE DATA - run fetch_universe.py or the GitHub Action to populate live figures",
+  "source": "api.mfapi.in (AMFI NAV data), classified client-side",
+  "categories": [
+    {
+      "key": "equity_flexi_multi_cap",
+      "label": "Equity - Flexi / Multi Cap",
+      "group": "Equity",
+      "rating": "High Risk",
+      "horizon": "5+ Years",
+      "rank_metric": "1Y",
+      "avg": 14.2,
+      "funds": [
+        {"schemeCode": 100001, "fund": "Sample Flexi Cap Fund - Direct - Growth", "1M": 2.1, "3M": 5.4, "6M": 9.8, "1Y": 15.6, "3Y": 18.2, "5Y": 16.9, "nav": 142.35, "nav_date": "16-Aug-2026"},
+        {"schemeCode": 100002, "fund": "Sample Multi Cap Fund - Direct - Growth", "1M": 1.8, "3M": 4.9, "6M": 8.7, "1Y": 12.8, "3Y": 17.1, "5Y": 15.4, "nav": 98.12, "nav_date": "16-Aug-2026"}
+      ]
+    },
+    {
+      "key": "elss_tax_saver",
+      "label": "ELSS - Tax Saver (80C)",
+      "group": "Equity",
+      "rating": "High Risk",
+      "horizon": "3 Yr Lock-in",
+      "rank_metric": "1Y",
+      "avg": 13.5,
+      "funds": [
+        {"schemeCode": 100003, "fund": "Sample ELSS Tax Saver Fund - Direct - Growth", "1M": 1.9, "3M": 5.0, "6M": 9.1, "1Y": 13.5, "3Y": 16.8, "5Y": 15.0, "nav": 76.44, "nav_date": "16-Aug-2026"}
+      ]
+    },
+    {
+      "key": "hybrid_balanced_advantage",
+      "label": "Hybrid - Balanced Advantage / Multi Asset",
+      "group": "Hybrid",
+      "rating": "Moderate Risk",
+      "horizon": "3-5 Years",
+      "rank_metric": "1Y",
+      "avg": 10.1,
+      "funds": [
+        {"schemeCode": 100004, "fund": "Sample Balanced Advantage Fund - Direct - Growth", "1M": 1.1, "3M": 3.2, "6M": 6.0, "1Y": 10.1, "3Y": 11.4, "5Y": 10.9, "nav": 54.21, "nav_date": "16-Aug-2026"}
+      ]
+    },
+    {
+      "key": "debt_short_duration",
+      "label": "Debt - Short Duration",
+      "group": "Debt",
+      "rating": "Low-Moderate Risk",
+      "horizon": "1-3 Years",
+      "rank_metric": "3M",
+      "avg": 8.4,
+      "funds": [
+        {"schemeCode": 100005, "fund": "Sample Short Duration Fund - Direct - Growth", "1M": 7.1, "3M": 8.4, "6M": 6.9, "1Y": 6.6, "3Y": 6.4, "5Y": 6.3, "nav": 32.11, "nav_date": "14-Aug-2026"}
+      ]
+    },
+    {
+      "key": "liquid_overnight",
+      "label": "Liquid / Overnight (Emergency Fund)",
+      "group": "Debt",
+      "rating": "Very Low Risk",
+      "horizon": "0-3 Months",
+      "rank_metric": "3M",
+      "avg": 6.9,
+      "funds": [
+        {"schemeCode": 100006, "fund": "Sample Liquid Fund - Direct - Growth", "1M": 6.4, "3M": 6.9, "6M": 6.8, "1Y": 6.6, "3Y": 6.1, "5Y": 5.9, "nav": 2801.55, "nav_date": "16-Aug-2026"}
+      ]
+    }
+  ]
+}

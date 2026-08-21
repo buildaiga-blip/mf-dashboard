@@ -1,0 +1,34 @@
+name: Refresh MF Data
+
+on:
+  schedule:
+    # Runs daily at 12:30 UTC (~6:00 PM IST), after most AMFI NAVs are published
+    - cron: "30 12 * * *"
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run data refresh
+        run: python fetch_universe.py
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "mf-dashboard-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/data.json
+          git diff --cached --quiet && echo "No changes" || git commit -m "Refresh MF data $(date -u +%Y-%m-%d)"
+          git push

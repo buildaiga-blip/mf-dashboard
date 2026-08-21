@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My MF Intelligence — Personal Portfolio Dashboard</title>
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<div class="header">
+  <h1>My MF Intelligence</h1>
+  <div class="sub">Personal Portfolio | Equity + Hybrid + Debt | Direct-Growth Plans Only | Live via api.mfapi.in</div>
+</div>
+
+<div class="updated-bar">
+  <span>Data updated: <strong id="updated-label">loading...</strong></span>
+  <span>Source: api.mfapi.in (AMFI NAV data)</span>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-target="tab-rankings">Fund Rankings</div>
+  <div class="tab" data-target="tab-guide">Allocation Guide</div>
+  <div class="tab" data-target="tab-portfolio">My Portfolio</div>
+</div>
+
+<div class="content">
+
+  <!-- FUND RANKINGS -->
+  <div id="tab-rankings" class="tab-panel">
+    <div class="sort-row">
+      <label>Sort every category by:</label>
+      <span class="pill" data-period="1M">1M</span>
+      <span class="pill" data-period="3M">3M</span>
+      <span class="pill" data-period="6M">6M</span>
+      <span class="pill active" data-period="1Y">1Y</span>
+      <span class="pill" data-period="3Y">3Y</span>
+      <span class="pill" data-period="5Y">5Y</span>
+    </div>
+    <div id="rankings-container"></div>
+    <div class="footer-note">
+      Equity/Hybrid returns beyond 1Y are annualized (CAGR); Debt/Liquid returns follow simple trailing % change.
+      This is informational data, not investment advice — please consider your own risk profile, or consult a
+      SEBI-registered advisor before investing.
+    </div>
+  </div>
+
+  <!-- ALLOCATION GUIDE -->
+  <div id="tab-guide" class="tab-panel" style="display:none">
+    <div class="guide-card">
+      <h4>🚨 Emergency Fund (3–6 months of expenses)</h4>
+      <p>Keep this in <strong>Liquid or Overnight Funds</strong>. Priority is safety and instant access, not returns —
+      check the Liquid/Overnight table under Fund Rankings.</p>
+    </div>
+    <div class="guide-card">
+      <h4>🎯 Short-Term Goals (1–3 years)</h4>
+      <p>Use <strong>Debt: Short Duration or Corporate Bond funds</strong>. Avoid equity here — a market dip right
+      before you need the money is the main risk to manage.</p>
+    </div>
+    <div class="guide-card">
+      <h4>🧾 Tax Saving (Section 80C)</h4>
+      <p>An <strong>ELSS fund</strong> is the only equity option under 80C, with the shortest lock-in (3 years) of any
+      80C instrument. Suitable if you're already investing for 5+ years anyway.</p>
+    </div>
+    <div class="guide-card">
+      <h4>📈 Long-Term Wealth Creation (5–10+ years)</h4>
+      <p>Core allocation to <strong>Equity: Flexi/Multi Cap</strong> for diversification, with satellite allocations to
+      <strong>Mid/Small Cap</strong> for higher (and more volatile) growth potential if your risk appetite allows.</p>
+    </div>
+    <div class="guide-card">
+      <h4>🏖️ Retirement / Very Long Horizon</h4>
+      <p>A mix of <strong>Equity (core)</strong> and <strong>Hybrid Balanced Advantage / Multi Asset</strong> funds,
+      shifting gradually toward hybrid and debt as retirement approaches to reduce sequence-of-returns risk.</p>
+    </div>
+    <div class="guide-card">
+      <h4>🛡️ Moderate Risk / Can't Stomach Big Swings</h4>
+      <p><strong>Hybrid Balanced Advantage</strong> funds auto-adjust equity/debt exposure based on market valuations —
+      a reasonable single-fund option if you'd rather not manage the mix yourself.</p>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO TRACKER -->
+  <div id="tab-portfolio" class="tab-panel" style="display:none">
+    <p style="color:var(--text-dim); font-size:13px;">
+      Add your actual holdings by MFAPI scheme code + units. Values are fetched live from api.mfapi.in each time you
+      open this tab or hit refresh. Data is stored only in your browser (localStorage) — nothing is sent anywhere else.
+    </p>
+    <form id="add-holding-form" class="portfolio-form">
+      <input id="input-scheme-code" type="text" placeholder="Scheme code (e.g. 120503)" required />
+      <input id="input-units" type="number" step="0.001" placeholder="Units held" required />
+      <button type="submit">Add Holding</button>
+      <button type="button" id="refresh-portfolio-btn" class="refresh-btn">Refresh Live Values</button>
+    </form>
+    <p id="scheme-code-hint" style="color:var(--text-dim); font-size:12px;"></p>
+    <table>
+      <thead>
+        <tr><th>Fund</th><th>Scheme Code</th><th>Units</th><th>Live NAV</th><th>Value</th><th></th></tr>
+      </thead>
+      <tbody id="portfolio-body"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "_comment": "Each category has include keywords (ANY must match) and exclude keywords (NONE may match). Matching runs against the scheme name in lowercase. Only 'Direct' + 'Growth' plans are kept (see fetch_universe.py) so returns reflect what an individual investor actually gets.",
+
+  "categories": [
+    {
+      "key": "equity_large_cap",
+      "label": "Equity - Large Cap",
+      "group": "Equity",
+      "rating": "High Risk",
+      "horizon": "5+ Years",
+      "include": ["large cap", "largecap", "bluechip", "top 100"],
+      "exclude": ["mid cap", "small cap", "hybrid", "index", "etf"]
+    },
+    {
+      "key": "equity_flexi_multi_cap",
+      "label": "Equity - Flexi / Multi Cap",
+      "group": "Equity",
+      "rating": "High Risk",
+      "horizon": "5+ Years",
+      "include": ["flexi cap", "flexicap", "multi cap", "multicap"],
+      "exclude": ["hybrid", "index", "etf"]
+    },
+    {
+      "key": "equity_mid_cap",
+      "label": "Equity - Mid Cap",
+      "group": "Equity",
+      "rating": "Very High Risk",
+      "horizon": "7+ Years",
+      "include": ["mid cap", "midcap"],
+      "exclude": ["small", "large", "hybrid", "index", "etf"]
+    },
+    {
+      "key": "equity_small_cap",
+      "label": "Equity - Small Cap",
+      "group": "Equity",
+      "rating": "Very High Risk",
+      "horizon": "7+ Years",
+      "include": ["small cap", "smallcap"],
+      "exclude": ["mid", "large", "hybrid", "index", "etf"]
+    },
+    {
+      "key": "elss_tax_saver",
+      "label": "ELSS - Tax Saver (80C)",
+      "group": "Equity",
+      "rating": "High Risk",
+      "horizon": "3 Yr Lock-in",
+      "include": ["elss", "tax saver", "taxsaver", "tax plan"],
+      "exclude": []
+    },
+    {
+      "key": "hybrid_aggressive",
+      "label": "Hybrid - Aggressive",
+      "group": "Hybrid",
+      "rating": "Moderately High Risk",
+      "horizon": "3-5 Years",
+      "include": ["aggressive hybrid", "equity hybrid"],
+      "exclude": []
+    },
+    {
+      "key": "hybrid_balanced_advantage",
+      "label": "Hybrid - Balanced Advantage / Multi Asset",
+      "group": "Hybrid",
+      "rating": "Moderate Risk",
+      "horizon": "3-5 Years",
+      "include": ["balanced advantage", "dynamic asset", "multi asset", "multi-asset"],
+      "exclude": []
+    },
+    {
+      "key": "debt_short_duration",
+      "label": "Debt - Short Duration",
+      "group": "Debt",
+      "rating": "Low-Moderate Risk",
+      "horizon": "1-3 Years",
+      "include": ["short duration", "short term"],
+      "exclude": ["ultra short", "medium"]
+    },
+    {
+      "key": "debt_corporate_bond",
+      "label": "Debt - Corporate Bond",
+      "group": "Debt",
+      "rating": "Low-Moderate Risk",
+      "horizon": "1-3 Years",
+      "include": ["corporate bond"],
+      "exclude": []
+    },
+    {
+      "key": "liquid_overnight",
+      "label": "Liquid / Overnight (Emergency Fund)",
+      "group": "Debt",
+      "rating": "Very Low Risk",
+      "horizon": "0-3 Months",
+      "include": ["liquid fund", "overnight fund"],
+      "exclude": []
+    }
+  ],
+
+  "plan_filters": {
+    "must_include_any": ["direct"],
+    "must_include_growth": ["growth"],
+    "must_exclude_any": ["idcw", "dividend", "bonus", "regular plan"]
+  }
+}
