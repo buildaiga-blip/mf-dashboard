@@ -1,7 +1,142 @@
 {
+<<<<<<< HEAD
   "updated": "PARTIALLY LIVE (20-Aug-2026) \u2014 Equity Small Cap verified against real api.mfapi.in data. All other categories are still SAMPLE placeholders \u2014 run fetch_universe.py or the GitHub Action to populate them for real.",
+=======
+  "updated": "21-Aug-2026 18:29",
+>>>>>>> 860ebd8d891de0e1abf748052eb62c63f4cbf908
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
+    {
+      "key": "equity_large_cap",
+      "label": "Equity - Large Cap",
+      "group": "Equity",
+      "rating": "High Risk",
+      "horizon": "5+ Years",
+      "rank_metric": "1Y",
+      "avg": 24.2,
+      "funds": [
+        {
+          "schemeCode": 119441,
+          "fund": "Principal Emerging Bluechip Fund - Direct Plan - Growth Option",
+          "1M": 1.84,
+          "3M": 2.04,
+          "6M": 13.0,
+          "1Y": 39.17,
+          "3Y": 22.89,
+          "5Y": 20.28,
+          "nav": 197.96,
+          "nav_date": "30-Dec-2021"
+        },
+        {
+          "schemeCode": 133355,
+          "fund": "Sundaram Top 100 Series IV Direct Plan Growth",
+          "1M": 3.06,
+          "3M": 4.6,
+          "6M": 5.99,
+          "1Y": 27.71,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.0626,
+          "nav_date": "30-Jan-2018"
+        },
+        {
+          "schemeCode": 148524,
+          "fund": "Principal Large Cap Fund - Direct Growth",
+          "1M": 0.34,
+          "3M": -0.4,
+          "6M": 10.77,
+          "1Y": 27.02,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.81,
+          "nav_date": "30-Dec-2021"
+        },
+        {
+          "schemeCode": 129887,
+          "fund": "Sundaram Top 100 Series II Direct Plan Growth",
+          "1M": 0.45,
+          "3M": 6.75,
+          "6M": 22.77,
+          "1Y": 25.11,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.538,
+          "nav_date": "27-Jun-2017"
+        },
+        {
+          "schemeCode": 120186,
+          "fund": "ICICI Prudential US Bluechip Equity Fund - Direct Plan - Growth",
+          "1M": 8.32,
+          "3M": 11.16,
+          "6M": 11.04,
+          "1Y": 24.96,
+          "3Y": 17.77,
+          "5Y": 13.6,
+          "nav": 92.66,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 120757,
+          "fund": "UTI Bluechip Flexicap Fund - Direct Plan - Growth Option",
+          "1M": 5.89,
+          "3M": 4.15,
+          "6M": 11.66,
+          "1Y": 24.33,
+          "3Y": 13.24,
+          "5Y": 16.65,
+          "nav": 35.8696,
+          "nav_date": "02-May-2018"
+        },
+        {
+          "schemeCode": 129693,
+          "fund": "Sundaram Top 100 Series I Direct Plan Growth",
+          "1M": 0.43,
+          "3M": 7.8,
+          "6M": 19.99,
+          "1Y": 22.86,
+          "3Y": null,
+          "5Y": null,
+          "nav": 15.0112,
+          "nav_date": "06-Jun-2017"
+        },
+        {
+          "schemeCode": 130346,
+          "fund": "Sundaram Top 100 Series III Direct Plan Growth",
+          "1M": 4.78,
+          "3M": 4.82,
+          "6M": 17.66,
+          "1Y": 19.61,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.7297,
+          "nav_date": "31-Jul-2017"
+        },
+        {
+          "schemeCode": 118344,
+          "fund": "IDBI India Top 100 Equity Fund Growth Direct",
+          "1M": 3.73,
+          "3M": 10.38,
+          "6M": 11.17,
+          "1Y": 18.42,
+          "3Y": 23.69,
+          "5Y": 13.99,
+          "nav": 49.56,
+          "nav_date": "27-Jul-2023"
+        },
+        {
+          "schemeCode": 138986,
+          "fund": "DHFL Pramerica Large Cap Fund - Series 1 - Direct Plan - Growth",
+          "1M": -1.21,
+          "3M": 2.3,
+          "6M": 12.18,
+          "1Y": 12.79,
+          "3Y": null,
+          "5Y": null,
+          "nav": 12.5992,
+          "nav_date": "24-Sep-2018"
+        }
+      ]
+    },
     {
       "key": "equity_flexi_multi_cap",
       "label": "Equity - Flexi / Multi Cap",
@@ -9,9 +144,10 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 14.2,
+      "avg": 23.87,
       "funds": [
         {
+<<<<<<< HEAD
           "schemeCode": 100001,
           "fund": "Sample Flexi Cap Fund - Direct - Growth",
           "1M": 2.1,
@@ -34,6 +170,388 @@
           "5Y": 15.4,
           "nav": 98.12,
           "nav_date": "21-Aug-2026"
+=======
+          "schemeCode": 119452,
+          "fund": "Principal Multi Cap Growth Fund-Direct Plan - Growth Option",
+          "1M": 2.24,
+          "3M": 3.69,
+          "6M": 17.78,
+          "1Y": 46.02,
+          "3Y": 21.0,
+          "5Y": 19.62,
+          "nav": 256.09,
+          "nav_date": "30-Dec-2021"
+        },
+        {
+          "schemeCode": 119451,
+          "fund": "Principal Multi Cap Growth Fund - Direct Plan -Half Yearly Income Distribution CUM Capital Withdrawal Option",
+          "1M": -1.56,
+          "3M": -0.16,
+          "6M": 13.41,
+          "1Y": 35.68,
+          "3Y": 16.29,
+          "5Y": 11.54,
+          "nav": 68.1,
+          "nav_date": "30-Dec-2021"
+        },
+        {
+          "schemeCode": 119464,
+          "fund": "Principal Focused Multicap Fund- Direct Plan - Growth Option",
+          "1M": 0.74,
+          "3M": 0.8,
+          "6M": 10.44,
+          "1Y": 34.24,
+          "3Y": 21.92,
+          "5Y": 19.12,
+          "nav": 116.59,
+          "nav_date": "30-Dec-2021"
+        },
+        {
+          "schemeCode": 119988,
+          "fund": "BNP Paribas MULTI CAP Fund - Direct Plan - Growth Option",
+          "1M": -4.28,
+          "3M": -4.55,
+          "6M": -1.63,
+          "1Y": 21.06,
+          "3Y": 18.99,
+          "5Y": 14.99,
+          "nav": 83.9294,
+          "nav_date": "13-Mar-2022"
+        },
+        {
+          "schemeCode": 153034,
+          "fund": "Groww Multicap Fund - Direct Plan - Growth",
+          "1M": 4.77,
+          "3M": 11.37,
+          "6M": 16.91,
+          "1Y": 20.12,
+          "3Y": null,
+          "5Y": null,
+          "nav": 12.6025,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 153644,
+          "fund": "TRUSTMF MULTI CAP FUND - Direct Plan - Growth",
+          "1M": 5.44,
+          "3M": 12.94,
+          "6M": 16.83,
+          "1Y": 19.92,
+          "3Y": null,
+          "5Y": null,
+          "nav": 12.22,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 128236,
+          "fund": "IDBI FLEXI CAP FUND Growth Direct",
+          "1M": 2.79,
+          "3M": 10.93,
+          "6M": 11.63,
+          "1Y": 16.24,
+          "3Y": 24.63,
+          "5Y": 13.51,
+          "nav": 42.72,
+          "nav_date": "27-Jul-2023"
+        },
+        {
+          "schemeCode": 120843,
+          "fund": "Quant Flexi Cap Fund - Direct Plan - Growth Option",
+          "1M": -0.22,
+          "3M": 5.38,
+          "6M": 14.01,
+          "1Y": 15.56,
+          "3Y": 17.3,
+          "5Y": 16.89,
+          "nav": 122.9399,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 148404,
+          "fund": "BANK OF INDIA FLEXI CAP FUND - Direct Plan - Growth",
+          "1M": 2.45,
+          "3M": 8.49,
+          "6M": 12.03,
+          "1Y": 15.27,
+          "3Y": 22.06,
+          "5Y": 18.43,
+          "nav": 42.66,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 131164,
+          "fund": "UTI Multi Cap Fund - Growth Option - Direct",
+          "1M": 2.63,
+          "3M": -3.1,
+          "6M": 0.6,
+          "1Y": 14.54,
+          "3Y": 10.53,
+          "5Y": null,
+          "nav": 14.2467,
+          "nav_date": "02-May-2018"
+        }
+      ]
+    },
+    {
+      "key": "equity_mid_cap",
+      "label": "Equity - Mid Cap",
+      "group": "Equity",
+      "rating": "Very High Risk",
+      "horizon": "7+ Years",
+      "rank_metric": "1Y",
+      "avg": 27.88,
+      "funds": [
+        {
+          "schemeCode": 119909,
+          "fund": "ING Midcap Fund - Direct Plan - Growth Option",
+          "1M": -1.71,
+          "3M": 5.47,
+          "6M": 31.81,
+          "1Y": 69.61,
+          "3Y": null,
+          "5Y": null,
+          "nav": 36.84,
+          "nav_date": "09-Oct-2014"
+        },
+        {
+          "schemeCode": 147778,
+          "fund": "Principal Midcap Fund - Direct Plan- Growth",
+          "1M": 0.82,
+          "3M": 1.88,
+          "6M": 14.37,
+          "1Y": 46.53,
+          "3Y": null,
+          "5Y": null,
+          "nav": 18.39,
+          "nav_date": "30-Dec-2021"
+        },
+        {
+          "schemeCode": 138950,
+          "fund": "DHFL Pramerica Mid Cap Fund - Series 1 - Direct Plan - Growth",
+          "1M": 1.1,
+          "3M": 2.85,
+          "6M": 8.91,
+          "1Y": 41.01,
+          "3Y": null,
+          "5Y": null,
+          "nav": 18.4641,
+          "nav_date": "18-Dec-2017"
+        },
+        {
+          "schemeCode": 151036,
+          "fund": "HSBC Midcap Fund - Direct Plan - Growth",
+          "1M": 3.61,
+          "3M": 8.71,
+          "6M": 18.92,
+          "1Y": 21.43,
+          "3Y": 26.24,
+          "5Y": null,
+          "nav": 542.106,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 120002,
+          "fund": "BNP Paribas Mid Cap Fund - Direct Plan - Growth Option",
+          "1M": -2.96,
+          "3M": -4.31,
+          "6M": -2.81,
+          "1Y": 19.07,
+          "3Y": 23.19,
+          "5Y": 16.2,
+          "nav": 63.1554,
+          "nav_date": "13-Mar-2022"
+        },
+        {
+          "schemeCode": 140461,
+          "fund": "IDBI Midcap Fund Growth Direct",
+          "1M": 4.21,
+          "3M": 16.13,
+          "6M": 16.84,
+          "1Y": 18.37,
+          "3Y": 25.18,
+          "5Y": 11.18,
+          "nav": 20.81,
+          "nav_date": "27-Jul-2023"
+        },
+        {
+          "schemeCode": 120381,
+          "fund": "ICICI Prudential MidCap Fund - Direct Plan - Growth",
+          "1M": 2.38,
+          "3M": 3.35,
+          "6M": 10.19,
+          "1Y": 16.71,
+          "3Y": 24.15,
+          "5Y": 19.53,
+          "nav": 393.27,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 150584,
+          "fund": "WhiteOak Capital Mid Cap Fund - Direct Plan - Growth Option",
+          "1M": 2.41,
+          "3M": 9.0,
+          "6M": 15.8,
+          "1Y": 16.61,
+          "3Y": 24.35,
+          "5Y": null,
+          "nav": 23.778,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 153326,
+          "fund": "Helios Mid Cap Fund - Direct Plan - Growth",
+          "1M": 2.65,
+          "3M": 9.82,
+          "6M": 16.63,
+          "1Y": 15.03,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.31,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 142110,
+          "fund": "Mahindra Manulife Mid Cap Fund - Direct Plan - Growth",
+          "1M": 1.48,
+          "3M": 6.55,
+          "6M": 10.79,
+          "1Y": 14.46,
+          "3Y": 21.98,
+          "5Y": 20.51,
+          "nav": 42.8161,
+          "nav_date": "20-Aug-2026"
+        }
+      ]
+    },
+    {
+      "key": "equity_small_cap",
+      "label": "Equity - Small Cap",
+      "group": "Equity",
+      "rating": "Very High Risk",
+      "horizon": "7+ Years",
+      "rank_metric": "1Y",
+      "avg": 37.37,
+      "funds": [
+        {
+          "schemeCode": 147131,
+          "fund": "Principal Small Cap Fund - Direct Plan - Growth Option",
+          "1M": 3.5,
+          "3M": 9.07,
+          "6M": 25.39,
+          "1Y": 76.11,
+          "3Y": null,
+          "5Y": null,
+          "nav": 25.73,
+          "nav_date": "30-Dec-2021"
+        },
+        {
+          "schemeCode": 141561,
+          "fund": "Sundaram Select Small Cap Series VI Direct Plan - Growth",
+          "1M": 1.28,
+          "3M": 13.26,
+          "6M": 19.56,
+          "1Y": 57.42,
+          "3Y": 15.11,
+          "5Y": null,
+          "nav": 14.4952,
+          "nav_date": "19-Jul-2021"
+        },
+        {
+          "schemeCode": 141499,
+          "fund": "Sundaram Select Small Cap Series V Direct Plan - Growth",
+          "1M": 2.23,
+          "3M": 5.45,
+          "6M": 19.21,
+          "1Y": 52.54,
+          "3Y": 12.52,
+          "5Y": null,
+          "nav": 14.1554,
+          "nav_date": "23-Jun-2021"
+        },
+        {
+          "schemeCode": 120077,
+          "fund": "HSBC - Small Cap Fund - Growth Direct",
+          "1M": 10.18,
+          "3M": 25.4,
+          "6M": 48.79,
+          "1Y": 39.06,
+          "3Y": null,
+          "5Y": null,
+          "nav": 12.7765,
+          "nav_date": "25-Apr-2014"
+        },
+        {
+          "schemeCode": 152939,
+          "fund": "TRUSTMF SMALL CAP FUND - Direct Plan - Growth",
+          "1M": 4.13,
+          "3M": 14.83,
+          "6M": 29.29,
+          "1Y": 32.76,
+          "3Y": null,
+          "5Y": null,
+          "nav": 13.86,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 145678,
+          "fund": "BANK OF INDIA SMALL CAP FUND - Direct Plan - Growth",
+          "1M": 4.49,
+          "3M": 16.98,
+          "6M": 32.91,
+          "1Y": 27.89,
+          "3Y": 24.19,
+          "5Y": 21.91,
+          "nav": 65.66,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 141475,
+          "fund": "IDBI Small Cap Fund - Growth Direct",
+          "1M": 2.38,
+          "3M": 15.58,
+          "6M": 18.28,
+          "1Y": 24.28,
+          "3Y": 39.12,
+          "5Y": 16.69,
+          "nav": 22.78,
+          "nav_date": "27-Jul-2023"
+        },
+        {
+          "schemeCode": 129649,
+          "fund": "Union Small Cap Fund - Direct Plan - Growth Option",
+          "1M": 4.05,
+          "3M": 12.28,
+          "6M": 22.68,
+          "1Y": 23.33,
+          "3Y": 19.72,
+          "5Y": 19.18,
+          "nav": 67.29,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 147919,
+          "fund": "ITI Small Cap Fund - Direct Plan - Growth Option",
+          "1M": 3.61,
+          "3M": 15.2,
+          "6M": 25.96,
+          "1Y": 21.14,
+          "3Y": 27.0,
+          "5Y": 20.66,
+          "nav": 38.4959,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 152004,
+          "fund": "LIC MF Small Cap Fund - Direct Plan - Growth",
+          "1M": 5.34,
+          "3M": 12.56,
+          "6M": 23.53,
+          "1Y": 19.21,
+          "3Y": 20.51,
+          "5Y": null,
+          "nav": 39.8827,
+          "nav_date": "20-Aug-2026"
+>>>>>>> 860ebd8d891de0e1abf748052eb62c63f4cbf908
         }
       ]
     },
@@ -44,9 +562,10 @@
       "rating": "High Risk",
       "horizon": "3 Yr Lock-in",
       "rank_metric": "1Y",
-      "avg": 13.5,
+      "avg": 10.24,
       "funds": [
         {
+<<<<<<< HEAD
           "schemeCode": 100003,
           "fund": "Sample ELSS Tax Saver Fund - Direct - Growth",
           "1M": 1.9,
@@ -57,6 +576,257 @@
           "5Y": 15.0,
           "nav": 76.44,
           "nav_date": "21-Aug-2026"
+=======
+          "schemeCode": 134045,
+          "fund": "Baroda ELSS 96 Plan B(Direct) -Growth Option",
+          "1M": -3.84,
+          "3M": -5.9,
+          "6M": -3.1,
+          "1Y": 18.77,
+          "3Y": 17.32,
+          "5Y": 12.18,
+          "nav": 75.3119,
+          "nav_date": "13-Mar-2022"
+        },
+        {
+          "schemeCode": 120847,
+          "fund": "Quant ELSS Tax Saver Fund - Direct Plan - Growth Option",
+          "1M": -0.15,
+          "3M": 6.1,
+          "6M": 11.88,
+          "1Y": 14.6,
+          "3Y": 16.84,
+          "5Y": 17.52,
+          "nav": 464.0935,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 120494,
+          "fund": "JM ELSS Tax Saver Fund - Direct Plan - Growth Option",
+          "1M": 4.16,
+          "3M": 11.98,
+          "6M": 11.21,
+          "1Y": 10.21,
+          "3Y": 18.17,
+          "5Y": 16.33,
+          "nav": 61.3197,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 132756,
+          "fund": "Tata ELSS Fund - Direct Plan - Growth Option",
+          "1M": 2.8,
+          "3M": 7.13,
+          "6M": 5.28,
+          "1Y": 10.03,
+          "3Y": 14.67,
+          "5Y": 14.6,
+          "nav": 55.5462,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 118620,
+          "fund": "Edelweiss ELSS Tax Saver Fund - Direct Plan - Growth",
+          "1M": 1.95,
+          "3M": 6.23,
+          "6M": 5.0,
+          "1Y": 8.92,
+          "3Y": 15.78,
+          "5Y": 14.08,
+          "nav": 142.04,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 147541,
+          "fund": "ITI ELSS Tax Saver Fund - Direct Plan - Growth Option",
+          "1M": 1.39,
+          "3M": 10.0,
+          "6M": 10.67,
+          "1Y": 8.43,
+          "3Y": 19.39,
+          "5Y": 15.19,
+          "nav": 29.3127,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 151078,
+          "fund": "HSBC ELSS Tax saver Fund - Direct Plan - Growth",
+          "1M": 2.84,
+          "3M": 7.97,
+          "6M": 7.58,
+          "1Y": 8.32,
+          "3Y": 18.36,
+          "5Y": null,
+          "nav": 158.6357,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 150159,
+          "fund": "Baroda BNP Paribas ELSS Tax Saver Fund - Direct Plan - Growth Option",
+          "1M": 3.16,
+          "3M": 7.85,
+          "6M": 5.33,
+          "1Y": 8.17,
+          "3Y": 17.62,
+          "5Y": null,
+          "nav": 116.9218,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 135654,
+          "fund": "Navi ELSS Tax Saver Fund- Direct Plan- Growth Option",
+          "1M": 0.19,
+          "3M": -6.34,
+          "6M": -3.29,
+          "1Y": 7.64,
+          "3Y": 12.82,
+          "5Y": 11.66,
+          "nav": 32.8119,
+          "nav_date": "10-Apr-2026"
+        },
+        {
+          "schemeCode": 119351,
+          "fund": "BANK OF INDIA ELSS TAX SAVER - Direct Plan - Growth",
+          "1M": 1.68,
+          "3M": 4.86,
+          "6M": 5.18,
+          "1Y": 7.33,
+          "3Y": 15.16,
+          "5Y": 13.21,
+          "nav": 198.04,
+          "nav_date": "20-Aug-2026"
+        }
+      ]
+    },
+    {
+      "key": "hybrid_aggressive",
+      "label": "Hybrid - Aggressive",
+      "group": "Hybrid",
+      "rating": "Moderately High Risk",
+      "horizon": "3-5 Years",
+      "rank_metric": "1Y",
+      "avg": 24.31,
+      "funds": [
+        {
+          "schemeCode": 147689,
+          "fund": "Nippon India Equity Hybrid Fund - Segregated Portfolio 1 - Direct Plan - Growth Plan",
+          "1M": 125.99,
+          "3M": 125.99,
+          "6M": 125.99,
+          "1Y": 125.99,
+          "3Y": 31.23,
+          "5Y": 17.71,
+          "nav": 0.1261,
+          "nav_date": "21-Mar-2025"
+        },
+        {
+          "schemeCode": 119542,
+          "fund": "Sundaram Equity Hybrid Fund Direct Plan - Growth",
+          "1M": 1.39,
+          "3M": 1.14,
+          "6M": 10.92,
+          "1Y": 28.76,
+          "3Y": 17.17,
+          "5Y": 15.6,
+          "nav": 146.339,
+          "nav_date": "31-Dec-2021"
+        },
+        {
+          "schemeCode": 144681,
+          "fund": "Motilal Oswal Equity Hybrid Fund (MOFEH) - Direct Plan Growth Option",
+          "1M": 4.89,
+          "3M": 7.23,
+          "6M": 9.06,
+          "1Y": 19.51,
+          "3Y": 11.8,
+          "5Y": 14.77,
+          "nav": 19.8323,
+          "nav_date": "19-Jan-2024"
+        },
+        {
+          "schemeCode": 120819,
+          "fund": "Quant Aggressive Hybrid Fund - Direct Plan - Growth Option",
+          "1M": -2.55,
+          "3M": 3.06,
+          "6M": 9.61,
+          "1Y": 11.38,
+          "3Y": 14.25,
+          "5Y": 14.41,
+          "nav": 512.2882,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 141006,
+          "fund": "BNP PARIBAS SUBSTANTIAL EQUITY HYBRID FUND- DIRECT PLAN - GROWTH OPTION",
+          "1M": -4.19,
+          "3M": -3.93,
+          "6M": -3.26,
+          "1Y": 10.6,
+          "3Y": 17.37,
+          "5Y": null,
+          "nav": 19.0606,
+          "nav_date": "13-Mar-2022"
+        },
+        {
+          "schemeCode": 143163,
+          "fund": "Navi Aggressive Hybrid Fund - Direct Plan - Growth",
+          "1M": 3.7,
+          "3M": 9.22,
+          "6M": 9.02,
+          "1Y": 10.46,
+          "3Y": 13.43,
+          "5Y": 12.73,
+          "nav": 26.0529,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 118485,
+          "fund": "Bandhan Aggressive Hybrid Passive FOF - Direct Plan - Growth",
+          "1M": 1.9,
+          "3M": 4.44,
+          "6M": 5.42,
+          "1Y": 10.41,
+          "3Y": 14.25,
+          "5Y": 11.58,
+          "nav": 54.7922,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 140382,
+          "fund": "Bandhan Aggressive Hybrid Fund - Direct Plan - Growth",
+          "1M": 2.45,
+          "3M": 7.3,
+          "6M": 5.84,
+          "1Y": 9.49,
+          "3Y": 16.01,
+          "5Y": 12.89,
+          "nav": 32.469,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 129200,
+          "fund": "HSBC Aggressive Hybrid Active FOF (erstwhile HSBC Managed Solutions India - Growth fund) - Direct Plan - Growth",
+          "1M": 2.48,
+          "3M": 7.01,
+          "6M": 7.49,
+          "1Y": 8.88,
+          "3Y": 13.99,
+          "5Y": 12.21,
+          "nav": 46.1579,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 151122,
+          "fund": "HSBC Aggressive Hybrid Fund - Direct Plan - Growth",
+          "1M": 2.85,
+          "3M": 6.97,
+          "6M": 7.87,
+          "1Y": 7.64,
+          "3Y": 14.82,
+          "5Y": null,
+          "nav": 68.9339,
+          "nav_date": "20-Aug-2026"
+>>>>>>> 860ebd8d891de0e1abf748052eb62c63f4cbf908
         }
       ]
     },
@@ -67,9 +837,10 @@
       "rating": "Moderate Risk",
       "horizon": "3-5 Years",
       "rank_metric": "1Y",
-      "avg": 10.1,
+      "avg": 19.73,
       "funds": [
         {
+<<<<<<< HEAD
           "schemeCode": 100004,
           "fund": "Sample Balanced Advantage Fund - Direct - Growth",
           "1M": 1.1,
@@ -80,6 +851,126 @@
           "5Y": 10.9,
           "nav": 54.21,
           "nav_date": "21-Aug-2026"
+=======
+          "schemeCode": 134110,
+          "fund": "SBI Dynamic Asset Allocation Fund - Direct Plan - Growth",
+          "1M": 1.13,
+          "3M": 4.21,
+          "6M": 6.81,
+          "1Y": 26.42,
+          "3Y": 8.14,
+          "5Y": 9.38,
+          "nav": 16.8439,
+          "nav_date": "02-Jul-2021"
+        },
+        {
+          "schemeCode": 152064,
+          "fund": "Kotak Multi Asset Allocation Fund - Direct Plan - Growth Option",
+          "1M": 2.55,
+          "3M": 2.81,
+          "6M": 2.44,
+          "1Y": 22.05,
+          "3Y": null,
+          "5Y": null,
+          "nav": 16.842,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 152056,
+          "fund": "DSP Multi Asset Allocation Fund - Direct Plan - Growth",
+          "1M": 1.8,
+          "3M": 2.23,
+          "6M": 2.77,
+          "1Y": 20.89,
+          "3Y": null,
+          "5Y": null,
+          "nav": 17.0565,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 120821,
+          "fund": "Quant Multi Asset Allocation Fund - Direct Plan - Growth Option",
+          "1M": -1.5,
+          "3M": 2.26,
+          "6M": 4.42,
+          "1Y": 20.46,
+          "3Y": 23.2,
+          "5Y": 21.02,
+          "nav": 183.6885,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 152443,
+          "fund": "Mahindra Manulife Multi Asset Allocation Fund - Direct Plan - Growth",
+          "1M": 1.9,
+          "3M": 4.97,
+          "6M": 4.02,
+          "1Y": 18.2,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.5951,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 153047,
+          "fund": "Invesco India Multi Asset Allocation Fund - Direct Plan - Growth",
+          "1M": 2.45,
+          "3M": 3.27,
+          "6M": 2.86,
+          "1Y": 18.07,
+          "3Y": null,
+          "5Y": null,
+          "nav": 12.94,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 131865,
+          "fund": "Aditya Birla Sun Life Multi Asset Omni FoF - Direct Plan - GROWTH",
+          "1M": 2.99,
+          "3M": 6.38,
+          "6M": 4.41,
+          "1Y": 17.93,
+          "3Y": 18.76,
+          "5Y": 14.54,
+          "nav": 41.6137,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 152324,
+          "fund": "BANDHAN MULTI ASSET ALLOCATION FUND - Direct Plan - Growth",
+          "1M": 2.27,
+          "3M": 3.47,
+          "6M": 4.87,
+          "1Y": 17.77,
+          "3Y": null,
+          "5Y": null,
+          "nav": 15.0087,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 148457,
+          "fund": "Nippon India Multi Asset Allocation Fund - Direct Plan - Growth Option",
+          "1M": 3.15,
+          "3M": 4.32,
+          "6M": 4.38,
+          "1Y": 17.74,
+          "3Y": 20.64,
+          "5Y": 16.75,
+          "nav": 27.5836,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 152380,
+          "fund": "HSBC Multi Asset Allocation Fund - Direct Plan - Growth",
+          "1M": 2.05,
+          "3M": 3.58,
+          "6M": 4.77,
+          "1Y": 17.74,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.5777,
+          "nav_date": "20-Aug-2026"
+>>>>>>> 860ebd8d891de0e1abf748052eb62c63f4cbf908
         }
       ]
     },
@@ -90,9 +981,10 @@
       "rating": "Low-Moderate Risk",
       "horizon": "1-3 Years",
       "rank_metric": "3M",
-      "avg": 8.4,
+      "avg": 21.83,
       "funds": [
         {
+<<<<<<< HEAD
           "schemeCode": 100005,
           "fund": "Sample Short Duration Fund - Direct - Growth",
           "1M": 7.1,
@@ -103,6 +995,257 @@
           "5Y": 6.3,
           "nav": 32.11,
           "nav_date": "21-Aug-2026"
+=======
+          "schemeCode": 118565,
+          "fund": "Franklin India SHORT TERM INCOME PLAN - Direct - GROWTH",
+          "1M": 192.1,
+          "3M": 192.1,
+          "6M": 192.1,
+          "1Y": 192.1,
+          "3Y": 47.29,
+          "5Y": 31.06,
+          "nav": 15097.536,
+          "nav_date": "02-May-2025"
+        },
+        {
+          "schemeCode": 120471,
+          "fund": "JM Short Term Fund (Direct) - Growth Option",
+          "1M": 0.65,
+          "3M": 3.55,
+          "6M": 6.42,
+          "1Y": 4.39,
+          "3Y": 3.67,
+          "5Y": 5.61,
+          "nav": 26.9629,
+          "nav_date": "25-Sep-2020"
+        },
+        {
+          "schemeCode": 119385,
+          "fund": "PineBridge India Short Term Fund- Direct Plan- Growth Option",
+          "1M": 1.25,
+          "3M": 3.09,
+          "6M": 5.74,
+          "1Y": 10.58,
+          "3Y": null,
+          "5Y": null,
+          "nav": 1664.5708,
+          "nav_date": "28-Jan-2015"
+        },
+        {
+          "schemeCode": 145954,
+          "fund": "LIC MF Short Duration Fund - Direct Plan - Growth",
+          "1M": 0.37,
+          "3M": 2.87,
+          "6M": 2.92,
+          "1Y": 5.88,
+          "3Y": 7.63,
+          "5Y": 6.32,
+          "nav": 16.6389,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 118407,
+          "fund": "Bandhan Short Duration Fund - Direct Plan - Growth",
+          "1M": 0.41,
+          "3M": 2.82,
+          "6M": 3.56,
+          "1Y": 6.37,
+          "3Y": 7.82,
+          "5Y": 6.51,
+          "nav": 65.6791,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 148729,
+          "fund": "Mahindra Manulife Short Duration Fund - Direct Plan - Growth",
+          "1M": 0.38,
+          "3M": 2.8,
+          "6M": 3.34,
+          "1Y": 6.28,
+          "3Y": 7.89,
+          "5Y": 6.7,
+          "nav": 14.2741,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 119498,
+          "fund": "Aditya Birla Sun Life Short Term Fund - Direct Plan - GROWTH",
+          "1M": 0.34,
+          "3M": 2.79,
+          "6M": 2.97,
+          "1Y": 6.12,
+          "3Y": 7.78,
+          "5Y": 6.91,
+          "nav": 55.1778,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 120754,
+          "fund": "ICICI Prudential Short Term Fund - Direct Plan - Growth",
+          "1M": 0.47,
+          "3M": 2.79,
+          "6M": 3.31,
+          "1Y": 6.55,
+          "3Y": 7.97,
+          "5Y": 7.24,
+          "nav": 70.6776,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 118796,
+          "fund": "Nippon India Short Duration Fund - Direct Plan - Growth Option",
+          "1M": 0.32,
+          "3M": 2.76,
+          "6M": 2.87,
+          "1Y": 5.99,
+          "3Y": 7.81,
+          "5Y": 6.75,
+          "nav": 61.4595,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 142641,
+          "fund": "Mirae Asset Short Duration Fund - Direct Plan - Growth",
+          "1M": 0.39,
+          "3M": 2.76,
+          "6M": 2.73,
+          "1Y": 5.6,
+          "3Y": 7.53,
+          "5Y": 6.45,
+          "nav": 17.803,
+          "nav_date": "20-Aug-2026"
+        }
+      ]
+    },
+    {
+      "key": "debt_corporate_bond",
+      "label": "Debt - Corporate Bond",
+      "group": "Debt",
+      "rating": "Low-Moderate Risk",
+      "horizon": "1-3 Years",
+      "rank_metric": "3M",
+      "avg": 2.95,
+      "funds": [
+        {
+          "schemeCode": 118987,
+          "fund": "HDFC Corporate Bond Fund - Direct Plan - Growth Option",
+          "1M": 0.24,
+          "3M": 3.12,
+          "6M": 2.72,
+          "1Y": 5.27,
+          "3Y": 7.34,
+          "5Y": 6.41,
+          "nav": 35.2759,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 150237,
+          "fund": "BARODA BNP PARIBAS CORPORATE BOND FUND - Direct Plan - Growth Option",
+          "1M": 0.5,
+          "3M": 3.08,
+          "6M": 3.34,
+          "1Y": 6.29,
+          "3Y": 7.91,
+          "5Y": null,
+          "nav": 31.3387,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 119533,
+          "fund": "Aditya Birla Sun Life Corporate Bond Fund - Direct Plan - GROWTH",
+          "1M": 0.25,
+          "3M": 3.05,
+          "6M": 2.71,
+          "1Y": 5.43,
+          "3Y": 7.35,
+          "5Y": 6.46,
+          "nav": 121.8462,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 120497,
+          "fund": "Invesco India Corporate Bond Fund - Direct Plan - Growth",
+          "1M": 0.28,
+          "3M": 2.97,
+          "6M": 2.75,
+          "1Y": 5.44,
+          "3Y": 7.44,
+          "5Y": 6.22,
+          "nav": 3623.8708,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 120692,
+          "fund": "ICICI Prudential Corporate Bond Fund - Direct Plan - Growth",
+          "1M": 0.41,
+          "3M": 2.94,
+          "6M": 3.24,
+          "1Y": 6.28,
+          "3Y": 7.64,
+          "5Y": 6.91,
+          "nav": 33.5408,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 148755,
+          "fund": "Mirae Asset Corporate Bond Fund - Direct Plan - Growth",
+          "1M": 0.49,
+          "3M": 2.9,
+          "6M": 2.74,
+          "1Y": 5.45,
+          "3Y": 7.27,
+          "5Y": 6.1,
+          "nav": 13.8348,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 135916,
+          "fund": "BANDHAN Corporate Bond Fund - Direct Plan - Growth",
+          "1M": 0.38,
+          "3M": 2.88,
+          "6M": 3.43,
+          "1Y": 6.04,
+          "3Y": 7.41,
+          "5Y": 6.15,
+          "nav": 21.1791,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 118814,
+          "fund": "Nippon India Corporate Bond Fund - Direct Plan - Growth Option",
+          "1M": 0.34,
+          "3M": 2.87,
+          "6M": 2.91,
+          "1Y": 5.65,
+          "3Y": 7.7,
+          "5Y": 6.84,
+          "nav": 67.1829,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 141588,
+          "fund": "AXIS Corporate Bond Fund - Direct Plan - Growth Option",
+          "1M": 0.34,
+          "3M": 2.84,
+          "6M": 3.05,
+          "1Y": 5.95,
+          "3Y": 7.85,
+          "5Y": 6.84,
+          "nav": 19.3568,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 149361,
+          "fund": "Tata Corporate Bond Fund - Direct Plan - Growth Option",
+          "1M": 0.33,
+          "3M": 2.83,
+          "6M": 2.7,
+          "1Y": 5.5,
+          "3Y": 7.47,
+          "5Y": null,
+          "nav": 13.4253,
+          "nav_date": "20-Aug-2026"
+>>>>>>> 860ebd8d891de0e1abf748052eb62c63f4cbf908
         }
       ]
     },
@@ -113,9 +1256,10 @@
       "rating": "Very Low Risk",
       "horizon": "0-3 Months",
       "rank_metric": "3M",
-      "avg": 6.9,
+      "avg": 1.99,
       "funds": [
         {
+<<<<<<< HEAD
           "schemeCode": 100006,
           "fund": "Sample Liquid Fund - Direct - Growth",
           "1M": 6.4,
@@ -149,6 +1293,126 @@
           "5Y": 16.28,
           "nav": 215.27,
           "nav_date": "20-Aug-2026"
+=======
+          "schemeCode": 119181,
+          "fund": "Daiwa Liquid Fund - Direct - Growth",
+          "1M": 0.72,
+          "3M": 2.37,
+          "6M": 4.46,
+          "1Y": null,
+          "3Y": null,
+          "5Y": null,
+          "nav": 1382.3538,
+          "nav_date": "14-Nov-2013"
+        },
+        {
+          "schemeCode": 120123,
+          "fund": "BNP Paribas LIQUID Fund - Direct Plan - Growth Option",
+          "1M": 0.71,
+          "3M": 2.23,
+          "6M": 4.56,
+          "1Y": 9.56,
+          "3Y": null,
+          "5Y": null,
+          "nav": 20.1814,
+          "nav_date": "27-Jun-2014"
+        },
+        {
+          "schemeCode": 119173,
+          "fund": "Morgan Stanley Liquid Fund - Direct Growth Plan",
+          "1M": 0.67,
+          "3M": 2.22,
+          "6M": 4.46,
+          "1Y": 9.57,
+          "3Y": null,
+          "5Y": null,
+          "nav": 1288.4008,
+          "nav_date": "26-Jun-2014"
+        },
+        {
+          "schemeCode": 119935,
+          "fund": "ING Liquid Fund - Super Institutional Plan - Direct Plan - Growth Option",
+          "1M": 0.7,
+          "3M": 2.11,
+          "6M": 4.31,
+          "1Y": 9.31,
+          "3Y": null,
+          "5Y": null,
+          "nav": 20.009,
+          "nav_date": "09-Oct-2014"
+        },
+        {
+          "schemeCode": 119360,
+          "fund": "PineBridge India Liquid Fund- Direct Plan- Growth Option",
+          "1M": 0.65,
+          "3M": 1.97,
+          "6M": 3.98,
+          "1Y": 8.28,
+          "3Y": null,
+          "5Y": null,
+          "nav": 1719.5505,
+          "nav_date": "29-Jan-2015"
+        },
+        {
+          "schemeCode": 120104,
+          "fund": "DHFL Pramerica Liquid Fund - Direct Plan-Growth Option",
+          "1M": 0.63,
+          "3M": 1.91,
+          "6M": 3.88,
+          "1Y": 8.3,
+          "3Y": 8.9,
+          "5Y": null,
+          "nav": 1608.2459,
+          "nav_date": "07-Mar-2016"
+        },
+        {
+          "schemeCode": 149664,
+          "fund": "Sundaram Liquid Fund (Formerly Known as Principal Cash Management Fund) - Direct Plan - GROWTH",
+          "1M": 0.52,
+          "3M": 1.79,
+          "6M": 3.47,
+          "1Y": 6.52,
+          "3Y": 7.02,
+          "5Y": null,
+          "nav": 2502.0837,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 118577,
+          "fund": "Franklin India Liquid Fund - Direct Plan - Super Institutional Growth",
+          "1M": 0.53,
+          "3M": 1.76,
+          "6M": 3.41,
+          "1Y": 6.49,
+          "3Y": 7.01,
+          "5Y": 6.32,
+          "nav": 4254.7405,
+          "nav_date": "20-Aug-2026"
+        },
+        {
+          "schemeCode": 118610,
+          "fund": "Reliance Liquid Fund - Cash Plan - Direct Plan - Growth Plan - Growth Option",
+          "1M": 0.49,
+          "3M": 1.75,
+          "6M": 3.44,
+          "1Y": 6.93,
+          "3Y": 7.47,
+          "5Y": 8.14,
+          "nav": 2831.6355,
+          "nav_date": "20-May-2018"
+        },
+        {
+          "schemeCode": 118857,
+          "fund": "Mirae Asset Liquid Fund - Direct Plan - Growth",
+          "1M": 0.62,
+          "3M": 1.74,
+          "6M": 3.64,
+          "1Y": null,
+          "3Y": null,
+          "5Y": null,
+          "nav": 1061.7509,
+          "nav_date": "30-Jul-2013"
+>>>>>>> 860ebd8d891de0e1abf748052eb62c63f4cbf908
         }
       ]
     }
