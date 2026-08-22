@@ -510,6 +510,9 @@ function renderTrends() {
           },
         },
       });
+    } else if (points.length > 0 && typeof Chart === "undefined") {
+      card.querySelector(".trend-chart-wrap").innerHTML =
+        '<div class="empty-state">Chart library failed to load from CDN — check your internet connection or that cdnjs.cloudflare.com isn\'t blocked, then reload.</div>';
     }
   });
 }
