@@ -1,63 +1,249 @@
 {
-  "updated": "22-Aug-2026 16:31",
+  "updated": "22-Aug-2026 16:56",
   "indicators": {
     "repo_rate": {
       "label": "RBI Repo Rate (3M Interbank proxy via FRED + RBI announcements)",
       "unit": "%",
-<<<<<<< HEAD
-      "source": "FRED + auto-extracted RBI announcements (NOT yet fetched)",
-      "points": [],
-      "as_of": null
-=======
       "source": "FRED",
       "points": [
         {
+          "date": "2021-09-01",
+          "value": 3.3057
+        },
+        {
           "date": "2021-10-01",
-          "value": 4.25
+          "value": 3.46616
+        },
+        {
+          "date": "2021-11-01",
+          "value": 3.56
+        },
+        {
+          "date": "2021-12-01",
+          "value": 3.58154
         },
         {
           "date": "2022-01-01",
-          "value": 4.25
+          "value": 3.630025
+        },
+        {
+          "date": "2022-02-01",
+          "value": 3.786225
+        },
+        {
+          "date": "2022-03-01",
+          "value": 3.77975
         },
         {
           "date": "2022-04-01",
-          "value": 5.03
+          "value": 3.9255
+        },
+        {
+          "date": "2022-05-01",
+          "value": 4.6956
+        },
+        {
+          "date": "2022-06-01",
+          "value": 5.02425
         },
         {
           "date": "2022-07-01",
-          "value": 5.75
+          "value": 5.31202
+        },
+        {
+          "date": "2022-08-01",
+          "value": 5.578275
+        },
+        {
+          "date": "2022-09-01",
+          "value": 5.80714
         },
         {
           "date": "2022-10-01",
-          "value": 6.43
+          "value": 6.287125
+        },
+        {
+          "date": "2022-11-01",
+          "value": 6.45805
+        },
+        {
+          "date": "2022-12-01",
+          "value": 6.38934
         },
         {
           "date": "2023-01-01",
-          "value": 6.75
+          "value": 6.41075
+        },
+        {
+          "date": "2023-02-01",
+          "value": 6.693325
+        },
+        {
+          "date": "2023-03-01",
+          "value": 6.875175
         },
         {
           "date": "2023-04-01",
-          "value": 6.75
+          "value": 6.812025
+        },
+        {
+          "date": "2023-05-01",
+          "value": 6.86335
+        },
+        {
+          "date": "2023-06-01",
+          "value": 6.76382
         },
         {
           "date": "2023-07-01",
-          "value": 6.75
+          "value": 6.723425
+        },
+        {
+          "date": "2023-08-01",
+          "value": 6.800625
+        },
+        {
+          "date": "2023-09-01",
+          "value": 6.83792
         },
         {
           "date": "2023-10-01",
-          "value": 6.75
+          "value": 6.89355
+        },
+        {
+          "date": "2023-11-01",
+          "value": 6.93485
+        },
+        {
+          "date": "2023-12-01",
+          "value": 6.9534
+        },
+        {
+          "date": "2024-01-01",
+          "value": 6.9638
+        },
+        {
+          "date": "2024-02-01",
+          "value": 7.032125
+        },
+        {
+          "date": "2024-03-01",
+          "value": 6.92498
+        },
+        {
+          "date": "2024-04-01",
+          "value": 6.88555
+        },
+        {
+          "date": "2024-05-01",
+          "value": 6.93736
+        },
+        {
+          "date": "2024-06-01",
+          "value": 6.829325
+        },
+        {
+          "date": "2024-07-01",
+          "value": 6.747925
+        },
+        {
+          "date": "2024-08-01",
+          "value": 6.63938
+        },
+        {
+          "date": "2024-09-01",
+          "value": 6.63815
+        },
+        {
+          "date": "2024-10-01",
+          "value": 6.458775
+        },
+        {
+          "date": "2024-11-01",
+          "value": 6.46916
+        },
+        {
+          "date": "2024-12-01",
+          "value": 6.4745
+        },
+        {
+          "date": "2025-01-01",
+          "value": 6.59302
+        },
+        {
+          "date": "2025-02-01",
+          "value": 6.4538666667
+        },
+        {
+          "date": "2025-03-01",
+          "value": 6.501125
+        },
+        {
+          "date": "2025-04-01",
+          "value": 6.042975
+        },
+        {
+          "date": "2025-05-01",
+          "value": 5.79088
+        },
+        {
+          "date": "2025-06-01",
+          "value": 5.428975
+        },
+        {
+          "date": "2025-07-01",
+          "value": 5.38235
+        },
+        {
+          "date": "2025-08-01",
+          "value": 5.46808
+        },
+        {
+          "date": "2025-09-01",
+          "value": 5.49675
+        },
+        {
+          "date": "2025-10-01",
+          "value": 5.4531
+        },
+        {
+          "date": "2025-11-01",
+          "value": 5.4064
+        },
+        {
+          "date": "2025-12-01",
+          "value": 5.288525
+        },
+        {
+          "date": "2026-01-01",
+          "value": 5.411075
+        },
+        {
+          "date": "2026-02-01",
+          "value": 5.32
+        },
+        {
+          "date": "2026-03-01",
+          "value": 5.32
+        },
+        {
+          "date": "2026-04-01",
+          "value": 5.24
+        },
+        {
+          "date": "2026-05-01",
+          "value": 5.39
+        },
+        {
+          "date": "2026-06-01",
+          "value": 5.34
         }
-      ]
->>>>>>> 05d845dd41906f05a0b22dd257f7df85bf07dbb2
+      ],
+      "as_of": "2026-06-01"
     },
     "cpi_index": {
       "label": "CPI (All Items, Index)",
       "unit": "Index",
-<<<<<<< HEAD
-      "source": "FRED (NOT yet fetched)",
-      "points": [],
-      "as_of": null
-=======
       "source": "FRED",
       "points": [
         {
@@ -232,17 +418,12 @@
           "date": "2025-03-01",
           "value": 157.5517
         }
-      ]
->>>>>>> 05d845dd41906f05a0b22dd257f7df85bf07dbb2
+      ],
+      "as_of": "2025-03-01"
     },
     "gsec_10y": {
       "label": "10-Year G-Sec Yield",
       "unit": "%",
-<<<<<<< HEAD
-      "source": "FRED (NOT yet fetched)",
-      "points": [],
-      "as_of": null
-=======
       "source": "FRED",
       "points": [
         {
@@ -477,17 +658,12 @@
           "date": "2026-06-01",
           "value": 6.89
         }
-      ]
->>>>>>> 05d845dd41906f05a0b22dd257f7df85bf07dbb2
+      ],
+      "as_of": "2026-06-01"
     },
     "usd_inr": {
       "label": "USD/INR Exchange Rate",
       "unit": "\u20b9 per $",
-<<<<<<< HEAD
-      "source": "FRED (NOT yet fetched)",
-      "points": [],
-      "as_of": null
-=======
       "source": "FRED",
       "points": [
         {
@@ -5470,20 +5646,15 @@
           "date": "2026-08-14",
           "value": 95.43
         }
-      ]
->>>>>>> 05d845dd41906f05a0b22dd257f7df85bf07dbb2
+      ],
+      "as_of": "2026-08-14"
     },
     "wpi_yoy": {
       "label": "WPI (All Commodities Index)",
       "unit": "Index",
-<<<<<<< HEAD
-      "source": "MOSPI API (NOT yet fetched)",
+      "source": "MOSPI API (not configured \u2014 see README)",
       "points": [],
       "as_of": null
-=======
-      "source": "MOSPI API (not configured \u2014 see README)",
-      "points": []
->>>>>>> 05d845dd41906f05a0b22dd257f7df85bf07dbb2
     }
   }
 }
