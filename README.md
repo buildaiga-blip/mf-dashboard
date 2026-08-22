@@ -140,13 +140,23 @@ from FRED's free, keyless CSV endpoint (`fred.stlouisfed.org/graph/fredgraph.csv
 occasionally get renamed — if a fetch fails, check `fred.stlouisfed.org/tags/series?t=india` for
 the current ID and update `FRED_SERIES` in the script.
 
-**Repo Rate** uses FRED's `IRSTCB01INQ156N` (OECD "Central Bank Rates: Total for India", quarterly)
-as the long-run backbone — it's a close proxy for the repo rate, not RBI's own series (no free API
-publishes that directly). On top of that baseline, the script automatically scans
+**Repo Rate** uses FRED's `INDIR3TIB01STM` (OECD "3-Month Interbank Rate: Total for India",
+monthly) as the backbone — it tracks the repo corridor closely and updates far more recently than
+alternatives. (An earlier version used `IRSTCB01INQ156N`, which publishes on a multi-quarter lag
+and had gone stale — if your chart is flat for the last year or two, that's the old series; make
+sure you're on this version.) On top of that baseline, the script scans
 `data/regulatory_updates.json` (produced by `fetch_regulatory_updates.py`, which runs first in the
-same workflow) for RBI announcement titles mentioning "repo rate" followed by a percentage, and
-layers in any it finds as sharper, more current points — no manual editing, just regex extraction
-against real RBI press releases every time the workflow runs.
+same workflow) for RBI announcements whose **title or summary** mentions "repo rate" followed by a
+percentage, and merges any it finds into `data/repo_rate_extracted_history.json` — a small state
+file the script itself reads, updates, and writes back every run. This persistence is what lets the
+chart keep accumulating real RBI-announced values permanently, even after an announcement ages out
+of the regulatory feed's 2-day lookback window — with zero manual editing at any point.
+
+**USD/INR** comes from FRED's `DEXINUS` (Fed H.10 release). A few days' lag versus "today" is
+normal — that's the Fed's own publication schedule, not a bug — and it closes automatically since
+the workflow runs daily. If you want tighter-than-FRED currency data, swap `DEXINUS` for a live
+INR rate API in `fetch_fred_series`/`FRED_SERIES` (e.g. `exchangerate.host` or a similar free feed)
+— not done by default here to keep the pipeline on one consistent, well-documented data source.
 
 **WPI** comes from MOSPI's own public WPI API (`api.mospi.gov.in`). This needs a **one-time free
 account signup** (not a recurring task — the same kind of one-time setup as enabling GitHub Pages):
@@ -166,6 +176,14 @@ parsing in that function to match what MOSPI actually returns.
 
 Runs daily via `.github/workflows/refresh-macro.yml` (cheap to run, and lets a same-day repo-rate
 announcement show up quickly via the auto-extraction step above).
+
+## Chart interactivity
+
+Each Economic Trends chart shows the exact "as of" date next to its latest value, supports
+scroll-to-zoom and drag-to-pan (via `chartjs-plugin-zoom`, loaded from jsDelivr — needs
+`hammerjs` as a dependency, also loaded there), has a "Reset zoom" button per chart, and shows a
+richer tooltip on hover (formatted date, value with unit, and — for Repo Rate points that came
+from an RBI announcement — the announcement title that produced that point).
 
 ## Research tab — what it is and isn't
 

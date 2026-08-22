@@ -6,6 +6,8 @@
 <title>My MF Intelligence — Personal Portfolio Dashboard</title>
 <link rel="stylesheet" href="assets/style.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
 </head>
 <body>
 
@@ -153,6 +155,7 @@
       CPI, 10-Year G-Sec yield, USD/INR, and a Repo Rate baseline come from FRED; Repo Rate is
       sharpened further using values auto-extracted from RBI's own announcements; WPI comes from
       MOSPI's public API. See the README for the one-time WPI setup.
+      Scroll to zoom, drag to pan, hover for exact values — double-click a chart to reset it.
     </p>
     <div id="trends-container"></div>
   </div>

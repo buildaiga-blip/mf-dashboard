@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "mf-dashboard-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/macro_trends.json data/regulatory_updates.json
+          git add data/macro_trends.json data/regulatory_updates.json data/repo_rate_extracted_history.json
           git diff --cached --quiet && echo "No changes" || git commit -m "Refresh macro trends $(date -u +%Y-%m-%d)"
           git pull --rebase origin main
           git push

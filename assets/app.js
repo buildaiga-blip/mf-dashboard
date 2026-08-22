@@ -418,6 +418,7 @@ function renderUpdates() {
           <span class="update-date">${it.published}</span>
         </div>
         <div class="update-title"><a href="${it.link}" target="_blank" rel="noopener">${it.title}</a></div>
+        ${it.summary ? `<div style="color:var(--text-dim); font-size:12px; margin-top:4px;">${it.summary}</div>` : ""}
         <div style="color:var(--text-dim); font-size:11.5px; margin-top:4px;">${it.feed_label}</div>
       </div>
     `
@@ -464,18 +465,25 @@ function renderTrends() {
   container.innerHTML = "";
   if (!TRENDS_DATA || !TRENDS_DATA.indicators) return;
 
+  const zoomAvailable = typeof Chart !== "undefined" && Chart.registry.plugins.get("zoom");
+
   Object.entries(TRENDS_DATA.indicators).forEach(([key, series]) => {
     const card = document.createElement("div");
     card.className = "trend-card";
     const points = series.points || [];
     const latest = points.length ? points[points.length - 1] : null;
+    const asOf = series.as_of || (latest ? latest.date : null);
 
     card.innerHTML = `
       <div class="trend-card-head">
         <h4>${series.label}</h4>
-        <div class="trend-latest">${latest ? latest.value.toFixed(2) + " " + series.unit : "No data"}</div>
+        <div class="trend-latest-block">
+          <div class="trend-latest">${latest ? latest.value.toFixed(2) + " " + series.unit : "No data"}</div>
+          <div class="trend-as-of">${asOf ? "As of " + formatDisplayDate(asOf) : ""}</div>
+        </div>
       </div>
       <div class="trend-chart-wrap"><canvas id="chart-${key}"></canvas></div>
+      ${points.length > 0 && zoomAvailable ? `<button class="reset-zoom-btn" data-chart-key="${key}">Reset zoom</button>` : ""}
       <div style="color:var(--text-dim); font-size:11px; margin-top:6px;">Source: ${series.source || "N/A"}${points.length === 0 ? " — not yet populated, run the GitHub Action" : ""}</div>
     `;
     container.appendChild(card);
@@ -496,6 +504,9 @@ function renderTrends() {
               fill: true,
               tension: 0.25,
               pointRadius: 0,
+              pointHoverRadius: 5,
+              pointHoverBackgroundColor: "#d4a72c",
+              pointHitRadius: 12,
               borderWidth: 2,
             },
           ],
@@ -503,7 +514,36 @@ function renderTrends() {
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          plugins: { legend: { display: false } },
+          interaction: { mode: "index", intersect: false },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: "#16213a",
+              borderColor: "#d4a72c",
+              borderWidth: 1,
+              titleColor: "#e8ecf4",
+              bodyColor: "#e8ecf4",
+              padding: 10,
+              callbacks: {
+                title: (items) => formatDisplayDate(items[0].label),
+                label: (item) => `${series.label}: ${item.parsed.y.toFixed(2)} ${series.unit}`,
+                afterLabel: (item) => {
+                  const p = points[item.dataIndex];
+                  return p && p.note ? p.note : "";
+                },
+              },
+            },
+            zoom: zoomAvailable
+              ? {
+                  pan: { enabled: true, mode: "x" },
+                  zoom: {
+                    wheel: { enabled: true },
+                    pinch: { enabled: true },
+                    mode: "x",
+                  },
+                }
+              : undefined,
+          },
           scales: {
             x: { ticks: { color: "#8b96ac", maxTicksLimit: 6 }, grid: { color: "#24304a" } },
             y: { ticks: { color: "#8b96ac" }, grid: { color: "#24304a" } },
@@ -515,6 +555,19 @@ function renderTrends() {
         '<div class="empty-state">Chart library failed to load from CDN — check your internet connection or that cdnjs.cloudflare.com isn\'t blocked, then reload.</div>';
     }
   });
+
+  container.querySelectorAll(".reset-zoom-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const chart = chartInstances[btn.dataset.chartKey];
+      if (chart && chart.resetZoom) chart.resetZoom();
+    });
+  });
+}
+
+function formatDisplayDate(isoOrDateStr) {
+  const d = new Date(isoOrDateStr);
+  if (isNaN(d.getTime())) return isoOrDateStr;
+  return d.toLocaleDateString(undefined, { day: "2-digit", month: "short", year: "numeric" });
 }
 
 // ---------- Research tab ----------

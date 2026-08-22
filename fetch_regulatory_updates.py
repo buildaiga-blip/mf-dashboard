@@ -106,11 +106,15 @@ def fetch_source(source):
         title = re.sub(r"\s+", " ", getattr(entry, "title", "")).strip()
         if not title:
             continue
+        summary_raw = getattr(entry, "summary", "") or ""
+        summary = re.sub(r"<[^>]+>", " ", summary_raw)  # strip any HTML tags
+        summary = re.sub(r"\s+", " ", summary).strip()[:500]
         items.append(
             {
                 "source": source["name"],
                 "feed_label": source["label"],
                 "title": title,
+                "summary": summary,
                 "link": getattr(entry, "link", ""),
                 "published": pub_date.strftime("%d-%b-%Y %H:%M UTC"),
                 "published_iso": pub_date.isoformat(),
