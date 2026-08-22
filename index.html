@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>My MF Intelligence — Personal Portfolio Dashboard</title>
 <link rel="stylesheet" href="assets/style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 </head>
 <body>
 
@@ -24,6 +25,9 @@
   <div class="tab" data-target="tab-debt">Debt</div>
   <div class="tab" data-target="tab-guide">Allocation Guide</div>
   <div class="tab" data-target="tab-portfolio">My Portfolio</div>
+  <div class="tab" data-target="tab-updates">Financial Updates</div>
+  <div class="tab" data-target="tab-trends">Economic Trends</div>
+  <div class="tab" data-target="tab-research">Research</div>
 </div>
 
 <div class="content">
@@ -115,16 +119,62 @@
       <button type="button" id="refresh-portfolio-btn" class="refresh-btn">Refresh Live Values</button>
     </form>
     <p id="scheme-code-hint" style="color:var(--text-dim); font-size:12px;"></p>
-    <table>
-      <thead>
-        <tr><th>Fund</th><th>Scheme Code</th><th>Units</th><th>Live NAV</th><th>Value</th><th></th></tr>
-      </thead>
-      <tbody id="portfolio-body"></tbody>
-    </table>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Fund</th><th>Scheme Code</th><th>Units</th><th>Live NAV</th><th>Value</th><th></th></tr>
+        </thead>
+        <tbody id="portfolio-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FINANCIAL UPDATES -->
+  <div id="tab-updates" class="tab-panel" style="display:none">
+    <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;">
+      Announcements from the last 2 days, pulled from official RBI, SEBI, and Government (PIB) RSS feeds.
+      Refreshed a few times a day by a GitHub Action — see the README for the exact source list.
+      IRDAI has no public RSS feed we could verify, so it's listed as a manual-check reference link instead.
+    </p>
+    <div class="source-filter-row" id="update-source-filters">
+      <span class="pill active" data-source="All">All</span>
+      <span class="pill" data-source="RBI">RBI</span>
+      <span class="pill" data-source="SEBI">SEBI</span>
+      <span class="pill" data-source="Government">Government</span>
+    </div>
+    <div id="updates-container"></div>
+    <div class="guide-card" id="manual-references-container" style="margin-top:10px;"></div>
+  </div>
+
+  <!-- ECONOMIC TRENDS -->
+  <div id="tab-trends" class="tab-panel" style="display:none">
+    <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;">
+      5-year trend for key macro indicators — all fetched automatically, nothing edited by hand.
+      CPI, 10-Year G-Sec yield, USD/INR, and a Repo Rate baseline come from FRED; Repo Rate is
+      sharpened further using values auto-extracted from RBI's own announcements; WPI comes from
+      MOSPI's public API. See the README for the one-time WPI setup.
+    </p>
+    <div id="trends-container"></div>
+  </div>
+
+  <!-- RESEARCH -->
+  <div id="tab-research" class="tab-panel" style="display:none">
+    <p style="color:var(--text-dim); font-size:13px; margin-bottom:4px;">
+      Structural India growth themes with well-known example companies per theme — illustrative, not a ranked buy
+      list. This is written/curated content, not a live feed; it needs periodic manual review to stay current.
+    </p>
+    <p style="color:var(--gold); font-size:12px; margin-bottom:14px;" id="research-last-reviewed"></p>
+    <div id="research-container"></div>
+    <div class="footer-note">
+      This is general, educational commentary based on publicly known structural themes — not personalized
+      investment advice, not a recommendation to buy any security, and not a guarantee of future performance.
+      Please do your own research or consult a SEBI-registered investment advisor before acting on any of this.
+    </div>
   </div>
 
 </div>
 
+<script src="assets/research_content.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

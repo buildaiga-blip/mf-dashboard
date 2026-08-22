@@ -239,6 +239,9 @@ function renderRankings() {
         return;
       }
 
+      const scrollWrap = document.createElement("div");
+      scrollWrap.className = "table-scroll";
+
       const table = document.createElement("table");
       const thead = document.createElement("thead");
       thead.innerHTML = `<tr>
@@ -265,7 +268,8 @@ function renderRankings() {
         tbody.appendChild(tr);
       });
       table.appendChild(tbody);
-      card.appendChild(table);
+      scrollWrap.appendChild(table);
+      card.appendChild(scrollWrap);
       container.appendChild(card);
     });
   });
@@ -378,6 +382,159 @@ document.getElementById("refresh-portfolio-btn").addEventListener("click", rende
 
 document.getElementById("live-refresh-btn").addEventListener("click", refreshAllLive);
 
+// ---------- Financial Updates tab ----------
+let UPDATES_DATA = null;
+let activeSourceFilter = "All";
+
+async function loadUpdates() {
+  try {
+    const res = await fetch("data/regulatory_updates.json", { cache: "no-store" });
+    UPDATES_DATA = await res.json();
+  } catch {
+    UPDATES_DATA = { items: [], manual_references: [] };
+  }
+  renderUpdates();
+}
+
+function renderUpdates() {
+  const container = document.getElementById("updates-container");
+  const refsContainer = document.getElementById("manual-references-container");
+  if (!UPDATES_DATA) return;
+
+  const items = UPDATES_DATA.items.filter(
+    (it) => activeSourceFilter === "All" || it.source === activeSourceFilter
+  );
+
+  if (items.length === 0) {
+    container.innerHTML = '<div class="empty-state">No announcements matching this filter in the last 2 days.</div>';
+  } else {
+    container.innerHTML = items
+      .map(
+        (it) => `
+      <div class="update-item">
+        <div class="update-item-top">
+          <span class="source-badge source-${it.source}">${it.source}</span>
+          <span class="topic-badge">${it.topic}</span>
+          <span class="update-date">${it.published}</span>
+        </div>
+        <div class="update-title"><a href="${it.link}" target="_blank" rel="noopener">${it.title}</a></div>
+        <div style="color:var(--text-dim); font-size:11.5px; margin-top:4px;">${it.feed_label}</div>
+      </div>
+    `
+      )
+      .join("");
+  }
+
+  const refs = UPDATES_DATA.manual_references || [];
+  refsContainer.innerHTML = refs.length
+    ? `<h4>Other Regulators (manual check)</h4>` +
+      refs
+        .map(
+          (r) => `<p style="margin:4px 0;"><a href="${r.url}" target="_blank" rel="noopener" style="color:var(--gold)">${r.label}</a></p>`
+        )
+        .join("")
+    : "";
+}
+
+document.querySelectorAll('#update-source-filters .pill').forEach((pill) => {
+  pill.addEventListener("click", () => {
+    document.querySelectorAll('#update-source-filters .pill').forEach((p) => p.classList.remove("active"));
+    pill.classList.add("active");
+    activeSourceFilter = pill.dataset.source;
+    renderUpdates();
+  });
+});
+
+// ---------- Economic Trends tab ----------
+let TRENDS_DATA = null;
+const chartInstances = {};
+
+async function loadTrends() {
+  try {
+    const res = await fetch("data/macro_trends.json", { cache: "no-store" });
+    TRENDS_DATA = await res.json();
+  } catch {
+    TRENDS_DATA = { indicators: {} };
+  }
+  renderTrends();
+}
+
+function renderTrends() {
+  const container = document.getElementById("trends-container");
+  container.innerHTML = "";
+  if (!TRENDS_DATA || !TRENDS_DATA.indicators) return;
+
+  Object.entries(TRENDS_DATA.indicators).forEach(([key, series]) => {
+    const card = document.createElement("div");
+    card.className = "trend-card";
+    const points = series.points || [];
+    const latest = points.length ? points[points.length - 1] : null;
+
+    card.innerHTML = `
+      <div class="trend-card-head">
+        <h4>${series.label}</h4>
+        <div class="trend-latest">${latest ? latest.value.toFixed(2) + " " + series.unit : "No data"}</div>
+      </div>
+      <div class="trend-chart-wrap"><canvas id="chart-${key}"></canvas></div>
+      <div style="color:var(--text-dim); font-size:11px; margin-top:6px;">Source: ${series.source || "N/A"}${points.length === 0 ? " — not yet populated, run the GitHub Action" : ""}</div>
+    `;
+    container.appendChild(card);
+
+    if (points.length > 0 && typeof Chart !== "undefined") {
+      const ctx = card.querySelector(`#chart-${key}`).getContext("2d");
+      if (chartInstances[key]) chartInstances[key].destroy();
+      chartInstances[key] = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: points.map((p) => p.date),
+          datasets: [
+            {
+              label: series.label,
+              data: points.map((p) => p.value),
+              borderColor: "#d4a72c",
+              backgroundColor: "rgba(212,167,44,0.12)",
+              fill: true,
+              tension: 0.25,
+              pointRadius: 0,
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: "#8b96ac", maxTicksLimit: 6 }, grid: { color: "#24304a" } },
+            y: { ticks: { color: "#8b96ac" }, grid: { color: "#24304a" } },
+          },
+        },
+      });
+    }
+  });
+}
+
+// ---------- Research tab ----------
+function renderResearch() {
+  if (typeof SECTOR_THEMES === "undefined") return;
+  document.getElementById("research-last-reviewed").textContent = `Last reviewed: ${LAST_REVIEWED}`;
+  const container = document.getElementById("research-container");
+  container.innerHTML = SECTOR_THEMES.map(
+    (s) => `
+    <div class="sector-card">
+      <h4>${s.sector}</h4>
+      <p class="sector-thesis">${s.thesis}</p>
+      <div class="company-chips">
+        ${s.companies.map((c) => `<span class="company-chip">${c}</span>`).join("")}
+      </div>
+    </div>
+  `
+  ).join("");
+}
+
 // ---------- Init ----------
 loadData();
 renderPortfolio();
+loadUpdates();
+loadTrends();
+renderResearch();

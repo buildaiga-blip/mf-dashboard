@@ -1,0 +1,42 @@
+name: Refresh Macro Trends
+
+on:
+  schedule:
+    # Daily — cheap to run, and lets a same-day RBI repo-rate announcement
+    # (auto-extracted from regulatory updates) show up in the chart quickly.
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh regulatory updates first (repo-rate extraction reads this)
+        run: python fetch_regulatory_updates.py
+
+      - name: Run macro trends refresh
+        env:
+          MOSPI_USERNAME: ${{ secrets.MOSPI_USERNAME }}
+          MOSPI_PASSWORD: ${{ secrets.MOSPI_PASSWORD }}
+        run: python fetch_macro_trends.py
+
+      - name: Commit updated data files
+        run: |
+          git config user.name "mf-dashboard-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/macro_trends.json data/regulatory_updates.json
+          git diff --cached --quiet && echo "No changes" || git commit -m "Refresh macro trends $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main
+          git push

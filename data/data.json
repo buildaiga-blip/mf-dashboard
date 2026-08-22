@@ -3,8 +3,8 @@
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
     {
-      "key": "equity_flexi_multi_cap",
-      "label": "Equity - Flexi / Multi Cap",
+      "key": "equity_flexi_cap",
+      "label": "Equity - Flexi Cap",
       "group": "Equity",
       "rating": "High Risk",
       "horizon": "5+ Years",
@@ -107,8 +107,8 @@
       ]
     },
     {
-      "key": "liquid_overnight",
-      "label": "Liquid / Overnight (Emergency Fund)",
+      "key": "debt_liquid",
+      "label": "Debt - Liquid",
       "group": "Debt",
       "rating": "Very Low Risk",
       "horizon": "0-3 Months",

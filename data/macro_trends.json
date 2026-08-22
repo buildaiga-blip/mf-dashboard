@@ -1,0 +1,35 @@
+{
+  "updated": "SAMPLE/PARTIAL - run the GitHub Action to populate all indicators automatically",
+  "indicators": {
+    "repo_rate": {
+      "label": "RBI Repo Rate (OECD/FRED proxy + RBI announcements)",
+      "unit": "%",
+      "source": "FRED + auto-extracted RBI announcements (NOT yet fetched)",
+      "points": []
+    },
+    "cpi_index": {
+      "label": "CPI (All Items, Index)",
+      "unit": "Index",
+      "source": "FRED (NOT yet fetched)",
+      "points": []
+    },
+    "gsec_10y": {
+      "label": "10-Year G-Sec Yield",
+      "unit": "%",
+      "source": "FRED (NOT yet fetched)",
+      "points": []
+    },
+    "usd_inr": {
+      "label": "USD/INR Exchange Rate",
+      "unit": "\u20b9 per $",
+      "source": "FRED (NOT yet fetched)",
+      "points": []
+    },
+    "wpi_yoy": {
+      "label": "WPI (All Commodities Index)",
+      "unit": "Index",
+      "source": "MOSPI API (NOT yet fetched)",
+      "points": []
+    }
+  }
+}

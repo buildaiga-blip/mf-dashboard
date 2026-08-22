@@ -14,6 +14,17 @@ The dashboard has two ranking tabs:
 Each tab sorts independently (Equity defaults to 1Y, Debt to 3M, matching how each asset class is
 normally compared), and **only active funds are shown** — see "Active funds only" below.
 
+## Six tabs
+
+1. **Equity** — 10 Equity categories + 6 Hybrid categories (Large Cap, Flexi Cap, ELSS, Balanced
+   Advantage, etc.), each its own card, sorted independently from Debt.
+2. **Debt** — all 16 SEBI debt categories (Overnight through Gilt), each its own card.
+3. **Allocation Guide** — static goal-based guidance (emergency fund, tax saving, retirement, etc.)
+4. **My Portfolio** — your actual holdings, valued live.
+5. **Financial Updates** — RBI/SEBI/Government announcements from the last 2 days.
+6. **Economic Trends** — 5-year charts for Repo Rate, CPI, WPI, 10Y G-Sec yield, USD/INR.
+7. **Research** — curated structural sector themes with example companies (educational, not advice).
+
 ## What's inside
 
 ```
@@ -106,6 +117,65 @@ Note the refresh button only re-scores the funds *already present* in `data.json
 re-scan the entire mutual fund universe for new entrants (that full scan is what
 `fetch_universe.py` does, and it's what the daily Action keeps current). So new funds appearing in
 a category, or funds dropping out of the top 10, still show up via the daily automated refresh.
+
+## Financial Updates tab — sources and limits
+
+Pulled by `fetch_regulatory_updates.py` from official RSS feeds:
+- RBI Press Releases & Notifications (`rbi.org.in/pressreleases_rss.xml`, `notifications_rss.xml`)
+- SEBI (`sebi.gov.in/sebirss.xml`)
+- PIB / Government of India (`pib.gov.in` — the central press-release aggregator across ministries,
+  covering Finance Ministry / economy / budget announcements)
+
+**IRDAI has no public RSS feed we could verify.** It's listed as a manual-check reference link in
+the tab instead of an automated feed. If you find or IRDAI publishes one, add it to `SOURCES` in
+`fetch_regulatory_updates.py` the same way as the others.
+
+Only items published in the last 2 days are kept (`LOOKBACK_DAYS` at the top of the script). Runs
+every 6 hours via `.github/workflows/refresh-regulatory.yml`.
+
+## Economic Trends tab — sources and limits (fully automated, no manual data entry)
+
+`fetch_macro_trends.py` pulls **CPI, 10-Year G-Sec yield, USD/INR, and a Repo Rate baseline** live
+from FRED's free, keyless CSV endpoint (`fred.stlouisfed.org/graph/fredgraph.csv`). FRED series IDs
+occasionally get renamed — if a fetch fails, check `fred.stlouisfed.org/tags/series?t=india` for
+the current ID and update `FRED_SERIES` in the script.
+
+**Repo Rate** uses FRED's `IRSTCB01INQ156N` (OECD "Central Bank Rates: Total for India", quarterly)
+as the long-run backbone — it's a close proxy for the repo rate, not RBI's own series (no free API
+publishes that directly). On top of that baseline, the script automatically scans
+`data/regulatory_updates.json` (produced by `fetch_regulatory_updates.py`, which runs first in the
+same workflow) for RBI announcement titles mentioning "repo rate" followed by a percentage, and
+layers in any it finds as sharper, more current points — no manual editing, just regex extraction
+against real RBI press releases every time the workflow runs.
+
+**WPI** comes from MOSPI's own public WPI API (`api.mospi.gov.in`). This needs a **one-time free
+account signup** (not a recurring task — the same kind of one-time setup as enabling GitHub Pages):
+
+1. Sign up at the MOSPI API platform: POST to `https://api.mospi.gov.in/api/users/usersignup`
+   with a username/password (see `esankhyiki.mospi.gov.in/API/WPI API User Manual.pdf` for the
+   exact request body, or use Postman as the manual describes).
+2. In your GitHub repo: Settings → Secrets and variables → Actions → New repository secret. Add
+   `MOSPI_USERNAME` and `MOSPI_PASSWORD` with those credentials.
+3. That's it — every run of `refresh-macro.yml` logs in automatically and pulls fresh WPI data.
+
+If those secrets aren't set, WPI is simply skipped (empty chart with a note) rather than failing —
+everything else keeps working. MOSPI's response field names aren't fully documented publicly, so
+`fetch_wpi_series()` tries several plausible variants defensively; if WPI comes back empty even
+with credentials set, check the Action logs for a note about unmatched fields and adjust the
+parsing in that function to match what MOSPI actually returns.
+
+Runs daily via `.github/workflows/refresh-macro.yml` (cheap to run, and lets a same-day repo-rate
+announcement show up quickly via the auto-extraction step above).
+
+## Research tab — what it is and isn't
+
+`assets/research_content.js` holds curated, written commentary on structural India growth themes
+(banking, capex/infra, manufacturing, renewables, healthcare, IT, consumer, autos, real estate,
+insurance) with a handful of well-known example companies per theme. **This is not a live feed** —
+predicting sector outperformance isn't something a free API does — it's meant to be periodically
+refreshed by asking an LLM or doing your own research to update the file, then bumping
+`LAST_REVIEWED`. It's explicitly educational/illustrative, not a ranked buy list or personalized
+advice — see the disclaimer in the tab itself.
 
 ## Customizing categories
 

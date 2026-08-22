@@ -142,7 +142,12 @@ body {
 .group-Hybrid { background: #1f3a4d; color: #a8d4ff; }
 .group-Debt { background: #1f4d33; color: #a8ffcb; }
 
-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 13px; }
 
 th {
   text-align: left;
@@ -242,4 +247,113 @@ td {
   color: var(--text-dim);
   padding: 30px;
   text-align: center;
+}
+
+/* ---------- Financial Updates tab ---------- */
+.source-filter-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.update-item {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.update-item-top {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.source-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.source-RBI { background: #1f3a4d; color: #a8d4ff; }
+.source-SEBI { background: #3a1f4d; color: #d9a8ff; }
+.source-Government { background: #1f4d33; color: #a8ffcb; }
+.source-IRDAI { background: #4d3a1f; color: #ffd9a8; }
+.source-Other { background: #333; color: #ccc; }
+
+.topic-badge {
+  font-size: 10.5px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #24304a;
+  color: var(--text-dim);
+}
+
+.update-date { font-size: 12px; color: var(--text-dim); margin-left: auto; }
+
+.update-title { font-size: 14px; font-weight: 600; }
+.update-title a { color: var(--text); text-decoration: none; }
+.update-title a:hover { color: var(--gold); text-decoration: underline; }
+
+/* ---------- Economic Trends tab ---------- */
+.trend-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.trend-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.trend-card-head h4 { margin: 0; color: var(--gold); }
+.trend-latest { font-size: 20px; font-weight: 700; }
+.trend-chart-wrap { position: relative; height: 220px; }
+
+/* ---------- Research tab ---------- */
+.sector-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.sector-card h4 { margin: 0 0 4px 0; color: var(--gold); }
+.sector-thesis { color: var(--text-dim); font-size: 13.5px; line-height: 1.5; margin: 0 0 10px 0; }
+.company-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.company-chip {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .header { padding: 16px 16px; }
+  .header h1 { font-size: 19px; }
+  .header .sub { font-size: 12px; }
+  .updated-bar { padding: 10px 16px; font-size: 11.5px; gap: 12px; }
+  .content { padding: 14px 12px 40px; }
+  .category-title { padding: 10px 12px; }
+  .category-title h3 { font-size: 13.5px; }
+  .tab { padding: 10px 14px; font-size: 13px; }
+  .sort-row { gap: 6px; }
+  .pill { padding: 5px 11px; font-size: 12px; }
+  .refresh-btn { padding: 7px 12px; font-size: 12px; }
+  .trend-chart-wrap { height: 180px; }
 }
