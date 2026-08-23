@@ -5,7 +5,7 @@
     "repo_rate": {
       "label": "RBI Repo Rate (from official RBI announcements)",
       "unit": "%",
-      "source": "RBI announcements (auto-extracted, full press-release text) (NOT yet fetched)",
+      "source": "RBI announcements + RBI homepage (NOT yet fetched)",
       "points": [],
       "as_of": null
     },
@@ -26,7 +26,7 @@
     "usd_inr": {
       "label": "USD/INR Exchange Rate (FBIL official reference rate)",
       "unit": "\u20b9 per $",
-      "source": "FBIL via Frankfurter API (NOT yet fetched)",
+      "source": "FBIL via Frankfurter v2 API (NOT yet fetched)",
       "points": [],
       "as_of": null
     },

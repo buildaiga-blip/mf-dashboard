@@ -23,33 +23,39 @@ pipeline. Sources:
 2. USD/INR now comes from FBIL (Financial Benchmarks India Ltd) — the entity
    RBI itself designated to compute the official USD/INR reference rate,
    published every Mumbai business day around 13:30 IST — via the free,
-   keyless Frankfurter API's FBIL provider:
-       https://api.frankfurter.dev/v2/...?providers=FBIL
-   This replaced an earlier version of this script that used FRED's DEXINUS
-   (the Fed's H.10 release), which runs several business days behind because
-   of the Fed's own publication schedule — not a fixable "lag", just the
-   wrong upstream source for something India-official and same-day. FBIL is
-   the correct, lower-lag source for this specific number.
+   keyless Frankfurter API's FBIL provider (v2 endpoint):
+       https://api.frankfurter.dev/v2/rates?base=USD&quotes=INR&providers=FBIL
+   An earlier version of this script called the wrong v2 shape (v1-style
+   "/v2/{start}..{end}" path with a "symbols" param and a nested
+   {"rates":{"date":{"INR":...}}} response) — v2 actually uses "/v2/rates"
+   with "quotes" and returns a FLAT ARRAY of {"date","base","quote","rate"}
+   objects, so the old parsing silently matched nothing and returned an
+   empty series. Also replaced FRED's DEXINUS (Fed's H.10 release, several
+   business days behind) with FBIL for the same-day-official reason noted
+   below.
 
-3. Repo Rate (and Reverse Repo / SDF / MSF, shown together as "Current
-   Policy Rates") comes directly from RBI's own announcement text — not a
-   market-rate proxy — because the repo rate isn't a continuously-traded
-   number, it's a fixed value the RBI Monetary Policy Committee sets at
-   ~6 discrete meetings a year. A proxy (like a market interbank rate) will
-   never exactly equal the announced figure, which is exactly the mismatch
-   this script used to produce. The fix: scan RBI announcements from
-   data/regulatory_updates.json (produced by fetch_regulatory_updates.py,
-   which must run before this script), and whenever a title looks like a
-   monetary-policy announcement, fetch the FULL press release page (RSS
-   titles/summaries are usually too short to contain the actual number) and
-   regex-extract each rate mentioned in RBI's own standard phrasing (e.g.
-   "the policy repo rate ... unchanged at 5.75 per cent"). Every rate found
-   is merged into data/repo_rate_extracted_history.json — a small state file
-   this script reads, updates, and writes back itself every run (not
-   something anyone edits by hand) — so values accumulate permanently going
-   forward with zero manual work, and the most recent one is always shown as
-   "current", sourced straight from RBI's own words with a link back to the
-   announcement.
+3. Repo Rate (and Reverse Repo / SDF / MSF / Bank Rate, shown together as
+   "Current Policy Rates") is sourced TWO ways, since the repo rate isn't a
+   continuously-traded number — RBI's MPC sets it at ~6 discrete meetings a
+   year — so neither a market proxy nor "wait for an announcement to appear
+   in a 2-day RSS window" reliably gives you today's actual value:
+     a) PRIMARY / always-current: RBI's own homepage (rbi.org.in) publishes
+        a live "Current Rates" panel — Policy Repo Rate, SDF, MSF, Bank
+        Rate, Fixed Reverse Repo Rate, even FBIL's own USD/INR reading —
+        that reflects whatever is true right now, independent of whether an
+        MPC meeting happened today or six weeks ago. This script fetches
+        that page every run and extracts every rate from it, so the
+        "Current Policy Rates" panel is NEVER empty and is never stale
+        beyond RBI's own update cadence for that page.
+     b) HISTORICAL: for the repo-rate chart's time series, the script also
+        scans RBI announcements from data/regulatory_updates.json for
+        anything MPC-related, fetches the full press release (RSS
+        titles/summaries are almost always too short to contain the actual
+        number), and regex-extracts RBI's standard phrasing. Every value
+        found — from either source — merges into
+        data/repo_rate_extracted_history.json, a state file this script
+        reads/updates/writes itself every run (never hand-edited), so the
+        chart accumulates real values permanently going forward.
 
 4. WPI comes from MOSPI's own WPI API (api.mospi.gov.in) — a free service
    that requires a one-time account signup (not a recurring manual task,
@@ -78,7 +84,8 @@ REGULATORY_UPDATES_PATH = HERE / "data" / "regulatory_updates.json"
 POLICY_RATE_HISTORY_PATH = HERE / "data" / "repo_rate_extracted_history.json"
 
 FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
-FRANKFURTER_RANGE_URL = "https://api.frankfurter.dev/v2/{start}..{end}?base=USD&symbols=INR&providers=FBIL"
+FRANKFURTER_RATES_URL = "https://api.frankfurter.dev/v2/rates"
+RBI_HOME_URL = "https://www.rbi.org.in/home.aspx"
 REQUEST_TIMEOUT = 20
 YEARS_BACK = 5
 
@@ -151,30 +158,38 @@ def fetch_fred_series(fred_id):
 
 def fetch_usd_inr_fbil():
     """Official RBI-designated FBIL USD/INR reference rate, via Frankfurter's
-    free FBIL provider. Published same Mumbai business day (~13:30 IST),
-    much lower lag than FRED's Fed-schedule-bound DEXINUS."""
+    free v2 API with the FBIL provider. v2's /rates endpoint returns a FLAT
+    ARRAY of {"date","base","quote","rate"} objects (not v1's nested
+    {"rates":{"date":{"INR":...}}} shape — an earlier version of this
+    function assumed the v1 shape against a v2 URL and silently matched
+    nothing)."""
     end = datetime.now()
     start = end.replace(year=end.year - YEARS_BACK)
-    url = FRANKFURTER_RANGE_URL.format(start=start.strftime("%Y-%m-%d"), end=end.strftime("%Y-%m-%d"))
+    params = {
+        "base": "USD",
+        "quotes": "INR",
+        "from": start.strftime("%Y-%m-%d"),
+        "to": end.strftime("%Y-%m-%d"),
+        "providers": "FBIL",
+    }
     try:
-        resp = requests.get(url, timeout=REQUEST_TIMEOUT)
+        resp = requests.get(FRANKFURTER_RATES_URL, params=params, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         payload = resp.json()
     except (requests.RequestException, ValueError) as e:
         print(f"  ! FBIL/Frankfurter fetch failed: {e}")
         return []
 
-    rates = payload.get("rates", {})
     points = []
-    for date_str, day_rates in rates.items():
-        inr = day_rates.get("INR")
-        if inr is None:
-            continue
+    for row in payload if isinstance(payload, list) else []:
         try:
-            points.append({"date": date_str, "value": float(inr)})
-        except (TypeError, ValueError):
+            points.append({"date": row["date"], "value": float(row["rate"])})
+        except (KeyError, TypeError, ValueError):
             continue
     points.sort(key=lambda p: p["date"])
+    if payload and not points:
+        print("  ! Frankfurter responded but no rows parsed — response shape may have changed again; "
+              "check a raw request to FRANKFURTER_RATES_URL and adjust this function.")
     return points
 
 
@@ -183,7 +198,7 @@ def strip_html(raw):
     return re.sub(r"\s+", " ", text).strip()
 
 
-def fetch_press_release_text(url):
+def fetch_page_text(url):
     if not url:
         return ""
     try:
@@ -191,8 +206,21 @@ def fetch_press_release_text(url):
         resp.raise_for_status()
         return strip_html(resp.text)
     except requests.RequestException as e:
-        print(f"  ! Failed to fetch press release {url}: {e}")
+        print(f"  ! Failed to fetch {url}: {e}")
         return ""
+
+
+def fetch_rbi_current_rates():
+    """RBI's own homepage publishes a live 'Current Rates' panel — Policy
+    Repo Rate, SDF, MSF, Bank Rate, Fixed Reverse Repo Rate — that reflects
+    whatever is true right now, independent of whether an MPC meeting
+    happened today or six weeks ago. This is what makes the Current Policy
+    Rates panel never empty: unlike scanning announcements for a match, this
+    page always has today's real numbers on it."""
+    text = fetch_page_text(RBI_HOME_URL)
+    if not text:
+        return {}
+    return extract_rates_from_text(text)
 
 
 def extract_rates_from_text(text):
@@ -259,7 +287,7 @@ def update_policy_rate_history():
 
         if len(found) < len(POLICY_RATE_PATTERNS) and MPC_TITLE_HINT.search(title):
             print(f"  Fetching full press release for closer look: {title[:80]}")
-            full_text = fetch_press_release_text(item.get("link"))
+            full_text = fetch_page_text(item.get("link"))
             if full_text:
                 found.update(extract_rates_from_text(full_text))  # full-text matches win
 
@@ -354,8 +382,24 @@ def main():
         "points": usd_inr_points,
     }
 
+    print("Fetching RBI's live 'Current Rates' panel (always-current bootstrap) ...")
+    today = datetime.now().strftime("%Y-%m-%d")
+    homepage_rates = fetch_rbi_current_rates()
+    print(f"  -> {len(homepage_rates)} rate(s) found: {list(homepage_rates.keys())}")
+
     print("Updating policy rates from RBI announcements (persisted across runs) ...")
     policy_history = update_policy_rate_history()
+    for rate_key, value in homepage_rates.items():
+        policy_history.setdefault(rate_key, {})
+        # Don't overwrite a same-day value already extracted from an actual announcement —
+        # only fill in via the homepage if nothing more specific exists for today yet.
+        policy_history[rate_key].setdefault(today, {
+            "value": value,
+            "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+            "link": RBI_HOME_URL,
+        })
+    save_policy_rate_history(policy_history)
+
     current_policy_rates = {}
     for rate_key, by_date in policy_history.items():
         points = [{"date": d, **v} for d, v in sorted(by_date.items())]

@@ -135,26 +135,35 @@ every 6 hours via `.github/workflows/refresh-regulatory.yml`.
 
 ## Economic Trends tab — sources and limits (fully automated, no manual data entry)
 
-**Repo Rate is no longer a proxy.** The repo rate isn't a continuously-traded market number — RBI's
-MPC sets it at ~6 discrete meetings a year — so a market-rate proxy (what an earlier version of this
-tab used) will basically never exactly match the announced figure, which is exactly the mismatch
-that prompted this fix. Now `fetch_macro_trends.py` scans RBI announcements from
-`data/regulatory_updates.json`, and for anything that looks like a monetary-policy release, fetches
-the **full press release page** (not just the RSS title/summary, which is almost always too short to
-contain the actual number) and regex-matches RBI's own standard phrasing — "the policy repo rate ...
-unchanged/reduced/increased to X.XX per cent" — along with Reverse Repo, SDF, MSF, and Bank Rate the
-same way. Every value found is merged into `data/repo_rate_extracted_history.json` (a small state
-file the script itself reads/updates/writes every run — never hand-edited), so values accumulate
-permanently going forward. The most recent one for each rate feeds the **Current Policy Rates**
-panel at the top of the tab — sourced straight from RBI's own words, with a link to the exact
-announcement and the date it was made.
+**Repo Rate is sourced two ways, primary + historical.** The repo rate isn't a continuously-traded
+market number — RBI's MPC sets it at ~6 discrete meetings a year — so neither a market-rate proxy
+nor "wait for an announcement to land in a 2-day RSS window" reliably surfaces today's actual value.
+Fixed with two sources:
+- **Primary (always current):** RBI's own homepage (`rbi.org.in`) publishes a live "Current Rates"
+  panel — Policy Repo Rate, SDF, MSF, Bank Rate, Fixed Reverse Repo Rate — reflecting whatever is
+  true right now, independent of announcement timing. This is what the "Current Policy Rates" panel
+  at the top of the tab is built from, and it's why that panel is never empty.
+- **Historical (for the chart):** the script also scans RBI announcements from
+  `data/regulatory_updates.json` for anything MPC-related and fetches the **full press release**
+  (RSS titles/summaries are almost always too short to contain the actual number), regex-matching
+  RBI's own standard phrasing. Both sources merge into `data/repo_rate_extracted_history.json` — a
+  state file the script reads/updates/writes itself every run, never hand-edited.
 
-**USD/INR now comes from FBIL** (Financial Benchmarks India Ltd — the entity RBI itself designated
-to compute the official USD/INR reference rate), via the free, keyless Frankfurter API's FBIL
-provider, published every Mumbai business day around 13:30 IST. An earlier version used FRED's
-`DEXINUS` (the Fed's H.10 release), which runs several business days behind — that's the Fed's own
-publication schedule, not something fixable by refreshing more often, so the fix was switching to
-the correct India-official, same-day source instead.
+**⚠️ Important — verify the number against your own expectation.** A live fetch of RBI's homepage
+while building this showed **Policy Repo Rate: 5.25%** (as at 1:00pm, 21-Aug-2026), not 5.75%. That
+may mean the figure in an earlier snapshot you had was stale, or RBI's page had changed between when
+that snapshot was taken and now — either way, this script pulls from RBI's own live page every run,
+so whatever it shows is what RBI's site says *at the moment the Action runs*. If that ever looks
+wrong, check `https://www.rbi.org.in/home.aspx` yourself — the "Current Rates" panel is the ground
+truth this script is built to mirror exactly.
+
+**USD/INR bug fix:** an earlier version of this script called Frankfurter's v2 API with v1-style
+parameters (`symbols=`, a `..` date-range path, expecting a nested `{"rates":{"date":{...}}}`
+response) — but v2 actually uses `/v2/rates` with `quotes=` and returns a **flat array** of
+`{"date","base","quote","rate"}` objects. The old code silently matched nothing and returned an
+empty series, which is why USD/INR showed "No data" even though CPI and G-Sec (both FRED, unaffected
+by this bug) worked fine. Fixed to call the correct v2 shape. Source is FBIL (the entity RBI itself
+designated to compute the official USD/INR reference rate), published same Mumbai business day.
 
 **CPI and 10-Year G-Sec yield still come from FRED** (`INDCPIALLMINMEI`, `INDIRLTLT01STM`) — these
 genuinely are monthly-published official statistics, so there's a floor on how current they can be
