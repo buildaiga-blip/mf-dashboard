@@ -455,9 +455,35 @@ async function loadTrends() {
     const res = await fetch("data/macro_trends.json", { cache: "no-store" });
     TRENDS_DATA = await res.json();
   } catch {
-    TRENDS_DATA = { indicators: {} };
+    TRENDS_DATA = { indicators: {}, current_policy_rates: {} };
   }
+  renderPolicyRates();
   renderTrends();
+}
+
+function renderPolicyRates() {
+  const container = document.getElementById("policy-rates-container");
+  const rates = (TRENDS_DATA && TRENDS_DATA.current_policy_rates) || {};
+  const keys = Object.keys(rates);
+  if (keys.length === 0) {
+    container.innerHTML =
+      '<div class="empty-state" style="padding:14px;">No policy rates extracted yet — run the GitHub Action to scan RBI announcements.</div>';
+    return;
+  }
+  const order = ["repo_rate", "reverse_repo_rate", "sdf_rate", "msf_rate", "bank_rate"];
+  container.innerHTML = order
+    .filter((k) => rates[k])
+    .map((k) => {
+      const r = rates[k];
+      return `
+        <div class="policy-rate-chip" title="${r.source_title}">
+          <div class="policy-rate-label">${r.label}</div>
+          <div class="policy-rate-value">${r.value.toFixed(2)}%</div>
+          <div class="policy-rate-date">As of ${formatDisplayDate(r.as_of)}${r.link ? ` · <a href="${r.link}" target="_blank" rel="noopener">source</a>` : ""}</div>
+        </div>
+      `;
+    })
+    .join("");
 }
 
 function renderTrends() {

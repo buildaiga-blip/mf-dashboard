@@ -135,28 +135,32 @@ every 6 hours via `.github/workflows/refresh-regulatory.yml`.
 
 ## Economic Trends tab — sources and limits (fully automated, no manual data entry)
 
-`fetch_macro_trends.py` pulls **CPI, 10-Year G-Sec yield, USD/INR, and a Repo Rate baseline** live
-from FRED's free, keyless CSV endpoint (`fred.stlouisfed.org/graph/fredgraph.csv`). FRED series IDs
-occasionally get renamed — if a fetch fails, check `fred.stlouisfed.org/tags/series?t=india` for
-the current ID and update `FRED_SERIES` in the script.
+**Repo Rate is no longer a proxy.** The repo rate isn't a continuously-traded market number — RBI's
+MPC sets it at ~6 discrete meetings a year — so a market-rate proxy (what an earlier version of this
+tab used) will basically never exactly match the announced figure, which is exactly the mismatch
+that prompted this fix. Now `fetch_macro_trends.py` scans RBI announcements from
+`data/regulatory_updates.json`, and for anything that looks like a monetary-policy release, fetches
+the **full press release page** (not just the RSS title/summary, which is almost always too short to
+contain the actual number) and regex-matches RBI's own standard phrasing — "the policy repo rate ...
+unchanged/reduced/increased to X.XX per cent" — along with Reverse Repo, SDF, MSF, and Bank Rate the
+same way. Every value found is merged into `data/repo_rate_extracted_history.json` (a small state
+file the script itself reads/updates/writes every run — never hand-edited), so values accumulate
+permanently going forward. The most recent one for each rate feeds the **Current Policy Rates**
+panel at the top of the tab — sourced straight from RBI's own words, with a link to the exact
+announcement and the date it was made.
 
-**Repo Rate** uses FRED's `INDIR3TIB01STM` (OECD "3-Month Interbank Rate: Total for India",
-monthly) as the backbone — it tracks the repo corridor closely and updates far more recently than
-alternatives. (An earlier version used `IRSTCB01INQ156N`, which publishes on a multi-quarter lag
-and had gone stale — if your chart is flat for the last year or two, that's the old series; make
-sure you're on this version.) On top of that baseline, the script scans
-`data/regulatory_updates.json` (produced by `fetch_regulatory_updates.py`, which runs first in the
-same workflow) for RBI announcements whose **title or summary** mentions "repo rate" followed by a
-percentage, and merges any it finds into `data/repo_rate_extracted_history.json` — a small state
-file the script itself reads, updates, and writes back every run. This persistence is what lets the
-chart keep accumulating real RBI-announced values permanently, even after an announcement ages out
-of the regulatory feed's 2-day lookback window — with zero manual editing at any point.
+**USD/INR now comes from FBIL** (Financial Benchmarks India Ltd — the entity RBI itself designated
+to compute the official USD/INR reference rate), via the free, keyless Frankfurter API's FBIL
+provider, published every Mumbai business day around 13:30 IST. An earlier version used FRED's
+`DEXINUS` (the Fed's H.10 release), which runs several business days behind — that's the Fed's own
+publication schedule, not something fixable by refreshing more often, so the fix was switching to
+the correct India-official, same-day source instead.
 
-**USD/INR** comes from FRED's `DEXINUS` (Fed H.10 release). A few days' lag versus "today" is
-normal — that's the Fed's own publication schedule, not a bug — and it closes automatically since
-the workflow runs daily. If you want tighter-than-FRED currency data, swap `DEXINUS` for a live
-INR rate API in `fetch_fred_series`/`FRED_SERIES` (e.g. `exchangerate.host` or a similar free feed)
-— not done by default here to keep the pipeline on one consistent, well-documented data source.
+**CPI and 10-Year G-Sec yield still come from FRED** (`INDCPIALLMINMEI`, `INDIRLTLT01STM`) — these
+genuinely are monthly-published official statistics, so there's a floor on how current they can be
+that no source swap fixes (CPI for month X is published by MOSPI in month X+1; that's the nature of
+the statistic, not a bug). What's guaranteed is you always get the latest point actually published,
+never something further behind than that.
 
 **WPI** comes from MOSPI's own public WPI API (`api.mospi.gov.in`). This needs a **one-time free
 account signup** (not a recurring task — the same kind of one-time setup as enabling GitHub Pages):
