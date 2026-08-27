@@ -1,28 +1,5 @@
 {
-<<<<<<< HEAD
-  "updated": "SAMPLE DATA - run fetch_regulatory_updates.py or the GitHub Action to populate live announcements",
-=======
-  "updated": "27-Aug-2026 07:02",
->>>>>>> 1adfc97dbfd06f89d3c63507c7e9c75e5e72e777
+  "updated": "27-Aug-2026 17:36",
   "lookback_days": 2,
-  "items": [
-    {
-      "source": "RBI",
-      "feed_label": "RBI Press Releases",
-      "title": "Result of the 3-day Variable Rate Reverse Repo (VRRR) auction held on August 21, 2026",
-      "link": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
-      "published": "21-Aug-2026 12:00 UTC",
-      "published_iso": "2026-08-21T12:00:00+00:00",
-      "topic": "Interest Rates"
-    },
-    {
-      "source": "RBI",
-      "feed_label": "RBI Notifications",
-      "title": "Result of the Second Overnight Variable Rate Reverse Repo (VRRR) auction held on August 20, 2026",
-      "link": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
-      "published": "20-Aug-2026 15:30 UTC",
-      "published_iso": "2026-08-20T15:30:00+00:00",
-      "topic": "Interest Rates"
-    }
-  ]
+  "items": []
 }
