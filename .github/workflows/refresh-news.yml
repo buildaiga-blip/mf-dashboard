@@ -1,0 +1,35 @@
+name: Refresh News
+
+on:
+  schedule:
+    # Every 4 hours — news moves fast, keep the Financial Updates tab feeling current
+    - cron: "0 */4 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run news refresh
+        run: python fetch_news.py
+
+      - name: Commit updated news.json
+        run: |
+          git config user.name "mf-dashboard-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/news.json
+          git diff --cached --quiet && echo "No changes" || git commit -m "Refresh news $(date -u +%Y-%m-%dT%H:%M)"
+          git pull --rebase origin main
+          git push

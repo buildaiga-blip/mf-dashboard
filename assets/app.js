@@ -18,6 +18,17 @@ document.querySelectorAll(".tab").forEach((tab) => {
   });
 });
 
+// ---------- Sub-tabs (e.g. Regulatory / News inside Financial Updates) ----------
+document.querySelectorAll(".subtab").forEach((subtab) => {
+  subtab.addEventListener("click", () => {
+    const parent = subtab.closest(".tab-panel");
+    parent.querySelectorAll(".subtab").forEach((t) => t.classList.remove("active"));
+    parent.querySelectorAll(".subtab-panel").forEach((p) => (p.style.display = "none"));
+    subtab.classList.add("active");
+    document.getElementById(subtab.dataset.subtarget).style.display = "block";
+  });
+});
+
 // ---------- Data load ----------
 async function loadData() {
   const res = await fetch("data/data.json", { cache: "no-store" });
@@ -391,14 +402,13 @@ async function loadUpdates() {
     const res = await fetch("data/regulatory_updates.json", { cache: "no-store" });
     UPDATES_DATA = await res.json();
   } catch {
-    UPDATES_DATA = { items: [], manual_references: [] };
+    UPDATES_DATA = { items: [] };
   }
   renderUpdates();
 }
 
 function renderUpdates() {
   const container = document.getElementById("updates-container");
-  const refsContainer = document.getElementById("manual-references-container");
   if (!UPDATES_DATA) return;
 
   const items = UPDATES_DATA.items.filter(
@@ -406,7 +416,7 @@ function renderUpdates() {
   );
 
   if (items.length === 0) {
-    container.innerHTML = '<div class="empty-state">No announcements matching this filter in the last 2 days.</div>';
+    container.innerHTML = '<div class="empty-state">No announcements matching this filter in the last 2 days — check the News sub-tab for general coverage.</div>';
   } else {
     container.innerHTML = items
       .map(
@@ -425,16 +435,6 @@ function renderUpdates() {
       )
       .join("");
   }
-
-  const refs = UPDATES_DATA.manual_references || [];
-  refsContainer.innerHTML = refs.length
-    ? `<h4>Other Regulators (manual check)</h4>` +
-      refs
-        .map(
-          (r) => `<p style="margin:4px 0;"><a href="${r.url}" target="_blank" rel="noopener" style="color:var(--gold)">${r.label}</a></p>`
-        )
-        .join("")
-    : "";
 }
 
 document.querySelectorAll('#update-source-filters .pill').forEach((pill) => {
@@ -443,6 +443,59 @@ document.querySelectorAll('#update-source-filters .pill').forEach((pill) => {
     pill.classList.add("active");
     activeSourceFilter = pill.dataset.source;
     renderUpdates();
+  });
+});
+
+// ---------- News sub-tab ----------
+let NEWS_DATA = null;
+let activeNewsCategory = "All";
+
+async function loadNews() {
+  try {
+    const res = await fetch("data/news.json", { cache: "no-store" });
+    NEWS_DATA = await res.json();
+  } catch {
+    NEWS_DATA = { items: [] };
+  }
+  renderNews();
+  renderResearch(); // re-run now that live headlines are available for sector tie-ins
+}
+
+function renderNews() {
+  const container = document.getElementById("news-container");
+  if (!NEWS_DATA) return;
+
+  const items = NEWS_DATA.items.filter(
+    (it) => activeNewsCategory === "All" || it.category === activeNewsCategory
+  );
+
+  if (items.length === 0) {
+    container.innerHTML = '<div class="empty-state">No news yet — run the GitHub Action to populate this feed.</div>';
+    return;
+  }
+
+  container.innerHTML = items
+    .map(
+      (it) => `
+    <div class="update-item">
+      <div class="update-item-top">
+        <span class="topic-badge news-category-badge">${it.category}</span>
+        <span class="update-date">${it.published}</span>
+      </div>
+      <div class="update-title"><a href="${it.link}" target="_blank" rel="noopener">${it.title}</a></div>
+      <div style="color:var(--text-dim); font-size:11.5px; margin-top:4px;">${it.source}</div>
+    </div>
+  `
+    )
+    .join("");
+}
+
+document.querySelectorAll('#news-category-filters .pill').forEach((pill) => {
+  pill.addEventListener("click", () => {
+    document.querySelectorAll('#news-category-filters .pill').forEach((p) => p.classList.remove("active"));
+    pill.classList.add("active");
+    activeNewsCategory = pill.dataset.category;
+    renderNews();
   });
 });
 
@@ -455,10 +508,11 @@ async function loadTrends() {
     const res = await fetch("data/macro_trends.json", { cache: "no-store" });
     TRENDS_DATA = await res.json();
   } catch {
-    TRENDS_DATA = { indicators: {}, current_policy_rates: {} };
+    TRENDS_DATA = { indicators: {}, current_policy_rates: {}, market_pulse: {} };
   }
   renderPolicyRates();
   renderTrends();
+  renderMarketPulse(); // Research tab's market strip depends on this same data
 }
 
 function renderPolicyRates() {
@@ -597,26 +651,57 @@ function formatDisplayDate(isoOrDateStr) {
 }
 
 // ---------- Research tab ----------
+function renderMarketPulse() {
+  const container = document.getElementById("market-pulse-container");
+  if (!container) return;
+  const pulse = TRENDS_DATA && TRENDS_DATA.market_pulse;
+  if (!pulse || (!pulse.sensex && !pulse.nifty)) {
+    container.innerHTML = "";
+    return;
+  }
+  container.innerHTML = `
+    <div class="market-pulse-strip">
+      ${pulse.sensex ? `<div class="pulse-chip"><div class="pulse-label">S&P BSE Sensex</div><div class="pulse-value">${pulse.sensex.toLocaleString("en-IN")}</div></div>` : ""}
+      ${pulse.nifty ? `<div class="pulse-chip"><div class="pulse-label">Nifty 50</div><div class="pulse-value">${pulse.nifty.toLocaleString("en-IN")}</div></div>` : ""}
+      <div class="pulse-asof">As of ${formatDisplayDate(pulse.as_of)} · Source: ${pulse.source}</div>
+    </div>
+  `;
+}
+
+function findRelatedHeadline(keywords) {
+  if (!NEWS_DATA || !NEWS_DATA.items) return null;
+  const lowerKeywords = keywords.map((k) => k.toLowerCase());
+  return (
+    NEWS_DATA.items.find((it) => {
+      const title = it.title.toLowerCase();
+      return lowerKeywords.some((k) => title.includes(k));
+    }) || null
+  );
+}
+
 function renderResearch() {
   if (typeof SECTOR_THEMES === "undefined") return;
   document.getElementById("research-last-reviewed").textContent = `Last reviewed: ${LAST_REVIEWED}`;
   const container = document.getElementById("research-container");
-  container.innerHTML = SECTOR_THEMES.map(
-    (s) => `
+  container.innerHTML = SECTOR_THEMES.map((s) => {
+    const headline = findRelatedHeadline(s.keywords || []);
+    return `
     <div class="sector-card">
-      <h4>${s.sector}</h4>
+      <h4>${s.icon || ""} ${s.sector}</h4>
       <p class="sector-thesis">${s.thesis}</p>
       <div class="company-chips">
         ${s.companies.map((c) => `<span class="company-chip">${c}</span>`).join("")}
       </div>
+      ${headline ? `<div class="related-headline">📰 <a href="${headline.link}" target="_blank" rel="noopener">${headline.title}</a></div>` : ""}
     </div>
-  `
-  ).join("");
+  `;
+  }).join("");
 }
 
 // ---------- Init ----------
 loadData();
 renderPortfolio();
 loadUpdates();
+loadNews();
 loadTrends();
 renderResearch();

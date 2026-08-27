@@ -21,9 +21,11 @@ normally compared), and **only active funds are shown** — see "Active funds on
 2. **Debt** — all 16 SEBI debt categories (Overnight through Gilt), each its own card.
 3. **Allocation Guide** — static goal-based guidance (emergency fund, tax saving, retirement, etc.)
 4. **My Portfolio** — your actual holdings, valued live.
-5. **Financial Updates** — RBI/SEBI/Government announcements from the last 2 days.
+5. **Financial Updates** — Regulatory (RBI/SEBI/Government, last 2 days) and News (India, Finance &
+   Markets, Geopolitics, Economy) sub-tabs, so it's never blank.
 6. **Economic Trends** — 5-year charts for Repo Rate, CPI, WPI, 10Y G-Sec yield, USD/INR.
-7. **Research** — curated structural sector themes with example companies (educational, not advice).
+7. **Research** — curated structural sector themes with example companies, plus a live Sensex/Nifty
+   market pulse strip and a related-headline tie-in per theme from the News feed (educational, not advice).
 
 ## What's inside
 
@@ -32,16 +34,28 @@ mf-dashboard/
 ├── index.html                 # the dashboard (3 tabs: Rankings, Allocation Guide, My Portfolio)
 ├── assets/
 │   ├── style.css               # dark "ledger" theme
-│   └── app.js                  # rendering + live NAV fetch logic
+│   ├── app.js                  # rendering + live NAV fetch logic
+│   └── research_content.js     # curated Research tab content (themes/companies/keywords)
 ├── data/
-│   ├── category_map.json       # rules used to classify scheme names into categories
-│   └── data.json                # the ranked fund data the dashboard reads (SAMPLE until first refresh)
-├── fetch_universe.py           # scans mfapi.in, classifies funds, computes returns, writes data.json
+│   ├── category_map.json               # rules used to classify scheme names into categories
+│   ├── data.json                        # ranked fund data (SAMPLE until first refresh)
+│   ├── regulatory_updates.json          # RBI/SEBI/Government announcements (last 2 days)
+│   ├── news.json                        # general news across curated categories
+│   ├── macro_trends.json                # CPI/G-Sec/USD-INR/Repo/WPI time series + policy rates + market pulse
+│   └── repo_rate_extracted_history.json # persisted state for policy-rate extraction (script-managed)
+├── fetch_universe.py             # scans mfapi.in, classifies funds, computes returns, writes data.json
+├── fetch_regulatory_updates.py   # RBI/SEBI/PIB RSS -> data/regulatory_updates.json
+├── fetch_news.py                 # Google News RSS across categories -> data/news.json
+├── fetch_macro_trends.py         # FRED + FBIL + RBI homepage + MOSPI -> data/macro_trends.json
 ├── requirements.txt
-└── .github/workflows/refresh-data.yml   # runs fetch_universe.py daily and commits the result
+└── .github/workflows/
+    ├── refresh-data.yml          # fetch_universe.py, daily
+    ├── refresh-regulatory.yml    # fetch_regulatory_updates.py, every 6 hours
+    ├── refresh-news.yml          # fetch_news.py, every 4 hours
+    └── refresh-macro.yml         # fetch_regulatory_updates.py + fetch_macro_trends.py, daily
 ```
 
-## How the two pieces fit together
+## How the pieces fit together
 
 - **`fetch_universe.py`** (Python, runs on a schedule via GitHub Actions) does the heavy lifting:
   pulls every scheme from mfapi.in, keeps only Direct-Growth plans, classifies them into 10
@@ -118,20 +132,25 @@ re-scan the entire mutual fund universe for new entrants (that full scan is what
 `fetch_universe.py` does, and it's what the daily Action keeps current). So new funds appearing in
 a category, or funds dropping out of the top 10, still show up via the daily automated refresh.
 
-## Financial Updates tab — sources and limits
+## Financial Updates tab — Regulatory + News sub-tabs (never blank)
 
-Pulled by `fetch_regulatory_updates.py` from official RSS feeds:
+The tab has two sub-tabs so it always has something current to show:
+
+**Regulatory** (`fetch_regulatory_updates.py`) pulls official RSS feeds:
 - RBI Press Releases & Notifications (`rbi.org.in/pressreleases_rss.xml`, `notifications_rss.xml`)
 - SEBI (`sebi.gov.in/sebirss.xml`)
 - PIB / Government of India (`pib.gov.in` — the central press-release aggregator across ministries,
   covering Finance Ministry / economy / budget announcements)
 
-**IRDAI has no public RSS feed we could verify.** It's listed as a manual-check reference link in
-the tab instead of an automated feed. If you find or IRDAI publishes one, add it to `SOURCES` in
-`fetch_regulatory_updates.py` the same way as the others.
-
 Only items published in the last 2 days are kept (`LOOKBACK_DAYS` at the top of the script). Runs
-every 6 hours via `.github/workflows/refresh-regulatory.yml`.
+every 6 hours via `.github/workflows/refresh-regulatory.yml`. This sub-tab can legitimately be
+empty on quiet days — regulators don't publish daily — which is exactly why the News sub-tab exists.
+
+**News** (`fetch_news.py`) pulls general news via Google News' RSS search endpoint (free, keyless,
+long-stable even without official docs) across four curated categories: **India**, **Finance &
+Markets**, **Geopolitics**, **Economy**. This sub-tab has content essentially every run regardless
+of the regulatory calendar, which is what keeps the Financial Updates tab from ever going blank.
+Runs every 4 hours via `.github/workflows/refresh-news.yml`.
 
 ## Economic Trends tab — sources and limits (fully automated, no manual data entry)
 
@@ -190,6 +209,16 @@ parsing in that function to match what MOSPI actually returns.
 Runs daily via `.github/workflows/refresh-macro.yml` (cheap to run, and lets a same-day repo-rate
 announcement show up quickly via the auto-extraction step above).
 
+**How the Repo Rate chart builds a real trend over time:** every daily run adds today's date to
+`data/repo_rate_extracted_history.json` with whatever RBI's homepage currently shows (step 3a
+above) — so even between MPC meetings, the chart accumulates one genuine flat-line point per day,
+which is actually correct behaviour for a policy rate (it's *supposed* to be flat between
+decisions — that flatness is real information, not missing data). Every time RBI actually changes
+the rate, either the homepage bootstrap or the announcement-extraction step (whichever catches it
+first) records the new value from that date forward. Give it a few daily runs after first setup and
+the line chart will visibly build out; a single run only gives you one point (today), which is
+expected on day one.
+
 ## Chart interactivity
 
 Each Economic Trends chart shows the exact "as of" date next to its latest value, supports
@@ -198,15 +227,29 @@ scroll-to-zoom and drag-to-pan (via `chartjs-plugin-zoom`, loaded from jsDelivr 
 richer tooltip on hover (formatted date, value with unit, and — for Repo Rate points that came
 from an RBI announcement — the announcement title that produced that point).
 
-## Research tab — what it is and isn't
+## Research tab — what it is, and what's live vs. curated
 
-`assets/research_content.js` holds curated, written commentary on structural India growth themes
+`assets/research_content.js` holds curated, written commentary on 10 structural India growth themes
 (banking, capex/infra, manufacturing, renewables, healthcare, IT, consumer, autos, real estate,
-insurance) with a handful of well-known example companies per theme. **This is not a live feed** —
-predicting sector outperformance isn't something a free API does — it's meant to be periodically
-refreshed by asking an LLM or doing your own research to update the file, then bumping
-`LAST_REVIEWED`. It's explicitly educational/illustrative, not a ranked buy list or personalized
-advice — see the disclaimer in the tab itself.
+insurance), each with an icon, a thesis, a handful of well-known example companies, and a set of
+match `keywords`. **The theme write-ups themselves are not a live feed** — predicting sector
+outperformance isn't something a free API does — they're meant to be periodically refreshed by
+asking an LLM or doing your own research to update the file, then bumping `LAST_REVIEWED`.
+
+Two things on this tab ARE live, reusing data already fetched elsewhere in the pipeline (no new
+script needed):
+- **Market Pulse strip** at the top — same-day Sensex and Nifty 50 levels, extracted from the same
+  RBI homepage fetch used for Current Policy Rates (`extract_market_pulse()` in
+  `fetch_macro_trends.py`), since the page already carries a "Capital Market" section alongside
+  "Current Rates".
+- **Related headline per sector card** — each theme's `keywords` array is matched client-side
+  against whatever's currently in `data/news.json` (the same feed powering the News sub-tab), so
+  if there's a live headline mentioning e.g. "banking" or "RBI", it surfaces directly under the
+  Banking & Financial Services card with a link. No match just means nothing recent happens to
+  mention that theme — the card still shows fine without one.
+
+Still explicitly educational/illustrative, not a ranked buy list or personalized advice — see the
+disclaimer in the tab itself.
 
 ## Customizing categories
 

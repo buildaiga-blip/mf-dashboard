@@ -133,19 +133,39 @@
 
   <!-- FINANCIAL UPDATES -->
   <div id="tab-updates" class="tab-panel" style="display:none">
-    <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;">
-      Announcements from the last 2 days, pulled from official RBI, SEBI, and Government (PIB) RSS feeds.
-      Refreshed a few times a day by a GitHub Action — see the README for the exact source list.
-      IRDAI has no public RSS feed we could verify, so it's listed as a manual-check reference link instead.
-    </p>
-    <div class="source-filter-row" id="update-source-filters">
-      <span class="pill active" data-source="All">All</span>
-      <span class="pill" data-source="RBI">RBI</span>
-      <span class="pill" data-source="SEBI">SEBI</span>
-      <span class="pill" data-source="Government">Government</span>
+    <div class="subtabs">
+      <div class="subtab active" data-subtarget="subtab-regulatory">Regulatory</div>
+      <div class="subtab" data-subtarget="subtab-news">News</div>
     </div>
-    <div id="updates-container"></div>
-    <div class="guide-card" id="manual-references-container" style="margin-top:10px;"></div>
+
+    <div id="subtab-regulatory" class="subtab-panel">
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;">
+        Announcements from the last 2 days, pulled from official RBI, SEBI, and Government (PIB) RSS feeds.
+        Refreshed a few times a day by a GitHub Action — see the README for the exact source list.
+      </p>
+      <div class="source-filter-row" id="update-source-filters">
+        <span class="pill active" data-source="All">All</span>
+        <span class="pill" data-source="RBI">RBI</span>
+        <span class="pill" data-source="SEBI">SEBI</span>
+        <span class="pill" data-source="Government">Government</span>
+      </div>
+      <div id="updates-container"></div>
+    </div>
+
+    <div id="subtab-news" class="subtab-panel" style="display:none">
+      <p style="color:var(--text-dim); font-size:13px; margin-bottom:14px;">
+        General news alongside the regulatory feed, so this tab always has something current even on days
+        with no official announcements. Refreshed every few hours via GitHub Action.
+      </p>
+      <div class="source-filter-row" id="news-category-filters">
+        <span class="pill active" data-category="All">All</span>
+        <span class="pill" data-category="India">India</span>
+        <span class="pill" data-category="Finance & Markets">Finance & Markets</span>
+        <span class="pill" data-category="Geopolitics">Geopolitics</span>
+        <span class="pill" data-category="Economy">Economy</span>
+      </div>
+      <div id="news-container"></div>
+    </div>
   </div>
 
   <!-- ECONOMIC TRENDS -->
@@ -165,9 +185,11 @@
   <div id="tab-research" class="tab-panel" style="display:none">
     <p style="color:var(--text-dim); font-size:13px; margin-bottom:4px;">
       Structural India growth themes with well-known example companies per theme — illustrative, not a ranked buy
-      list. This is written/curated content, not a live feed; it needs periodic manual review to stay current.
+      list. Themes and companies are written/curated content, not a live feed; the market pulse and linked
+      headlines below each theme are live.
     </p>
     <p style="color:var(--gold); font-size:12px; margin-bottom:14px;" id="research-last-reviewed"></p>
+    <div id="market-pulse-container"></div>
     <div id="research-container"></div>
     <div class="footer-note">
       This is general, educational commentary based on publicly known structural themes — not personalized

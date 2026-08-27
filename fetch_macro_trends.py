@@ -219,8 +219,29 @@ def fetch_rbi_current_rates():
     page always has today's real numbers on it."""
     text = fetch_page_text(RBI_HOME_URL)
     if not text:
-        return {}
-    return extract_rates_from_text(text)
+        return {}, {}
+    return extract_rates_from_text(text), extract_market_pulse(text)
+
+
+MARKET_PULSE_PATTERNS = {
+    "sensex": re.compile(r"S&P BSE Sensex[^0-9]{0,20}([\d,]+\.\d{1,2})", re.IGNORECASE),
+    "nifty": re.compile(r"Nifty\s*50[^0-9]{0,20}([\d,]+\.\d{1,2})", re.IGNORECASE),
+}
+
+
+def extract_market_pulse(text):
+    """Same RBI homepage fetch also carries the day's Sensex/Nifty levels
+    (under 'Capital Market') — grab them too since we're already there, for
+    a quick market-context strip on the Research tab."""
+    found = {}
+    for key, pattern in MARKET_PULSE_PATTERNS.items():
+        match = pattern.search(text)
+        if match:
+            try:
+                found[key] = float(match.group(1).replace(",", ""))
+            except ValueError:
+                continue
+    return found
 
 
 def extract_rates_from_text(text):
@@ -384,8 +405,9 @@ def main():
 
     print("Fetching RBI's live 'Current Rates' panel (always-current bootstrap) ...")
     today = datetime.now().strftime("%Y-%m-%d")
-    homepage_rates = fetch_rbi_current_rates()
+    homepage_rates, market_pulse = fetch_rbi_current_rates()
     print(f"  -> {len(homepage_rates)} rate(s) found: {list(homepage_rates.keys())}")
+    print(f"  -> market pulse: {market_pulse}")
 
     print("Updating policy rates from RBI announcements (persisted across runs) ...")
     policy_history = update_policy_rate_history()
@@ -445,6 +467,7 @@ def main():
     output = {
         "updated": datetime.now().strftime("%d-%b-%Y %H:%M"),
         "current_policy_rates": current_policy_rates,
+        "market_pulse": {**market_pulse, "as_of": today, "source": "RBI homepage (rbi.org.in)"} if market_pulse else {},
         "indicators": indicators,
     }
 

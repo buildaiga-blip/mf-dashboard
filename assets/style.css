@@ -250,6 +250,22 @@ td {
 }
 
 /* ---------- Financial Updates tab ---------- */
+.subtabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+.subtab {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--text-dim);
+  font-size: 13px;
+  border-bottom: 2px solid transparent;
+}
+.subtab.active { color: var(--gold); border-bottom-color: var(--gold); }
+.news-category-badge { background: #2a1f4d; color: #c9a8ff; }
+
 .source-filter-row {
   display: flex;
   gap: 8px;
@@ -283,7 +299,6 @@ td {
 .source-RBI { background: #1f3a4d; color: #a8d4ff; }
 .source-SEBI { background: #3a1f4d; color: #d9a8ff; }
 .source-Government { background: #1f4d33; color: #a8ffcb; }
-.source-IRDAI { background: #4d3a1f; color: #ffd9a8; }
 .source-Other { background: #333; color: #ccc; }
 
 .topic-badge {
@@ -366,6 +381,30 @@ td {
   border: 1px solid var(--border);
   color: var(--text);
 }
+.related-headline {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-size: 12.5px;
+}
+.related-headline a { color: var(--text-dim); text-decoration: none; }
+.related-headline a:hover { color: var(--gold); text-decoration: underline; }
+
+.market-pulse-strip {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+}
+.pulse-chip { min-width: 110px; }
+.pulse-label { font-size: 11px; color: var(--text-dim); }
+.pulse-value { font-size: 20px; font-weight: 700; color: var(--gold); }
+.pulse-asof { font-size: 11px; color: var(--text-dim); margin-left: auto; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {

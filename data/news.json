@@ -1,0 +1,14 @@
+{
+  "updated": "SAMPLE DATA - run fetch_news.py or the GitHub Action to populate live headlines",
+  "categories": ["India", "Finance & Markets", "Geopolitics", "Economy"],
+  "items": [
+    {
+      "category": "Finance & Markets",
+      "title": "Sample: Sensex, Nifty end higher tracking global cues",
+      "source": "Sample Source",
+      "link": "https://news.google.com/",
+      "published": "22-Aug-2026 09:00 UTC",
+      "published_iso": "2026-08-22T09:00:00+00:00"
+    }
+  ]
+}

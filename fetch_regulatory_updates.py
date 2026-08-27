@@ -17,11 +17,6 @@ Sources (verified public RSS feeds as of Aug 2026):
     covers Finance Ministry / economy / budget announcements etc., not just
     RBI/SEBI, which is why it stands in for the general "Government" bucket.)
 
-IRDAI has no public RSS feed that could be verified at the time this script
-was written. It's listed as a manual/reference link in the dashboard instead
-of an automated feed — see IRDAI_REFERENCE_URL below. If IRDAI publishes one
-in future, add it to SOURCES the same way as the others.
-
 Run locally:
     pip install -r requirements.txt
     python fetch_regulatory_updates.py
@@ -52,12 +47,6 @@ SOURCES = [
     {"name": "SEBI", "label": "SEBI", "url": "https://www.sebi.gov.in/sebirss.xml"},
     {"name": "Government", "label": "PIB (Govt. of India)", "url": "https://www.pib.gov.in/ViewRss.aspx?reg=1&lang=1"},
 ]
-
-IRDAI_REFERENCE = {
-    "source": "IRDAI",
-    "label": "IRDAI Press Releases (manual check — no public RSS found)",
-    "url": "https://irdai.gov.in/press-releases",
-}
 
 # Ordered so the first matching bucket wins when a title mentions multiple things.
 TOPIC_RULES = [
@@ -138,7 +127,6 @@ def main():
         "updated": datetime.now().strftime("%d-%b-%Y %H:%M"),
         "lookback_days": LOOKBACK_DAYS,
         "items": all_items,
-        "manual_references": [IRDAI_REFERENCE],
     }
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
