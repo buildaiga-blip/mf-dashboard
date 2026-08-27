@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "updated": "SAMPLE DATA - run fetch_regulatory_updates.py or the GitHub Action to populate live announcements",
+=======
+  "updated": "27-Aug-2026 07:02",
+>>>>>>> 1adfc97dbfd06f89d3c63507c7e9c75e5e72e777
   "lookback_days": 2,
   "items": [
     {
