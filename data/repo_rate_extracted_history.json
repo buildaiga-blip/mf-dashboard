@@ -19,6 +19,11 @@
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.5
+    },
+    "2026-08-31": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.5
     }
   },
   "msf_rate": {
@@ -38,6 +43,11 @@
       "value": 5.5
     },
     "2026-08-30": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.5
+    },
+    "2026-08-31": {
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.5
@@ -63,6 +73,11 @@
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.25
+    },
+    "2026-08-31": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.25
     }
   },
   "reverse_repo_rate": {
@@ -85,6 +100,11 @@
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 3.35
+    },
+    "2026-08-31": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 3.35
     }
   },
   "sdf_rate": {
@@ -104,6 +124,11 @@
       "value": 5.0
     },
     "2026-08-30": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.0
+    },
+    "2026-08-31": {
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.0
