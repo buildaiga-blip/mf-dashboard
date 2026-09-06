@@ -1,5 +1,5 @@
 {
-  "updated": "05-Sep-2026 11:08",
+  "updated": "06-Sep-2026 11:31",
   "current_policy_rates": {
     "bank_rate": {
       "label": "Bank Rate",
@@ -37,12 +37,7 @@
       "link": "https://www.rbi.org.in/home.aspx"
     }
   },
-  "market_pulse": {
-    "sensex": 76152.86,
-    "nifty": 23873.45,
-    "as_of": "2026-09-05",
-    "source": "RBI homepage (rbi.org.in)"
-  },
+  "market_pulse": {},
   "indicators": {
     "cpi_index": {
       "label": "CPI (All Items, Index)",
@@ -461,10 +456,6 @@
       "unit": "\u20b9 per $",
       "source": "FBIL via Frankfurter API",
       "points": [
-        {
-          "date": "2021-09-03",
-          "value": 73.0651
-        },
         {
           "date": "2021-09-06",
           "value": 73.0589
