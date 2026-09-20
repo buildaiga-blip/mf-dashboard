@@ -1,5 +1,5 @@
 {
-  "updated": "19-Sep-2026 16:08",
+  "updated": "20-Sep-2026 16:31",
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
     {
@@ -1987,76 +1987,16 @@
       "avg": 1.27,
       "funds": [
         {
-          "schemeCode": 147003,
-          "fund": "Union Overnight Fund - Direct Plan - Growth Option",
-          "1M": 0.4,
-          "3M": 1.29,
-          "6M": 2.58,
-          "1Y": 5.29,
-          "3Y": 6.06,
-          "5Y": 5.71,
-          "nav": 1452.0228,
-          "nav_date": "19-Sep-2026"
-        },
-        {
-          "schemeCode": 147515,
-          "fund": "LIC MF Overnight Fund - Direct Plan - Growth",
-          "1M": 0.4,
-          "3M": 1.28,
-          "6M": 2.57,
-          "1Y": 5.28,
-          "3Y": 6.07,
-          "5Y": 5.72,
-          "nav": 1429.8764,
-          "nav_date": "19-Sep-2026"
-        },
-        {
-          "schemeCode": 119110,
-          "fund": "HDFC Overnight Fund - Direct Plan - Growth Option",
-          "1M": 0.4,
-          "3M": 1.27,
-          "6M": 2.56,
-          "1Y": 5.24,
-          "3Y": 6.02,
-          "5Y": 5.67,
-          "nav": 4088.5194,
-          "nav_date": "19-Sep-2026"
-        },
-        {
-          "schemeCode": 145810,
-          "fund": "Nippon India Overnight Fund - Direct Plan - Growth Option",
-          "1M": 0.4,
-          "3M": 1.27,
-          "6M": 2.58,
-          "1Y": 5.29,
-          "3Y": 6.09,
-          "5Y": 5.74,
-          "nav": 148.1652,
-          "nav_date": "18-Sep-2026"
-        },
-        {
           "schemeCode": 146675,
           "fund": "Axis Overnight Fund - Direct Plan - Growth Option",
           "1M": 0.4,
           "3M": 1.27,
           "6M": 2.58,
-          "1Y": 5.3,
+          "1Y": 5.32,
           "3Y": 6.1,
           "5Y": 5.75,
-          "nav": 1460.0523,
-          "nav_date": "18-Sep-2026"
-        },
-        {
-          "schemeCode": 146963,
-          "fund": "Sundaram Overnight Fund - Direct Plan - GROWTH",
-          "1M": 0.4,
-          "3M": 1.27,
-          "6M": 2.55,
-          "1Y": 5.23,
-          "3Y": 6.05,
-          "5Y": 5.7,
-          "nav": 1464.8875,
-          "nav_date": "19-Sep-2026"
+          "nav": 1460.4579,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 146980,
@@ -2064,11 +2004,11 @@
           "1M": 0.4,
           "3M": 1.27,
           "6M": 2.59,
-          "1Y": 5.3,
+          "1Y": 5.32,
           "3Y": 6.1,
           "5Y": 5.73,
-          "nav": 1456.115,
-          "nav_date": "18-Sep-2026"
+          "nav": 1456.5239,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 147214,
@@ -2076,35 +2016,95 @@
           "1M": 0.4,
           "3M": 1.27,
           "6M": 2.6,
-          "1Y": 5.33,
+          "1Y": 5.34,
           "3Y": 6.06,
           "5Y": 5.69,
-          "nav": 1438.9246,
-          "nav_date": "18-Sep-2026"
+          "nav": 1439.3234,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 147531,
           "fund": "Canara Robeco Overnight Fund - Direct Plan - GROWTH OPTION",
-          "1M": 0.39,
+          "1M": 0.41,
           "3M": 1.27,
           "6M": 2.56,
-          "1Y": 5.22,
-          "3Y": 6.0,
+          "1Y": 5.25,
+          "3Y": 5.99,
           "5Y": 5.65,
-          "nav": 1423.4012,
-          "nav_date": "17-Sep-2026"
+          "nav": 1423.9902,
+          "nav_date": "20-Sep-2026"
         },
         {
-          "schemeCode": 147736,
-          "fund": "Mirae Asset Overnight Fund - Direct Plan - Growth",
+          "schemeCode": 147883,
+          "fund": "Invesco India Overnight Fund - Direct Plan - Growth",
           "1M": 0.4,
           "3M": 1.27,
+          "6M": 2.58,
+          "1Y": 5.29,
+          "3Y": 6.07,
+          "5Y": 5.71,
+          "nav": 1393.9101,
+          "nav_date": "20-Sep-2026"
+        },
+        {
+          "schemeCode": 147951,
+          "fund": "BANK OF INDIA OVERNIGHT FUND - Direct Plan - Growth",
+          "1M": 0.41,
+          "3M": 1.27,
+          "6M": 2.77,
+          "1Y": 5.51,
+          "3Y": 6.2,
+          "5Y": 5.84,
+          "nav": 1403.5721,
+          "nav_date": "20-Sep-2026"
+        },
+        {
+          "schemeCode": 151849,
+          "fund": "Bajaj Finserv Overnight Fund - Direct Plan - Growth",
+          "1M": 0.4,
+          "3M": 1.27,
+          "6M": 2.58,
+          "1Y": 5.34,
+          "3Y": 6.09,
+          "5Y": null,
+          "nav": 1210.5875,
+          "nav_date": "20-Sep-2026"
+        },
+        {
+          "schemeCode": 120785,
+          "fund": "UTI - Overnight Fund - Direct Plan - Growth",
+          "1M": 0.4,
+          "3M": 1.26,
           "6M": 2.57,
-          "1Y": 5.28,
-          "3Y": 6.08,
-          "5Y": 5.74,
-          "nav": 1414.6209,
-          "nav_date": "19-Sep-2026"
+          "1Y": 5.27,
+          "3Y": 6.07,
+          "5Y": 5.72,
+          "nav": 3776.197,
+          "nav_date": "20-Sep-2026"
+        },
+        {
+          "schemeCode": 145486,
+          "fund": "ADITYA BIRLA SUN LIFE OVERNIGHT FUND - Direct Plan - GROWTH",
+          "1M": 0.4,
+          "3M": 1.26,
+          "6M": 2.56,
+          "1Y": 5.27,
+          "3Y": 6.06,
+          "5Y": 5.72,
+          "nav": 1491.999,
+          "nav_date": "20-Sep-2026"
+        },
+        {
+          "schemeCode": 145536,
+          "fund": "ICICI Prudential Overnight Fund - Direct Plan - Growth",
+          "1M": 0.4,
+          "3M": 1.26,
+          "6M": 2.57,
+          "1Y": 5.29,
+          "3Y": 6.05,
+          "5Y": 67.53,
+          "nav": 1486.586,
+          "nav_date": "20-Sep-2026"
         }
       ]
     },
@@ -2121,97 +2121,85 @@
           "schemeCode": 149664,
           "fund": "Sundaram Liquid Fund (Formerly Known as Principal Cash Management Fund) - Direct Plan - GROWTH",
           "1M": 0.51,
-          "3M": 1.7,
-          "6M": 3.52,
-          "1Y": 6.57,
+          "3M": 1.68,
+          "6M": 3.51,
+          "1Y": 6.59,
           "3Y": 7.0,
           "5Y": null,
-          "nav": 2514.8283,
-          "nav_date": "19-Sep-2026"
-        },
-        {
-          "schemeCode": 139538,
-          "fund": "Mahindra Manulife Liquid Fund - Direct Plan - Growth",
-          "1M": 0.53,
-          "3M": 1.64,
-          "6M": 3.44,
-          "1Y": 6.54,
-          "3Y": 6.99,
-          "5Y": 6.4,
-          "nav": 1852.4114,
-          "nav_date": "17-Sep-2026"
+          "nav": 2515.2356,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 153651,
           "fund": "JioBlackRock Liquid Fund - Direct Plan - Growth Option",
-          "1M": 0.52,
+          "1M": 0.53,
           "3M": 1.64,
           "6M": 3.48,
-          "1Y": 6.57,
+          "1Y": 6.6,
           "3Y": null,
           "5Y": null,
-          "nav": 1078.6513,
-          "nav_date": "18-Sep-2026"
+          "nav": 1078.9917,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 118577,
           "fund": "Franklin India Liquid Fund - Direct Plan - Super Institutional Growth",
-          "1M": 0.51,
+          "1M": 0.52,
           "3M": 1.63,
-          "6M": 3.48,
-          "1Y": 6.54,
+          "6M": 3.47,
+          "1Y": 6.56,
           "3Y": 6.99,
           "5Y": 6.37,
-          "nav": 4275.9834,
-          "nav_date": "18-Sep-2026"
+          "nav": 4277.3468,
+          "nav_date": "20-Sep-2026"
+        },
+        {
+          "schemeCode": 139538,
+          "fund": "Mahindra Manulife Liquid Fund - Direct Plan - Growth",
+          "1M": 0.55,
+          "3M": 1.63,
+          "6M": 3.43,
+          "1Y": 6.57,
+          "3Y": 6.98,
+          "5Y": 6.4,
+          "nav": 1853.2458,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 118701,
           "fund": "Nippon India Liquid Fund - Direct Plan - Growth Option",
-          "1M": 0.52,
+          "1M": 0.53,
           "3M": 1.62,
-          "6M": 3.48,
-          "1Y": 6.55,
+          "6M": 3.47,
+          "1Y": 6.56,
           "3Y": 6.98,
           "5Y": 6.38,
-          "nav": 6963.4711,
-          "nav_date": "18-Sep-2026"
-        },
-        {
-          "schemeCode": 119303,
-          "fund": "Union Liquid Fund - Direct Plan - Growth Option",
-          "1M": 0.51,
-          "3M": 1.62,
-          "6M": 3.41,
-          "1Y": 6.52,
-          "3Y": 6.97,
-          "5Y": 6.38,
-          "nav": 2743.2903,
-          "nav_date": "19-Sep-2026"
+          "nav": 6965.6853,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 119369,
           "fund": "BANK OF INDIA LIQUID FUND - Direct Plan - Growth",
-          "1M": 0.53,
+          "1M": 0.55,
           "3M": 1.62,
           "6M": 3.43,
-          "1Y": 6.51,
-          "3Y": 6.98,
+          "1Y": 6.53,
+          "3Y": 6.97,
           "5Y": 6.39,
-          "nav": 3274.9466,
-          "nav_date": "17-Sep-2026"
+          "nav": 3276.5292,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 119568,
           "fund": "Aditya Birla Sun Life Liquid Fund - Direct Plan - GROWTH",
           "1M": 0.52,
           "3M": 1.62,
-          "6M": 3.48,
-          "1Y": 6.57,
+          "6M": 3.47,
+          "1Y": 6.59,
           "3Y": 7.01,
           "5Y": 6.42,
-          "nav": 459.6256,
-          "nav_date": "19-Sep-2026"
+          "nav": 459.7001,
+          "nav_date": "20-Sep-2026"
         },
         {
           "schemeCode": 120389,
@@ -2219,23 +2207,35 @@
           "1M": 0.52,
           "3M": 1.62,
           "6M": 3.49,
-          "1Y": 6.58,
+          "1Y": 6.6,
           "3Y": 7.01,
           "5Y": 6.4,
-          "nav": 3164.6488,
-          "nav_date": "18-Sep-2026"
+          "nav": 3165.673,
+          "nav_date": "20-Sep-2026"
         },
         {
-          "schemeCode": 118859,
-          "fund": "Mirae Asset Liquid Fund - Direct Plan - Growth",
+          "schemeCode": 119125,
+          "fund": "DSP Liquid Fund - Direct Plan - Growth",
           "1M": 0.52,
           "3M": 1.61,
-          "6M": 3.37,
-          "1Y": 6.43,
-          "3Y": 6.94,
-          "5Y": 6.36,
-          "nav": 3002.3222,
-          "nav_date": "19-Sep-2026"
+          "6M": 3.45,
+          "1Y": 6.56,
+          "3Y": 6.98,
+          "5Y": 6.37,
+          "nav": 4069.1089,
+          "nav_date": "20-Sep-2026"
+        },
+        {
+          "schemeCode": 119766,
+          "fund": "Kotak Liquid Fund - Direct Plan - Growth",
+          "1M": 0.52,
+          "3M": 1.61,
+          "6M": 3.44,
+          "1Y": 6.51,
+          "3Y": 6.95,
+          "5Y": 6.35,
+          "nav": 5747.0936,
+          "nav_date": "20-Sep-2026"
         }
       ]
     },
