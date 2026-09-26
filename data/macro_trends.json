@@ -1,38 +1,38 @@
 {
-  "updated": "25-Sep-2026 12:34",
+  "updated": "26-Sep-2026 12:03",
   "current_policy_rates": {
     "bank_rate": {
       "label": "Bank Rate",
       "value": 5.5,
-      "as_of": "2026-09-25",
+      "as_of": "2026-09-26",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "msf_rate": {
       "label": "Marginal Standing Facility (MSF) Rate",
       "value": 5.5,
-      "as_of": "2026-09-25",
+      "as_of": "2026-09-26",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "repo_rate": {
       "label": "Repo Rate",
       "value": 5.25,
-      "as_of": "2026-09-25",
+      "as_of": "2026-09-26",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "reverse_repo_rate": {
       "label": "Reverse Repo Rate",
       "value": 3.35,
-      "as_of": "2026-09-25",
+      "as_of": "2026-09-26",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "sdf_rate": {
       "label": "Standing Deposit Facility (SDF) Rate",
       "value": 5.0,
-      "as_of": "2026-09-25",
+      "as_of": "2026-09-26",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     }
@@ -40,7 +40,7 @@
   "market_pulse": {
     "sensex": 73580.54,
     "nifty": 23063.1,
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-26",
     "source": "RBI homepage (rbi.org.in)"
   },
   "indicators": {
@@ -5441,9 +5441,14 @@
           "date": "2026-09-25",
           "value": 5.25,
           "note": "RBI homepage 'Current Rates' panel (rbi.org.in)"
+        },
+        {
+          "date": "2026-09-26",
+          "value": 5.25,
+          "note": "RBI homepage 'Current Rates' panel (rbi.org.in)"
         }
       ],
-      "as_of": "2026-09-25"
+      "as_of": "2026-09-26"
     },
     "wpi_yoy": {
       "label": "WPI (All Commodities Index)",
