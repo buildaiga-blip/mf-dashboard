@@ -1,5 +1,5 @@
 {
-  "updated": "27-Sep-2026 17:19",
+  "updated": "28-Sep-2026 19:56",
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
     {
@@ -926,7 +926,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 7.51,
+      "avg": 7.59,
       "funds": [
         {
           "schemeCode": 152018,
@@ -977,6 +977,18 @@
           "nav_date": "25-Sep-2026"
         },
         {
+          "schemeCode": 148595,
+          "fund": "DSP Value Fund - Direct Plan - Growth",
+          "1M": -3.01,
+          "3M": -1.13,
+          "6M": 7.01,
+          "1Y": 5.99,
+          "3Y": 16.33,
+          "5Y": 12.33,
+          "nav": 24.254,
+          "nav_date": "25-Sep-2026"
+        },
+        {
           "schemeCode": 118935,
           "fund": "HDFC Value Fund - Direct Plan - Growth Option",
           "1M": -3.0,
@@ -987,18 +999,6 @@
           "5Y": 13.44,
           "nav": 877.231,
           "nav_date": "25-Sep-2026"
-        },
-        {
-          "schemeCode": 148595,
-          "fund": "DSP Value Fund - Direct Plan - Growth",
-          "1M": -3.43,
-          "3M": -1.39,
-          "6M": 5.29,
-          "1Y": 5.15,
-          "3Y": 16.18,
-          "5Y": 12.27,
-          "nav": 24.192,
-          "nav_date": "24-Sep-2026"
         },
         {
           "schemeCode": 148972,
