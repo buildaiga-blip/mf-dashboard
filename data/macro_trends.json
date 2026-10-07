@@ -1,46 +1,46 @@
 {
-  "updated": "06-Oct-2026 13:56",
+  "updated": "07-Oct-2026 14:13",
   "current_policy_rates": {
     "bank_rate": {
       "label": "Bank Rate",
-      "value": 5.5,
-      "as_of": "2026-10-06",
+      "value": 5.75,
+      "as_of": "2026-10-07",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "msf_rate": {
       "label": "Marginal Standing Facility (MSF) Rate",
-      "value": 5.5,
-      "as_of": "2026-10-06",
+      "value": 5.75,
+      "as_of": "2026-10-07",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "repo_rate": {
       "label": "Repo Rate",
-      "value": 5.25,
-      "as_of": "2026-10-06",
+      "value": 5.5,
+      "as_of": "2026-10-07",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "reverse_repo_rate": {
       "label": "Reverse Repo Rate",
       "value": 3.35,
-      "as_of": "2026-10-06",
+      "as_of": "2026-10-07",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "sdf_rate": {
       "label": "Standing Deposit Facility (SDF) Rate",
-      "value": 5.0,
-      "as_of": "2026-10-06",
+      "value": 5.25,
+      "as_of": "2026-10-07",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     }
   },
   "market_pulse": {
-    "sensex": 72382.47,
-    "nifty": 22555.75,
-    "as_of": "2026-10-06",
+    "sensex": 73067.81,
+    "nifty": 22776.1,
+    "as_of": "2026-10-07",
     "source": "RBI homepage (rbi.org.in)"
   },
   "indicators": {
@@ -457,10 +457,6 @@
       "unit": "\u20b9 per $",
       "source": "FBIL via Frankfurter API",
       "points": [
-        {
-          "date": "2021-10-06",
-          "value": 74.6292
-        },
         {
           "date": "2021-10-07",
           "value": 74.8607
@@ -5276,9 +5272,13 @@
         {
           "date": "2026-09-29",
           "value": 96.0321
+        },
+        {
+          "date": "2026-09-30",
+          "value": 95.9832
         }
       ],
-      "as_of": "2026-09-29"
+      "as_of": "2026-09-30"
     },
     "repo_rate": {
       "label": "RBI Repo Rate (from official RBI announcements)",
@@ -5484,9 +5484,14 @@
           "date": "2026-10-06",
           "value": 5.25,
           "note": "RBI homepage 'Current Rates' panel (rbi.org.in)"
+        },
+        {
+          "date": "2026-10-07",
+          "value": 5.5,
+          "note": "RBI homepage 'Current Rates' panel (rbi.org.in)"
         }
       ],
-      "as_of": "2026-10-06"
+      "as_of": "2026-10-07"
     },
     "wpi_yoy": {
       "label": "WPI (All Commodities Index)",

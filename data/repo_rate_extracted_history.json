@@ -199,6 +199,11 @@
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.5
+    },
+    "2026-10-07": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.75
     }
   },
   "msf_rate": {
@@ -401,6 +406,11 @@
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.5
+    },
+    "2026-10-07": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.75
     }
   },
   "repo_rate": {
@@ -603,6 +613,11 @@
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.25
+    },
+    "2026-10-07": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.5
     }
   },
   "reverse_repo_rate": {
@@ -802,6 +817,11 @@
       "value": 3.35
     },
     "2026-10-06": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 3.35
+    },
+    "2026-10-07": {
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 3.35
@@ -1007,6 +1027,11 @@
       "link": "https://www.rbi.org.in/home.aspx",
       "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "value": 5.0
+    },
+    "2026-10-07": {
+      "link": "https://www.rbi.org.in/home.aspx",
+      "note": "RBI homepage 'Current Rates' panel (rbi.org.in)",
+      "value": 5.25
     }
   }
 }
