@@ -1,5 +1,5 @@
 {
-  "updated": "11-Oct-2026 17:53",
+  "updated": "12-Oct-2026 21:29",
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
     {
@@ -926,7 +926,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 3.34,
+      "avg": 3.44,
       "funds": [
         {
           "schemeCode": 152018,
@@ -991,14 +991,14 @@
         {
           "schemeCode": 148595,
           "fund": "DSP Value Fund - Direct Plan - Growth",
-          "1M": -3.97,
-          "3M": -5.07,
-          "6M": 0.34,
-          "1Y": 1.56,
-          "3Y": 14.85,
-          "5Y": 11.67,
-          "nav": 23.452,
-          "nav_date": "08-Oct-2026"
+          "1M": -2.07,
+          "3M": -4.64,
+          "6M": 0.88,
+          "1Y": 2.54,
+          "3Y": 15.18,
+          "5Y": 11.95,
+          "nav": 23.742,
+          "nav_date": "09-Oct-2026"
         },
         {
           "schemeCode": 151113,
