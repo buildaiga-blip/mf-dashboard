@@ -1,5 +1,5 @@
 {
-  "updated": "14-Oct-2026 12:39",
+  "updated": "15-Oct-2026 12:28",
   "current_policy_rates": {
     "bank_rate": {
       "label": "Bank Rate",
@@ -37,12 +37,7 @@
       "link": "https://www.rbi.org.in/home.aspx"
     }
   },
-  "market_pulse": {
-    "sensex": 73033.78,
-    "nifty": 22721.95,
-    "as_of": "2026-10-14",
-    "source": "RBI homepage (rbi.org.in)"
-  },
+  "market_pulse": {},
   "indicators": {
     "cpi_index": {
       "label": "CPI (All Items, Index)",
@@ -5272,9 +5267,13 @@
         {
           "date": "2026-10-07",
           "value": 96.623
+        },
+        {
+          "date": "2026-10-08",
+          "value": 96.7733
         }
       ],
-      "as_of": "2026-10-07"
+      "as_of": "2026-10-08"
     },
     "repo_rate": {
       "label": "RBI Repo Rate (from official RBI announcements)",
