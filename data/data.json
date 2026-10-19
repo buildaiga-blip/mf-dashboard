@@ -1,5 +1,5 @@
 {
-  "updated": "18-Oct-2026 16:13",
+  "updated": "19-Oct-2026 18:56",
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
     {
@@ -9,7 +9,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 1.07,
+      "avg": 0.9,
       "funds": [
         {
           "schemeCode": 120186,
@@ -26,14 +26,14 @@
         {
           "schemeCode": 118870,
           "fund": "Taurus Large Cap Fund - Direct Plan - Growth",
-          "1M": 2.92,
-          "3M": 4.88,
-          "6M": 8.19,
-          "1Y": 6.21,
-          "3Y": 13.14,
-          "5Y": 9.72,
-          "nav": 179.97,
-          "nav_date": "16-Oct-2026"
+          "1M": 0.22,
+          "3M": 2.1,
+          "6M": 6.79,
+          "1Y": 4.43,
+          "3Y": 13.37,
+          "5Y": 9.61,
+          "nav": 177.76,
+          "nav_date": "19-Oct-2026"
         },
         {
           "schemeCode": 150440,
@@ -271,7 +271,7 @@
       "rating": "Very High Risk",
       "horizon": "7+ Years",
       "rank_metric": "1Y",
-      "avg": 5.21,
+      "avg": 5.14,
       "funds": [
         {
           "schemeCode": 151036,
@@ -322,18 +322,6 @@
           "nav_date": "16-Oct-2026"
         },
         {
-          "schemeCode": 118872,
-          "fund": "Taurus Mid Cap Fund - Direct Plan - Growth",
-          "1M": 1.76,
-          "3M": 4.69,
-          "6M": 9.55,
-          "1Y": 4.23,
-          "3Y": 8.81,
-          "5Y": 10.49,
-          "nav": 134.92,
-          "nav_date": "16-Oct-2026"
-        },
-        {
           "schemeCode": 150212,
           "fund": "Baroda BNP Paribas Mid Cap Fund - Direct Plan - Growth Option",
           "1M": -3.71,
@@ -368,6 +356,18 @@
           "5Y": null,
           "nav": 21.4856,
           "nav_date": "16-Oct-2026"
+        },
+        {
+          "schemeCode": 118872,
+          "fund": "Taurus Mid Cap Fund - Direct Plan - Growth",
+          "1M": -2.21,
+          "3M": 1.0,
+          "6M": 9.32,
+          "1Y": 3.55,
+          "3Y": 9.28,
+          "5Y": 10.75,
+          "nav": 133.4,
+          "nav_date": "19-Oct-2026"
         },
         {
           "schemeCode": 148073,
@@ -664,7 +664,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 5.91,
+      "avg": 5.74,
       "funds": [
         {
           "schemeCode": 151379,
@@ -700,18 +700,6 @@
           "3Y": 17.8,
           "5Y": 14.81,
           "nav": 41.39,
-          "nav_date": "16-Oct-2026"
-        },
-        {
-          "schemeCode": 118883,
-          "fund": "Taurus Flexi Cap Fund - Direct Plan - Growth",
-          "1M": 1.38,
-          "3M": 4.62,
-          "6M": 9.73,
-          "1Y": 6.05,
-          "3Y": 10.76,
-          "5Y": 9.13,
-          "nav": 250.3,
           "nav_date": "16-Oct-2026"
         },
         {
@@ -761,6 +749,18 @@
           "5Y": null,
           "nav": 10.7821,
           "nav_date": "16-Oct-2026"
+        },
+        {
+          "schemeCode": 118883,
+          "fund": "Taurus Flexi Cap Fund - Direct Plan - Growth",
+          "1M": -1.77,
+          "3M": 1.92,
+          "6M": 8.66,
+          "1Y": 4.38,
+          "3Y": 11.01,
+          "5Y": 8.97,
+          "nav": 247.06,
+          "nav_date": "19-Oct-2026"
         },
         {
           "schemeCode": 120564,
@@ -926,7 +926,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 3.89,
+      "avg": 3.87,
       "funds": [
         {
           "schemeCode": 152018,
@@ -967,14 +967,14 @@
         {
           "schemeCode": 148595,
           "fund": "DSP Value Fund - Direct Plan - Growth",
-          "1M": -0.06,
-          "3M": -3.55,
-          "6M": 0.3,
-          "1Y": 4.51,
-          "3Y": 15.5,
-          "5Y": 11.98,
-          "nav": 24.007,
-          "nav_date": "15-Oct-2026"
+          "1M": -0.17,
+          "3M": -3.63,
+          "6M": 0.08,
+          "1Y": 4.28,
+          "3Y": 15.46,
+          "5Y": 12.04,
+          "nav": 24.072,
+          "nav_date": "16-Oct-2026"
         },
         {
           "schemeCode": 149166,
