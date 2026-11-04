@@ -1,5 +1,5 @@
 {
-  "updated": "04-Nov-2026 00:24",
+  "updated": "04-Nov-2026 11:52",
   "categories": [
     "India",
     "Finance & Markets",
@@ -8,148 +8,356 @@
   ],
   "items": [
     {
-      "category": "Geopolitics",
-      "title": "US and Iran Are Reviewing Proposals to End War",
+      "category": "Finance & Markets",
+      "title": "Tax Cut Hopes, US Midterms May Fuel India\u2019s Nascent Stock Rebound",
       "source": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQN0QzbXFhSUp2Q1dpMWRuUTZMTWJrMmIxSml0VktRZGM4cnlMZGx2d0dMNjNjcDBhYVVjRWxOUU1rUWZZNXZ6Y1UxQXdBWUxBel9NRFdUck51YzMyTHlXeGxtNmZCeXlGbzZzNnRMSGZUYWdvc1JyTUp5clNPam9YVjR1bmlOVjBVTDZxTG5tWnhmOVE5M2NpejZ0d3RlZlV1V1dRMWRreTFvbHAyVUhVZ2pJYlphLVN6?oc=5",
-      "published": "03-Nov-2026 23:39 UTC",
-      "published_iso": "2026-11-03T23:39:27+00:00"
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOekxkSG1kUlB2VnJUNmRTYWM2UDlaeTg5ZkF5WEdHNmVNX2VSRldCeW1Edk9JZjF4bVFzTWZQS0Q3V1liOThBUGpJRGpPZmhXOUN3STYzbHl0RE1UNmZIUndkLXVGVk9qRGU1c25ZWmVMdGdYSmFVV0U2bHZacUdHUEc4UkV4UDVaenNhaE5pTHJQemdTU2EzRDN5dGhLR09XU2FUVEJFU2VtclZjT3A2Tg?oc=5",
+      "published": "04-Nov-2026 11:45 UTC",
+      "published_iso": "2026-11-04T11:45:47+00:00"
+    },
+    {
+      "category": "Geopolitics",
+      "title": "EU court upholds sanctions on Russian ship register but overturns recognition withdrawal",
+      "source": "safety4sea",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNenpBcFFJUmRzb2NFczhobklUVUhIYWxBM2pzUTFXMHNjTU40aUNUV1J2SXdHWHdPXy0tZ2M0RFRncThIeWRYTzVIeEhnQllQT2ZpR0l4alZvaUp3YzREMTVPUHU5dXZDQXFEbzRPekUyNEZPQkpWSGl1U0xIYTR0eGhoclZwZndlcE1JdDhwZ3RrNFpNX29HLW1BbUhNQ1kxY05ETDRLTmpZUUZNQlN0WXh3?oc=5",
+      "published": "04-Nov-2026 11:33 UTC",
+      "published_iso": "2026-11-04T11:33:05+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "India stock market rally has a catch: Why TCS, Infosys and HCL Tech were among the top laggards",
+      "source": "The Week",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNRDJneEFUV0ZIcXVjR1dwTzVKSDhPb2J2M2ZYcWhXdlJQQWhQTWpnTmo2UVh0emc2R0liMER6WTB2bUlTb1R4azVDLUh6Y2V5cE9jelZwRWIzVlE2VmRSeGJ6QkdmNXdVdmFteGFoNXpOYzJjVXFLTHFWbGlRN2doX2lZblJKbDZTY1lnNHRkTExZSm83TGcxaU1RT0h3S0g0S2d0dmpmMm41TlpLbDVzZ0VZM3d4U3A3UkthVGFCTHlLd2lTYmQ1OGFVNTJhUmZIZ2Z5cUs2UnhMYW90eUd30gHkAUFVX3lxTE1DS0tvZG1WTWhSY002V0RES1BYaE80emk2Q1ROZm5PRWRQOThoLUFxdDl5WTJNaldDN2htZjVhcEk3UU1HVHJoY2Z4eEVBMmJHb0I1Rmd6UEZ0cnlIWGRqTW1mSmNyeTNhWmMyRkw1QVdmMThOTVNEMUdDR1pjUE5ySzd2emtlZmZXcV9sdzJ5Q0pNY1Q0MTd5SFBUTUN3VnFRMTF6NUVsc2RBaVFFeERKSlY4UVlLVXdrZ0tEZHdCZS10dnBtQ2tmLVVGZUc0ZU00LUc0NEJCS1NiTTZMS1lpaFlpYg?oc=5",
+      "published": "04-Nov-2026 11:32 UTC",
+      "published_iso": "2026-11-04T11:32:53+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "RBI Sets Up Technical Consultative Committee for Financial Markets",
+      "source": "KNN India",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdDFVS0R3cHRKeWtLRmlxWGc4VGE3eTVXM0JsXzN5RW4yYW4yM3dRUUlic0xzZTBZaXoybWhxX0pmbDB5MjhkaVg2WVlnR0dTMldpUUJyX3NzdUV5ajBEdnhLbGdOcDFuZExfNUExdFNfUFdoUU1uZjdDQUdCb0o5Rm9VU3ZkS3lyNlhObTJlQ1NlbHJ3b1ZOaTE5VXlsY1BDSEJpejI5V2tCN0ZoTjNUSFd2MU0?oc=5",
+      "published": "04-Nov-2026 11:31 UTC",
+      "published_iso": "2026-11-04T11:31:49+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "Eurozone Inflation Rises to 4%, Driven by Energy Costs",
+      "source": "WSJ",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUk5sSUkwTkkyRVh3VGRuc196anVjNGZpeW1SNmRBZTNvTzEzYmVaQ1JYTnlieXpXT0ZZQmVDVU5iU2dIVnFoNEZGU1phUkp0ekRUUlpxZjNDTU9LdW96bTJHaGd2cjNiTnBKaWRJN3VDYUFPR2NqWmZ6T0xjcnAxamxoYmpaSnVOMDlWQnljckJYZF9tQ0JJZFU2OElZQjA?oc=5",
+      "published": "04-Nov-2026 11:09 UTC",
+      "published_iso": "2026-11-04T11:09:00+00:00"
+    },
+    {
+      "category": "Geopolitics",
+      "title": "Oil Market Weighs Next Stage in Iran Conflict After Midterms",
+      "source": "Rigzone",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdklIYXJfek9qSGVaWjFkUXQtMGo5cktqSFd1RUQwaUw1UDlZM0ozaGluY0tBSXZFVmxNUXZwSjlpVVN5TkhfSE9HWVZESlR2cnpsUjhvQTh4SWsyd0htUUZ5OTFtbnlaSncyaDY3MmliOHF4Nk5ieWNpSEhXclc1MTJLVmIwRFlfU0lCekZ5YVhhaU1sdlVRZ3hpemhIWlRlNE1hSkxlZEw5SV9OVkxrV3AtdjFJSXNw?oc=5",
+      "published": "04-Nov-2026 11:07 UTC",
+      "published_iso": "2026-11-04T11:07:00+00:00"
+    },
+    {
+      "category": "India",
+      "title": "What Household Investment Reveals About India\u2019s Unincorporated Economy",
+      "source": "orfonline.org",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa3JNd3MyOGFqOC1IaEN1NzVsU2txS0o1N1pvTDE5N1pTYUE2eTZsVlNJc1BMOVVpSGdXQm5Rak80TkU2VEhKbldGNGtZcnlhd0ppNC0yMXZORTdkd1ZzSjZXbEp0cUFiVTNENFJybWJwZkVoZ2s4U0o0Q1lwTTkwN0g3VHJOeWZrLTBGa3UzWHNKdWpYOHlPbWNockZ5UVQtZVZ0dHRBU2xRckdUOVE?oc=5",
+      "published": "04-Nov-2026 10:38 UTC",
+      "published_iso": "2026-11-04T10:38:39+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "What Household Investment Reveals About India\u2019s Unincorporated Economy",
+      "source": "orfonline.org",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa3JNd3MyOGFqOC1IaEN1NzVsU2txS0o1N1pvTDE5N1pTYUE2eTZsVlNJc1BMOVVpSGdXQm5Rak80TkU2VEhKbldGNGtZcnlhd0ppNC0yMXZORTdkd1ZzSjZXbEp0cUFiVTNENFJybWJwZkVoZ2s4U0o0Q1lwTTkwN0g3VHJOeWZrLTBGa3UzWHNKdWpYOHlPbWNockZ5UVQtZVZ0dHRBU2xRckdUOVE?oc=5",
+      "published": "04-Nov-2026 10:38 UTC",
+      "published_iso": "2026-11-04T10:38:39+00:00"
+    },
+    {
+      "category": "India",
+      "title": "India news: Election body opens door for voter reinclusion",
+      "source": "DW.com",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcGM1ZXcycVp0TUxFM1ZIX2stdHdSdUZnYzROVklYWWp4U05Jc0szNmo0Z3NYV3R4U1hhN2thU19jdkxDZ1BkdnFxX3pLUDZwdUNncU4tSVJnOS1yUTRPLUZXREV6VjhjS1ZjRkZocXMzUTlwLTljY3pFVHQ1aWpDaXVTcG9CSElQbGhMOE1qdXdEa1k1MFRaSg?oc=5",
+      "published": "04-Nov-2026 10:38 UTC",
+      "published_iso": "2026-11-04T10:38:06+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "India stocks higher at close of trade; Nifty 50 up 0.63%",
+      "source": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVzcxX0o3WTZST1dnVXBCeXNfNkRvVzNHMjd6Szk5UU0tSHk5R1BhX2VOOWl4U0FyeENRMHJsTVJzczZtb0FHSU5lVXluRVhWVElwZmpJZkxrYWc3S2trMndpa0l3OXVzVE15Q0pkYzB5ekNjU2k5VzlrSFpLcWlaX2VCSFNSM2dTZndqUjNMUHlrWDlPR0dSNGtaYkF5N0hZS3NDUDBEcXIzNnRCTVk4?oc=5",
+      "published": "04-Nov-2026 10:37 UTC",
+      "published_iso": "2026-11-04T10:37:09+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "India shares higher at close of trade; Nifty 50 up 0.63% By Investing.com",
+      "source": "Investing.com India",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNmxzRmFKSUNpU0hhWklQbDhlQXFzWFlOSHVsdnJEc2g0MHd0WHIyTEx1R1JldnhPSTVyS2p5NF9qdXFZbGpsc1BWUTZUdUQ3Nnp0MjRKY3NQb19NQVdSbWx0TWdqclRINjh2eGtzZ1FGOGhtdldnaEd5RU1oUVVYRGV1aUFrN1RnWGVyT1dMdnpNYTdwdnNudHJ4Y2xzZXdFcHVQcmsyNVhLSXdLaGc?oc=5",
+      "published": "04-Nov-2026 10:31 UTC",
+      "published_iso": "2026-11-04T10:31:38+00:00"
+    },
+    {
+      "category": "India",
+      "title": "U.S. midterm elections impact on India: faster trade deal talks and higher tariffs likely",
+      "source": "The Hindu",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQb2gtR0ZuWXJNM2UwZUVHdGEzdmh1blRQSHJaWnZicWJ5dWJiMkZ6M3FkbnFEcXk4MDhoVWxzRVNNMWNyV0lYeXNyZUVtazNjODBHM0NKbzlDUUFGOXFNd1kySkFITFl0eVdqQTVMR040YWREUXJ2RVBVU3dqeVN5RXRJdkRvcVNaUlVHNW5EZFZyS2dLbVNfTHhJbDBNV2t6ZWRLZXF2VDlCMzBodTlqS1I3cFVWYmFIZUkwVFBBSTZ3dE9KNVFIMEdhNVc0U3R5eXItWVotRi1USnd2dTB0RnpB0gHoAUFVX3lxTE5QbnZQSy1CRjBSY0Uwc290eUVvZG83d1FCOFRua1lqRDREWlppNnVwQnJKbDlGYXF0UXRjdFpjTkxwT0tZN01jdHlVUmZUel92MlFfLUJYaXBkcE5EZDFLQU5MSDlmclhLY2lqOUFjM1lRbHpYTWZYMnhVX1Q3MndwLWNqYjhrZWt4WHdRZVdDRFA5WjNjbjFWY0NNalIzT0ppWThhS2tBbXFMYmJIdVVaQkVOajlGVzd4eGxGR1ZCbmdZS3ZUTHNBcXRhWWJkWEd3aC05NTlwR2tLdlNqblFuMHZ3Nko4cE8?oc=5",
+      "published": "04-Nov-2026 10:13 UTC",
+      "published_iso": "2026-11-04T10:13:43+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "U.S. midterm elections impact on India: faster trade deal talks and higher tariffs likely",
+      "source": "The Hindu",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQb2gtR0ZuWXJNM2UwZUVHdGEzdmh1blRQSHJaWnZicWJ5dWJiMkZ6M3FkbnFEcXk4MDhoVWxzRVNNMWNyV0lYeXNyZUVtazNjODBHM0NKbzlDUUFGOXFNd1kySkFITFl0eVdqQTVMR040YWREUXJ2RVBVU3dqeVN5RXRJdkRvcVNaUlVHNW5EZFZyS2dLbVNfTHhJbDBNV2t6ZWRLZXF2VDlCMzBodTlqS1I3cFVWYmFIZUkwVFBBSTZ3dE9KNVFIMEdhNVc0U3R5eXItWVotRi1USnd2dTB0RnpB0gHoAUFVX3lxTE5QbnZQSy1CRjBSY0Uwc290eUVvZG83d1FCOFRua1lqRDREWlppNnVwQnJKbDlGYXF0UXRjdFpjTkxwT0tZN01jdHlVUmZUel92MlFfLUJYaXBkcE5EZDFLQU5MSDlmclhLY2lqOUFjM1lRbHpYTWZYMnhVX1Q3MndwLWNqYjhrZWt4WHdRZVdDRFA5WjNjbjFWY0NNalIzT0ppWThhS2tBbXFMYmJIdVVaQkVOajlGVzd4eGxGR1ZCbmdZS3ZUTHNBcXRhWWJkWEd3aC05NTlwR2tLdlNqblFuMHZ3Nko4cE8?oc=5",
+      "published": "04-Nov-2026 10:13 UTC",
+      "published_iso": "2026-11-04T10:13:43+00:00"
+    },
+    {
+      "category": "India",
+      "title": "India\u2019s Middle Class Spending Boom Comes With Growing Debt Bill",
+      "source": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWWFBeGVJY2xjRGt4aFBnbmJScS11UHQ2S2JiemxFc3ZIbnlhaWtfNmFwa0ppV1BSeVppTWtwRThJYkYxZWRUSGY2blFGQ01QQ293RFYyNVl4dVR2c0JHam1ZYzdaMWpFVmtnT1JkbmdoeDl5ZGdmZmN6WGhObzExb1A0MFhRd3dDUTg4SUlsR2t2WEZTOXBiUjN2dHE4cWloNm5zbE01dnpSNlZzdHZubFZrNDI?oc=5",
+      "published": "04-Nov-2026 10:09 UTC",
+      "published_iso": "2026-11-04T10:09:31+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "India\u2019s Middle Class Spending Boom Comes With Growing Debt Bill",
+      "source": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWWFBeGVJY2xjRGt4aFBnbmJScS11UHQ2S2JiemxFc3ZIbnlhaWtfNmFwa0ppV1BSeVppTWtwRThJYkYxZWRUSGY2blFGQ01QQ293RFYyNVl4dVR2c0JHam1ZYzdaMWpFVmtnT1JkbmdoeDl5ZGdmZmN6WGhObzExb1A0MFhRd3dDUTg4SUlsR2t2WEZTOXBiUjN2dHE4cWloNm5zbE01dnpSNlZzdHZubFZrNDI?oc=5",
+      "published": "04-Nov-2026 10:09 UTC",
+      "published_iso": "2026-11-04T10:09:31+00:00"
+    },
+    {
+      "category": "India",
+      "title": "Govt notifies new set of rules governing India\u2019s civil aviation sector, replacing colonial-era Aircraft Rules, 1937",
+      "source": "News On AIR",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQU21odmdSVGJ5QjY3MTJJREFXektKNWo0WkdVTV9ndk9mTlFsVURDWTVZU0xHb0ZHQ195NG5YcXRCX2lmY0NWZzNJUmljZDNyY0ZqazNTbDZjc3p0S2o0dVJjU0YzTE5OYlJpRG42T01yc0pOUm5tbjdKREE3VkVyLWQ4cjI3TVhoeFdUc2pkRWZPYUNQRDFQNTVzLUFSREowNjFrc0FadVhFdGpyTXY3emVYd1g5QW5NUWtYQ0tGWEZwT090UVRGY2JoMmRDYzBEMk1fdQ?oc=5",
+      "published": "04-Nov-2026 10:03 UTC",
+      "published_iso": "2026-11-04T10:03:07+00:00"
+    },
+    {
+      "category": "Geopolitics",
+      "title": "Brent declines as markets await US next move in Middle East conflict",
+      "source": "https://www.engine.online/",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRmlDemtTcGVlSTJLTDVBSEVKMWd3TWw0dTZURXUzeDJmUzVMY0JydFg4Ynh1QmtxV1VwREZ0dlJkak5fTEpSbTRTSTRXc2dCWXJjeXhYdGVrSVZLUG1qazNJLUphS0h5MkJZZUVpczNkS1lYRTBXbEd3QVdwQXBkOEpCd2dNb2dqSkJqQmVjQkl0Znp1ODBUQnZHOWJMUE5yZDE3MGtqUQ?oc=5",
+      "published": "04-Nov-2026 10:02 UTC",
+      "published_iso": "2026-11-04T10:02:31+00:00"
+    },
+    {
+      "category": "India",
+      "title": "US midterms: Key takeaways, impact on the world and India",
+      "source": "The Indian Express",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbUxld2wzdmQ5dy1KazhMaWh6WDlHN05QVzY3Q0k3dXhlUDVOakIyeUs4ZHhZVndDUGtJMFBqQmpmUEJfRnRzbnFESjRTM2ljY25nTllKOHZYdml1eUMyTFpXQ0lKN2NKZC0yMTFjTHdYWnF2WGZzb2tva1ZsbzZ5QzJWZVZBeFhsY05qWWJUYWxTNUFRZDdTVWRNekVlNzAwck9VZnh1bVduYmlZTjhTbFhBSFQzd9IBvAFBVV95cUxNTlctX2RGSVdTR0FvbFJVRXFDeFk4N252cVNMSHVITEo3elF6Sk1oRjE4aUpKbnhKT1RkYUlpZW9QajdPMDdRSk96aUVNbVFGRkZGeXJsblJXUFYta0oyT2cyTXFnb1lQczR6akh4dHFqM1R2Uk11UkpvNGRYVk9iZWl3UmJBaWhDU2R3NGZJNVg4dlE2ZThqcWlkNzhzZFJ6ZjJQZHpkdXdUdkw2TGdYOF80bE9Rc2VNSXBKQQ?oc=5",
+      "published": "04-Nov-2026 10:01 UTC",
+      "published_iso": "2026-11-04T10:01:15+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "Routed Media Builds for the Next Phase of India\u2019s Creator Economy",
+      "source": "TheWire.in",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZjhGdnJsMVNCcDlkSVpBei15aE8wbV9MUjRSWVRBS0hvX2o0aW9FT3NuTlpndXdSX1Rxd0lNYkJQcmxUTFJ5NTBpX2FzdThDRDY0cmNQSURlcTN3NkdvMXNiLWM0aS1OWWRPQ2syeXBZZ3NIdnhubjJjdURhZVB2QW1FQW5hcDBfLWdhd1NSMHR3MFNVaUVlVnRMMU5sX2pZUjd3VXl30gGrAUFVX3lxTE9kbTFFWDQ5OVJrS0NnbTJfMjVlMzg3WkZ0M3JzME1HRWxDM3dGb3JuRjVvcG1Hb3ZrMmtqRGQ0OUR1RkNTdGNsVUt4TTJyeXVoWUNvRFNCQ2hiREdrQnI1QWQ1S0Qxc3czZWJ0a3puc2FuVGlXNXR5ZDJwVWFianhvQnRjdVo4dTJXX09BTTBfdjNSd1YxQV9BQVlpXzAtZmVjb0t4N2I0TXFBVQ?oc=5",
+      "published": "04-Nov-2026 09:59 UTC",
+      "published_iso": "2026-11-04T09:59:44+00:00"
+    },
+    {
+      "category": "Geopolitics",
+      "title": "Indian refiner hedges Iran conflict freight risks with delivered crude",
+      "source": "Baird Maritime",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTnd5dFlhLUVWVkFqQzJqdmxWNklXa1FUUnBZN3ZjOGQ2TTBib3FJTjNoUklZVlhMSXRvYzRpWU04eHpoMUUwa3pCR1F1UkoxLWxUeFloZXJjLVlQM2prQWYtdENLUzNReFVxQWF6X0V4Zzk2UWlkYmotZTAzdHdxaUhaWG9JQjZyNFVUV1U3U3hheXR3U1o4UXJOaUtjZU45OWhQR0Uzc1ktS25pWGpjWU5RajVOZ2VL0gHGAUFVX3lxTE42OXZ0a1EwS2RwRzkzY0Qtb1NqLXpWd3ZNQ21CazU3RmNJOHRpSzRfRGhPbDV2SG9DbHFPSDk2S3B6LXc0cElaM1dwS3QxbkI1cVZNR2RvTnpZQWpKaFVCeDNYOUZvY0N0SnctdXluemRvZlRYNURxVFhkSWV1MUpYYkp6c04tR2Q5M2pWTjVqcHh1clJ2RGRpcll0X3kzMktfbXJ3UEVTTFoxc2NQNUpLZmJsMFNMeWtJeUNsQWNqanRIa3k1UQ?oc=5",
+      "published": "04-Nov-2026 09:56 UTC",
+      "published_iso": "2026-11-04T09:56:57+00:00"
+    },
+    {
+      "category": "India",
+      "title": "Mercedes-Benz GLC Electric Launched in India at Rs. 78.50 lakh",
+      "source": "CarWale",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLVBxSG5HYUd4UnBGUUdiWG43SXVaNU5PY256dllmUmF6MVM1eUpuLW5UeS1oTGh0U0NkQm1vQ0UwZVkzTS1CRlc1MExwZWdDcjBBN05mTkV6RVBkeEtFQTlJV292NmlkcGNjWlRjc2RremdDZVRDNlR1RVlBc1Q5d2tEdUZTUVJibGVWNUVuS3d2Q2xr?oc=5",
+      "published": "04-Nov-2026 09:51 UTC",
+      "published_iso": "2026-11-04T09:51:29+00:00"
+    },
+    {
+      "category": "Geopolitics",
+      "title": "Copper and conflict trigger profit surge for Buffett-backed Japanese commodity traders",
+      "source": "Financial Times",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMlNreXE2T2dFaVF4b29hdkFLUVl2dDRtV3BsSldmUEoycFB3MkxoYTV3MmJKWTdmSUZjVjBSRTd5Q2tzbjNKbE9JX1Y4enR6TDRFUVlMd2h4WHM0T3JkQlRieWtNMUtiX09oSTJrZndCNjNtZlJlc25saTd2Q05SM0dZb2k?oc=5",
+      "published": "04-Nov-2026 09:42 UTC",
+      "published_iso": "2026-11-04T09:42:01+00:00"
+    },
+    {
+      "category": "India",
+      "title": "India-Bangladesh Joint River Commission | Explained",
+      "source": "The Hindu",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOUVLWXV6eXgzRkY3X1oxQktpZkFNTnN5WVBObEZhS3dxckNkQjJTQXdQTHhMVE00WjJ1bnAwWlNNZzVMTzVaSEQ3MVRqTnlHT0tGSm8tZHpKZUpkSmsxV3JXakc3T2pLaHV4ZkJtdXV5WEw5Q1R4V3ZMd3FLYXRLYlZzX0NGRmNLc28yX2JUN1BfbmFmbHNmLUhIMm95bVZibndPRlJJeEtJbUdD0gGzAUFVX3lxTE1TQ0gxZ0RJa2tudHFiNzFucjEwYVExdFVYbVhVNW9hNm0yUWZrNGJPUnJhNnN2bWc1a0luMkR4QjJDOGV4clptTjhuajlMeGV3Sk5fTWpSbW8zQTU3WTVUNFVwWXppRWtabkJyNGp5elI4QXg2SGU3YXFtZVdkSl9pSGhXYm5IejlsSTN2SXlTVlZweWxzczNtdVlZUm5LUVlXZ2F3SGxyLUVMWlh0SHdtQmZn?oc=5",
+      "published": "04-Nov-2026 09:31 UTC",
+      "published_iso": "2026-11-04T09:31:26+00:00"
+    },
+    {
+      "category": "Geopolitics",
+      "title": "Both SHFE and LME aluminium pull back as supply-demand and geopolitics interweave bullish and bearish factors",
+      "source": "AL Circle",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQR0UwYUpXelhtbDNLMEE0OFRhS1I5cFJWbmJ5d2JGTWVkVExGTXB2WmpIYzdCbndxTlhRRG5UNzIxQUQxQ0Q3ZGZ5UV9LejVQa3Y5ZkZMSXh4SnZFU3lNT2FRU01zV3lUTUxzd081bWhVb1plcHF4TGFIT0stLUhBNmo5Vk85ZlRlMW5BZFhGYkNmcHJfTDFUcWVxbFppN214NGlpMEJocFhKRjV0aEhfVmpDY3dFNFVRTktBblFOa2kwdnVYaXpFR0xLM2hBcmVvTDBGTHMzQzRSZ0xUWGVsV3ZHZklJeG5MV2gtUlh2U2Vsdw?oc=5",
+      "published": "04-Nov-2026 08:26 UTC",
+      "published_iso": "2026-11-04T08:26:03+00:00"
     },
     {
       "category": "Geopolitics",
       "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
       "source": "Britannica",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-      "published": "03-Nov-2026 23:00 UTC",
-      "published_iso": "2026-11-03T23:00:52+00:00"
+      "published": "04-Nov-2026 08:09 UTC",
+      "published_iso": "2026-11-04T08:09:23+00:00"
     },
     {
       "category": "India",
-      "title": "India Watches as Trump Faces His Biggest Midterm Election Test",
-      "source": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWUsxNU5yZmYxRU4xc21OcG00cHlCd04yTzkwR1lLYURSbmJZNlRmdjFsWVhCdG84Ri1CaGo5RzhEYmV1aVIxWVdmaFM0T243NVgtZXFsRkVjakFGVzB0YnZHYU5kdVdZQUF2aXBURVdSbzVvYWJtalhXblRDZTdfWHl2R1lHMUZiMGhRYXRzVUM5bGlEZFdNMmJPMjM3cF9QQ2xFT0ZIYXlzWW1ZblRtSQ?oc=5",
-      "published": "03-Nov-2026 21:51 UTC",
-      "published_iso": "2026-11-03T21:51:10+00:00"
+      "title": "Midterm blues: Why a 'lame' duck Donald Trump may push for a quick India-US trade deal",
+      "source": "The Times of India",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQOXZYMHBqbDZhcFdoeHlBMFJyT2U3YTVYU1M4bjhRVDBRR0FPNFcyeGNLazRIZEdDbG1zUklqZzB4cUlJU3ZlWGNpZW10bFB1Wm5GNzBVWXc4OXkzMk1HZzBwTUdxQi1qR2ZZR2lOaHVNWjl2a2xqZmFlQlhzNEhBUFVyanEyeVlCZjNZdXFEYVI0aEN0Y0RMSllTWmtpc3g0NTZCcmJMbDFHb3VKY2FzREFWbTJMc2dmSFhYMk5nb0E3VENneGF6eVpjSmdpNmtLdlBsWFFhdXpqTFdVNG5lU3BreHVJMFY3OE15WjV0TmtSMU1Id1RoaWYweURBQdIBgwJBVV95cUxOSjl2eDNTT0hLblotZy1mRUlyWUtzN2JkQ0xMRjRuZ2hkaEE3OHJYa2F4dEpSRThFaDZCejJDLUpfb19LX2VCUXAtMEQzVTFGd3lEb1YxU0ExUDc5X3VrNXNxNGVDQ01uWjhJTml5Tk81X0lEVzV3ZTA1TDlkWTh0U1l3emI3MUpuVGYxUmNHWEdzbWFoY1lQZjVJSnI1a1pxX0F2R0hYOVVtbm93T1dnMUxXaDRkMUt3VTlKR2FwWlNlREhncXktTlRnOEl0V2FFeUlTNG1VS0g4ODFLdGdHOVJPbnFfaHZHYlRMaDZFOHE0bkJpaUFCS3A1VVNPaGZFbTdB?oc=5",
+      "published": "04-Nov-2026 07:59 UTC",
+      "published_iso": "2026-11-04T07:59:00+00:00"
     },
     {
       "category": "India",
-      "title": "India\u2019s Next Fiscal Consolidation Must Rest on Revenue",
-      "source": "Center for Global Development",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXJ5QkJ0dkdWbmUyWlcxRkFuUGR1VUZpWTNiay1FQ2k4aTBoZllfVW9wOXpNaWF0U195OGp5SlBBOGM0dlZHTXNoM0tOVWpLQ3diQ2ZFcGNNS2h3dU1PdDhUdVF0dkNwNkJFRWREWE9SdnBVbG1LXzlPMlByc1FDaktUaw?oc=5",
-      "published": "03-Nov-2026 21:39 UTC",
-      "published_iso": "2026-11-03T21:39:23+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "India\u2019s Next Fiscal Consolidation Must Rest on Revenue",
-      "source": "Center for Global Development",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXJ5QkJ0dkdWbmUyWlcxRkFuUGR1VUZpWTNiay1FQ2k4aTBoZllfVW9wOXpNaWF0U195OGp5SlBBOGM0dlZHTXNoM0tOVWpLQ3diQ2ZFcGNNS2h3dU1PdDhUdVF0dkNwNkJFRWREWE9SdnBVbG1LXzlPMlByc1FDaktUaw?oc=5",
-      "published": "03-Nov-2026 21:39 UTC",
-      "published_iso": "2026-11-03T21:39:23+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "India Needs Stronger Eye Banking Infrastructure To Improve Corneal Transplants",
-      "source": "BW Healthcare World",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSExfUTNIT1ZUTWFFUXRTaFJKU0xubEhHYjh3WS1fWFlKaGd4aXVTbVNYNzh2RXlxRXV3d1dmM0U1RC1uU0w1WktOa2hIMk9HQ3p6WXF6aDB5VmtGWERmZG5HTHowYkhpR1psT0dyeVlXSFUxWkVqdm9qd0xYY1VpSElXc1RmMTBJdi1Yc0pPcHRuaV9UcUF2dHBJV1NEelFpbTlmNFdycUlVQl96U05WZWJhNGxYaXdYUG5iM2NmcFRZTXhPTkE?oc=5",
-      "published": "03-Nov-2026 21:02 UTC",
-      "published_iso": "2026-11-03T21:02:40+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Oil Futures Turn Lower as Market Holds Out Hope for Middle East Diplomacy",
-      "source": "WSJ",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPanI0VE5sUnZXNzJ1Tm9vWmVYYTZWbWRuMGRoOUtSZnJTVVJrT3dub0FKa1VFdlpvLUg3SHJvd3RBN25LNWdZLTlCS2FScUg2UUdLdEhPZXlyeFg5a2Z0TURCVWw5Wkp1VWhVNTQ2UktXX2RJMzdRc0c4emVzbkMyYkRhd2xfZFNSZ05aSWI0amNlUUc0NThHQVdSMHlCdDRfNmh6LS1SeTdmQWNGZlpn?oc=5",
-      "published": "03-Nov-2026 21:00 UTC",
-      "published_iso": "2026-11-03T21:00:10+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "India may need to spend 3% of GDP on climate adaptation, against 0.5% in rich economies: Report",
-      "source": "Business Today",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQOF9vRVhPLU1lcUk3X2Q2NVJYYWVFVUY4UW1xSW1QZU9zWjBUcVhud195Ym9rSmx1SnpPa1N3TjRVZTVyNURGQkdRQkphbjV2WTZiejNDT1dkSC1KRUFhWU85bTNwVld1c0hCSEtYVi02MC1laGFYSF92MS1yM0V3YTJleE1YNklJUEozekp1WWpKQjEyZVhvRUZsWmVqVDJvNVloY29MZjFOX0ZOWWo1T1RXRUxRcnBJeHJ4bWJCZnptb2FVSl9qVk5pdnhkSFplRzB4YjBvaU84Q1JRLXVCZ3BMTzBJWEFFSkRqTHdBYUfSAfYBQVVfeXFMT2REZDNNTkZhaEZhN0s3bHVaYjVNaFhjY2F1N3NWZDBLc09oa1kwMW1LSWFsdDZMR1o0UWozbFN5M0RDd3dTY205TnhDQmZ2OEJIR0tXMU52TmEyQk9iVnQ4MlBEZTFLcVRXaDRmaTQ5N09GMXVmWWtEeGlKSXF2NTBXZFk2NURtWko2R1pDS3hOTXdLcW5OQkctejBidnVGV0JkMC1FU3FaQlR4WDNkeHBiY2tEeVZyYXEzSU9PbmNkMWtwczc4cDE5bk1Qa0tYWWFtU3VPMkRKQ0FQd1NmZzFrUmtNcFQtR1ZyckhJbzZoeUtJUk1B?oc=5",
-      "published": "03-Nov-2026 21:00 UTC",
-      "published_iso": "2026-11-03T21:00:06+00:00"
-    },
-    {
-      "category": "India",
-      "title": "India Under-19s Women vs England Under-19s Women at Surat, 3rd T20I, 1 Dec 2026",
-      "source": "BCCI",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMVBLTVhYb0ZGVnM0bkMzNVlsMGV5TGt2b2U4cHk3MkxZc0duVGV4Y3VlWU9zQkNJZTZSQWlFa0lkbEhWNFczYVZWVnBTbUdMMXMtNnhXZUJrMFVMVURYaEppT1dBeU5QajJpSlRCVkNmb0pxNkpxNjJDNW50NkpidjFISFR0V1Z2cEhmZ2lrWmJLSjFjd0tyWTEzV21qWTNpQlVUWHc3cXdjTHUxVlV1d0hPaHQ1amt0TWkxR1cxZFBBTnRBQmMw?oc=5",
-      "published": "03-Nov-2026 20:10 UTC",
-      "published_iso": "2026-11-03T20:10:54+00:00"
+      "title": "Air pollution: Indian capital Delhi's air quality worsens ahead of Diwali festival",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MNk9jSmpHdkNfVlJ0NDV5SWQ0ZjZCSTVtenNrdE5MVFVsaWhQSUN4NUdXZFJyRHBJMGhnZDNvbXhfWjlzZEI2WFI0UjNsM0Z2Ri1vUm9ZR3FaYlU?oc=5",
+      "published": "04-Nov-2026 07:39 UTC",
+      "published_iso": "2026-11-04T07:39:38+00:00"
     },
     {
       "category": "Geopolitics",
       "title": "Water Under Fire, Volume 4",
       "source": "Unicef",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzcGpEWnU3SWlHdXpRY0JsOFNiLVM5cEcyNXNtY1hvNlpIdk0tbmZCa3hPbEZSSnA3ci1wR1FvZjEzZUZQT2VYYkY1YjVFTmttVVBKUTJ6bzV3ODBQMDN0eDVtSDBMU2c?oc=5",
-      "published": "03-Nov-2026 19:38 UTC",
-      "published_iso": "2026-11-03T19:38:27+00:00"
+      "published": "04-Nov-2026 07:37 UTC",
+      "published_iso": "2026-11-04T07:37:18+00:00"
     },
     {
-      "category": "India",
-      "title": "India Clinch both Men\u2019s & Women\u2019s Titles at Inaugural Commonwealth Kabaddi Championship in Ahmedabad",
-      "source": "News On AIR",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTGlRZTZuMlZic0NBRHVTQU5haXROZ01TdHlIWHExNnItakZ3bHc4d1JuQS1PeXM5QzdfREY2dS1xSUJaeUJ1aW5nNXV0YUU2RVhESGFSd2E1MjFFdDB3VEJfdU9tTWZfYlU2SklpUjRCUG1lS2dzNWhrQzlGOVZsdUZpdVdqbG4xMk1OVnZyc0lEOVUzNmlCWTlQZmllemFvT09lX3h5RHR6ZUpLdnBMQ1RwNmczZWRBTzlTNXVMaw?oc=5",
-      "published": "03-Nov-2026 19:22 UTC",
-      "published_iso": "2026-11-03T19:22:37+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "Jeffrey Sachs predicts India will become world\u2019s largest economy by 2100",
-      "source": "The American Bazaar",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYy1pNVBad3RCM2s5N2dHbXAwNGJTZGhEYmY1c0VaWHNsZFNENmRSRWY0dUphZVNydmpzS0N3U0l3UDRfNkZvYkZyMmlZdjBKMGt4dFVZUXZ5WWJIRnc4d001bXRiM0JBZUNhT0hlbVZ2TmtuYmF1WGJ2YjhmX3Y1S1NjSkZoMVF2ZGEzSmxqbEtxTkVwLVlUWHR5cG9hblVLRExFZVdlbnZoeVkyWkVBXzRiNS1Id0lNLURWQXNoWms?oc=5",
-      "published": "03-Nov-2026 19:19 UTC",
-      "published_iso": "2026-11-03T19:19:46+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "India\u2019s Bond Market Puzzle Is a Test of Credibility",
-      "source": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTUZ3Zjk1azBHb3ZVMTlXN2ctZlJId3A5Vzk1Vk1rZ3hHcDFMWW1OdVE3Rm82RFVNSGktNnFSWWpYdlc1Rkg1VHpiTFczcV9FSjhEbkowZ185WXpWYno1OTlBaE5nRmlCMG1kUnZPVWFsQk5BWGNDbzNSbVpfTEdob1MtdFF3TE9GazZ4WkRZd3Z2Z3ZGWlROTkdXWlJVS0k?oc=5",
-      "published": "03-Nov-2026 19:01 UTC",
-      "published_iso": "2026-11-03T19:01:02+00:00"
+      "category": "Geopolitics",
+      "title": "AFC reschedules Asian Cup 2027 in Saudi Arabia amid regional conflict",
+      "source": "Al Jazeera",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeFBWZFBtZ1d3cTFVU3VDZ3JRcnREUGxJdTN6RkJCU3N1R0txUXdZWEdnc1YycUZVRVl6TDhjVWFNbU96aVFJeHBtb2RySjBKejdxd2RWRzlQdTJ4djRnbF9CaVpNa1h2VEp1VTlvaW1ORGdMQlZVV1l0NUZkOFprYU42cTVRajc1ajI4bDJDZFpTMS10UzdSWVVzbDFWWEtYQ1dDWXk2TTFwZDhySFVud0tn0gG3AUFVX3lxTE5pTUVSNTlZd2NjYlJjV1FUbXlGQmFlRnBqZGk2U0EwOGZMX21HU0NNUldxcXlTdzd6amtGcWs2VEM3M1M0RUJGdDRTT1haemhQZW1Gdk1fRjNpN09ROG10R1hxbDlyZDZqRF94bWlVWUF4eUN2bmlLX0ZYQjUxNmkycGxLNkdkenRMQ0hpS3NhckF5VFJadGZNb1R5bnhNYUtiVVFHZUZueHdYYWJjUTN6bEk4UmZTNA?oc=5",
+      "published": "04-Nov-2026 07:34 UTC",
+      "published_iso": "2026-11-04T07:34:08+00:00"
     },
     {
       "category": "Economy",
-      "title": "India\u2019s Bond Market Puzzle Is a Test of Credibility",
-      "source": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTUZ3Zjk1azBHb3ZVMTlXN2ctZlJId3A5Vzk1Vk1rZ3hHcDFMWW1OdVE3Rm82RFVNSGktNnFSWWpYdlc1Rkg1VHpiTFczcV9FSjhEbkowZ185WXpWYno1OTlBaE5nRmlCMG1kUnZPVWFsQk5BWGNDbzNSbVpfTEdob1MtdFF3TE9GazZ4WkRZd3Z2Z3ZGWlROTkdXWlJVS0k?oc=5",
-      "published": "03-Nov-2026 19:01 UTC",
-      "published_iso": "2026-11-03T19:01:02+00:00"
+      "title": "Global Imbalances Reconsidered: The Role of the International Monetary and Financial System",
+      "source": "Boston University",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMV94cnoydF9MSVo3cGhNMjRrRzJxYldGUU9GTXllU1FDalZQS1hlUzIwcVZMSUg5ZnR6OVRlaTllOUdjRlZadl8zSU00Y1RaMG1YcDJpeTMyeDlmNTBuMnh4Nm5BakVmWWs3NEZPc2hibXVLUEp4Uk9HeE5RNmRsTzJuRFZMVUNqNVZWSFl6SEFldlpmOFBIQnJhZHktdkxScTcxRzRlV1g0dk14ZU9KOXhZRGplbGlPRFhwY003bzVrRTA?oc=5",
+      "published": "04-Nov-2026 07:01 UTC",
+      "published_iso": "2026-11-04T07:01:38+00:00"
     },
     {
       "category": "Finance & Markets",
-      "title": "John Cockerill India Gets RBI Approval for \u20ac24.32m Share Swap",
-      "source": "Multibagg AI",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTWl5WWJvaVdOS0VHbkZFazRYcHRqVkFOc2wzYUNNVGh4VTJWNGhmN1JIN1VCTjdhSGtBTWQwSTREVmhCM2h5bTRNTE1DNkRUNHVISHlPd212V2xpNGVIbzJoS1FxTmVISWpETWljM0Y2S2k1aWR0ZTRpRE9DdXJDTVEtay1MbWdJMTBSSG1NdGZZME5HSVJDdGVraWhjSmJHbEpZZw?oc=5",
-      "published": "03-Nov-2026 18:51 UTC",
-      "published_iso": "2026-11-03T18:51:17+00:00"
+      "title": "Kotak Mahindra Bank gets CCI nod to acquire Deutsche Bank India's retail, private banking businesses",
+      "source": "The Hindu",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNQURKQXZabXFCWFJ4RTZ0bEpIUS1XcDYwd3plb0ZPbjVrOWpuZS00X0o3Y05ndEcwaTh5QkNyTzE0b09GcWFCZGZsSkVBM3ZaZE82UDE1ckVtS0NMUmZBb0JHQ08tM0o0TXc3REJwRzZaY2Z6MHRCdmU4Sk1xRllSWVctcThjNFdGU2pTRXFqRmVnY09CYndPdVhId1pmSlMtdWZMS29EWkROaElVTy1tck5GODBmR1dxOGxJNzdFWlVrR3REUm9oWGxwMmJScmc2TFFobEhUMzVZVHRGcmtxQ0dwV3FOMHBmSElYZVpWTC1DVlXSAfoBQVVfeXFMTU1EUHVPRWhaZ3NyRGgwZVBkSHdFbk9mcnhUd2xzdDdkbVctcjNfOWVTZmhVVko2cFdsbFQzVVBoYlJNQ0hzelUwemNXaV9sZmhoLXMwRnAteFR1OGNZTHEzMlBiRUVyOHFXd2ZqR0x6VHR0YnVST3VDbEhQaVhWaFZUUEhLV3kyY00xVHJ1NFFKMjhIM1BRRzd5TXZPenF4Nm9nakI1TWdOZVFCRjJkVUdBU2RBWkU4VmJqN01CMzFNWTdybEcwc0RDUWNocjd1OElzM1N5TjNtVVQ1dWpVNzJDZU85aHo1N3JBSm16SFhEYVhqRTNvLW5CUQ?oc=5",
+      "published": "04-Nov-2026 06:53 UTC",
+      "published_iso": "2026-11-04T06:53:01+00:00"
     },
     {
-      "category": "India",
-      "title": "Fairfax's $5.5 billion deal for India's IDBI Bank faces employee, political opposition",
+      "category": "Finance & Markets",
+      "title": "India central bank forms markets panel with Citi, Morgan Stanley, SBI as members",
       "source": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdnYyd1d6NDhFVHN5Y2diNGdPa29fb1NwWVJrQkloMjlneFZyZTEyOUVLTFItb3o4STloUUxnOE55b2xZNUpJWDI5RXNDZjBpUFJPdXF4enE5WHpxaXYxY3ctRW8xdS0yTjYxd2lzem1sOF8zb2pUaGdvdWFFVE95V3ZOOE0xY0hmOFhFRUktXzRRd3BXTV9aZ3lEcUJSbWs5STlOalFOa1lwU2taYVBHMFdzTVZ2NjVEQ3FkeXU2cUFZdVk?oc=5",
-      "published": "03-Nov-2026 17:28 UTC",
-      "published_iso": "2026-11-03T17:28:24+00:00"
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRGJ2NzhSOGdQWlY3dktjTGlIVEN4aWJKYXAxRm9pOHdBN1JKSGtmek8zWGZod2g1aTNsYmFzbmxLWFZIZVkzVkk0Y0FjMW5EOURqaFdXYlNEVUtlRmNyb3hUZ2w5YkI0RzRMMUIxZF9BWUNwY0tMSDdaM3QzenpXOHlUTFRsc2xJZDNxeHI0YmRuRUU0TXJ2WnRlcElBa3FJemJCYWZtTHlxMzlfM043VkdCOUNjOU51SHAxNEltOHBkWWE5Ukx3?oc=5",
+      "published": "04-Nov-2026 06:27 UTC",
+      "published_iso": "2026-11-04T06:27:00+00:00"
     },
     {
       "category": "Geopolitics",
-      "title": "\"23 Indians killed in West Asia conflict\": MEA flags casualties, including 5 in Black Sea shipping attacks",
-      "source": "Rising Kashmir",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPU2FieTNjemZEUkVJYkN0ODZLU24xcnZYamszQkZ0d3RBeU5EZU1mRUpiYzg4emd2Z1A2Y1B1NXMxeXRSa010bEg3TUJuY1BQdW1PU0tXbUE2NmZkMmUwWHRwdGdzYmNGdThzTkRaaGZsbGhJZm5qZDN1UmNEbXQ1YUZpTHFwaTE2b2I1MHBsalR4Z183NC10QnF0LWZpZmg2cU16UkVfSGtPd0lRZjJYSVBnYVlMQW1YLW85TzBUM3ZockVMeUZKbFVfOGJGVENKN3RPRjFTM2I3R0prRjV3RWgxTQ?oc=5",
-      "published": "03-Nov-2026 17:17 UTC",
-      "published_iso": "2026-11-03T17:17:02+00:00"
+      "title": "Human-elephant conflict: Assam to expand Gajmitra teams, expedite compensation",
+      "source": "The Assam Tribune",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdjQ4S0hFUl8zZ3NqczF2Umk5eTFiaXdZc01VVkZVU3dyZjBiNEpwcTJNUnFYSXlIQVBFX2RLREZEV01QcnJJbzZNVDZkTjhvOGdHWWJ6el9sUVI0V3BTWWhybjVZbUJwbVloOUVnMWk0bE1ETGVnRFlMMVBDRjRzN00tcHdNb3RwX3BKZkdLUk9qR00wTW9lUjRQVkpSZTN0dkZNdnc3NmxCSEJ4MTJfZi1hZTRzQdIBuwFBVV95cUxNbGhnZnpYUFpGX3pYZC1tQ3JVYTFPTmNLalhLZXZtbDE4UUJvenVzUmp4ZEN6NUtwZmVneGdwaTZoeW9sR2NOT25UVExxZml0UVRTMUctcnB3U0J1QXBldVNSNDFndWI1eEp5Ml9haFhUSmo1d3lIUmY3NGNCLWNTMzZOb0RQNHRYWERDMVV2bi1IakRaVFc0b3I4R1ktWTZPOFFxb1JaaHRZckdid2JpbFZxYzRqaEdRNjNV?oc=5",
+      "published": "04-Nov-2026 06:19 UTC",
+      "published_iso": "2026-11-04T06:19:16+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "ITC Share Price adds 2%. Lists on Top Nifty Performers Today",
+      "source": "India Infoline",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWnZvXzN1dmo3SVJmMjJnMTZRclpzREZ6SXNPbjdNODBEZWpUYnRiNTZGeUxwN2pDT1MxMzRBQkFGemFQbWZJcnI0UE1mZTJNUVRQcF9SQnV4UWJnZEwwSnRLSzZYSjEzdzFNcko2bklscXVSX0tyVXRqazM3OHhlQ2FNbkh2cW8xbVJWMW5sdnBjanh1LXFMNWViRUxPMTROanVlVTN3?oc=5",
+      "published": "04-Nov-2026 05:43 UTC",
+      "published_iso": "2026-11-04T05:43:53+00:00"
+    },
+    {
+      "category": "India",
+      "title": "Democrats Take Control Of US Congress. What It Means For India",
+      "source": "NDTV",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWWRQZlIxY2QzYWlKX25WRXJBVXhYN29LN1RhdS1Mb0UyZDYzaGQ2MkdJLUZKVGFKX1A4dTNaRXpPX0ZyWEdiZ0x1VFBrVFF2aVFfbGY4N2NFVkVsLUNHNlAxenkxdmxPRmhUTnBkeHYxRVRjOFMxUDNrOXFGLUpkY2QxaHhLb3FkUms1bFN1Q2VlUGxLX3M2YkNBVWlQSVBrZEhScdIBrAFBVV95cUxQWDIxZ0xQZ3ZEMkpPS2hzZ1I3Qmw4ZEd6VTVVaWFza1RZYmUtV2JhWDVaLUlSM1lzVTUzSW53T1VocUhRMEVMQTFhRVE5Z04tX2MzQzRPeG5zbmd5enZQVlA2ZWNmVGxpSk15Sy03Q2V2U1JvVXYyUzJjSGhOazhDMmNLU0hjRlNNR0NhUEdyN1daMWFqTzVZczlBenRNU1Z5ejBfemg4a1dxRE9J?oc=5",
+      "published": "04-Nov-2026 05:40 UTC",
+      "published_iso": "2026-11-04T05:40:03+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "What will Trump losing US midterm elections mean for Sensex, Nifty? Explained",
+      "source": "The Times of India",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOY0s1X3owX3I1VUZTR3JNejJaUjRqazNZeEFlNDhPcTdSR3hGLUxXVnh4QXhILXhYaTU1eHlDdlV4czhlTnhJZzNrMVlWc3BIa1BHOGNUcEYyWnRVTGlXbktDcS1zQU52d3ZLcG9VNGNiYXRKVUZURTAxOU43N1Z0b29HZUN2LUpva2xrVkpGQ29FRVNFQ2dWSHFuMXM1LUo2U192aGdMckxKZGc5aHZlSVpFRnk0cmpGU2R0OGlSbDV1b2ZNV18yd3dOandmUzM1RzJuYXdTTEpGeGZXTU5DaTNCSXdGdm9nbkhPcDNJd1c1S3fSAfgBQVVfeXFMTi1URjRQRzNOQXlfTk1kODZEd0kyN0R5TDl1VlYzNlJhWFNILXdLa19NdldzRW82M1RDcEZSWWkzSnloZUJOWV9uNGh1d29rU1g0a0szTVpwc0ZOamd6MUE3UXh2bHRQMlM2RDNjUU9aOXFZUEExT0JJamhsRVNUYWljTGk0TmJRdGFQVHFZQjNYWjZaRHotZDB4VVFMNXR1Zmlub2FEbTJHRWkwS3NjTFBBcllaY0NvdHZUV3QzRVFEWkdsd2JXVkZnSzlZaGNNQlFPVHVoUy1aN1ZTMUtQZnFWc3FZMXNsUE5ueXdLanRxWFp0RUhkVVg?oc=5",
+      "published": "04-Nov-2026 05:27 UTC",
+      "published_iso": "2026-11-04T05:27:00+00:00"
+    },
+    {
+      "category": "India",
+      "title": "India's EloElo nabs $80M from NBCUniversal to bet on the country's rising microdrama market",
+      "source": "TechCrunch",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZkphWFdFYmpCaVpyaEN0b3k0X3VVeVI0MHppWFRpMGc3TkswZHM5X0JZaHJwUW4wSXhCeXQ5TVFQX0tOazlHampJelhuZE0tMHYteEFTMTFHNlVmYmdva3Nta3g4RHE2YjVpdTlydXBjZ2FGMHBGWWk3d1F0SlFVb1Y1eEJPemltZ3MxZWhKSXZ2bW5hdHd2UGFiQVp1dUpYcHJ5UTdacC1MQkprVHJfRTRTdm9NX1J3RF9KM1BZMU02dw?oc=5",
+      "published": "04-Nov-2026 04:45 UTC",
+      "published_iso": "2026-11-04T04:45:00+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "India\u2019s Dollar Hedging Slumps as RBI Cracks Down on Speculation",
+      "source": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeUU3VXF5RmJGZGJhYkdsbTM3VTB2eUFaTFlENkZnRjB4N1pKTjdFc3NzNy0xRHBkOTh4VF91MUtoWG5PdGxwYTRKOEZpVGpoYThWRjNaRGM4Z3F0bW1KRE1XY1p5LVFITllnbVhRT3JCV1BWVlBORjlsUkFxSUF6YkY1YkhJd2N2SGFTbXZOX0RDbzZtSG5nOHhsemkxOFFqMENUVzA0QmJRSFpkaFExSkNUTE8?oc=5",
+      "published": "04-Nov-2026 04:16 UTC",
+      "published_iso": "2026-11-04T04:16:00+00:00"
     },
     {
       "category": "Geopolitics",
-      "title": "Gulf Economic Resilience: How GCC Weathered US-Iran Conflict",
-      "source": "World Economic Forum",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSi1jWWxETVlZT29ham5KaXFpU2ZlVk0yQjFHZlhkRHAyWUEwaUpVVGNSdEJOMHlGc0FJVEpvaTRWUFFxdjZQdkFmXzUtYmVWaTZBU3ZKMUtycjFhQkhmVEF0LTE2VjJBdjYzOXh3ekwtTXdKTkUwOEV5aGN1LTF0Zm9SelUtZmU5aEdRUC1rZkhPQ3RUVEpEM0JZMXhRdVFHZ0J1dGtCRXQ5Tmc?oc=5",
-      "published": "03-Nov-2026 17:15 UTC",
-      "published_iso": "2026-11-03T17:15:11+00:00"
+      "title": "Global Asset Managers Flag Geopolitics as Mounting Concern",
+      "source": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWUpqOGtocDRRb0o4RUpTbWV3ampqbWVmTER0cmNDRVAzd0RHNWpxaFpmZURhampwR2xtdURQYThBTGNycXU3NkZLUXZieVdJUmVIeTdjUmNNUHFOR3ZjbFhjVDFHcnhZOThtVmVOd0xSM1pvWVAyNG5SUjRXekJVa0s5dFkzY095UUVzZWdaOVFWZ3NONUN1YV9UbTBjYS1OVDR3NGw2RW42aEtSU1RjbDNPZDNuQQ?oc=5",
+      "published": "04-Nov-2026 03:39 UTC",
+      "published_iso": "2026-11-04T03:39:00+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "US Midterm Elections: 3 Scenarios That Could Decide Dalal Street's Fate",
+      "source": "NDTV",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNkdyY1pYMTAzM2ZtY1dLelRnYjFZdDBGejc3azBNLWxNLTZPeWVtbXp5NnZBTkRaNTFFVm1JdDBMQjZzbW1WTVNIYmJRNEZTSDZmaE94UHBpMmJFN1ZuYWVqTnByZUU2VlpNV2w2M0ZGRFdLTEFhRzlvQTFkRzIwNWFNMEdvb1hFVzNGdE41NDNBbUJMYzd4V3RZdmZlMWVEQWNETmlHcDdjSFIwWC1KTFh1Z2NvajZUcXB1R1ZRMmpMREZnUkc4SlNESdIB0wFBVV95cUxPdDZSaG5LZHNEMjZ2OWtqVHc0a05QVXVJZ3ZjakFkdndRMENrSWdqYjZudW5xdlJIanhPVjlTcFZvdjQ5M3BvVXZ3cmdDdHAwa3FZRWJkdGtzUC1OZGJYOHVPc2R2Zk1fVWEzNkNqT1hudkRGejF1OURtVmN0RVQzaDZ0S3VPZS1vTXBILUJyeGVBVEFFNkZtUDQ1LUFZZXR1anEwRWNEWTlxN0NmdDRFMkUzLS1tdUdpZUItX3J2SjRMa0dlWDluM2F6ME5SUFNmMTlB?oc=5",
+      "published": "04-Nov-2026 01:22 UTC",
+      "published_iso": "2026-11-04T01:22:30+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "India\u2019s Next Fiscal Consolidation Must Rest on Revenue",
+      "source": "Center for Global Development",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXJ5QkJ0dkdWbmUyWlcxRkFuUGR1VUZpWTNiay1FQ2k4aTBoZllfVW9wOXpNaWF0U195OGp5SlBBOGM0dlZHTXNoM0tOVWpLQ3diQ2ZFcGNNS2h3dU1PdDhUdVF0dkNwNkJFRWREWE9SdnBVbG1LXzlPMlByc1FDaktUaw?oc=5",
+      "published": "03-Nov-2026 21:39 UTC",
+      "published_iso": "2026-11-03T21:39:23+00:00"
+    },
+    {
+      "category": "Finance & Markets",
+      "title": "RBI set to announce repo rate decision amid geopolitical tensions",
+      "source": "DD News",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNTRHOVQyMkdXS1E4eG9mVEozXzZCdUZQWlJPSUpwMDJQT3RzbjdMVjJXUV9QZE9NMFRfdllGWlQ1NVZMZUlGTk9lX1dGeWtSYmd1NVFYUm5scjk4NFJRVGtxYlJZR3VPcXV3Y2xLODljeWdYajNJMko4SUh3dHRZOEs0NjFRcFo3RElBTDd5enBUZ21jblE?oc=5",
+      "published": "03-Nov-2026 19:14 UTC",
+      "published_iso": "2026-11-03T19:14:55+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "Why the global economy depends on Saudi Arabia",
+      "source": "DW.com",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcDFXQXlqVEFLZXB6VUR6MHNVaHB1TnJoRDFVeVQ4cVZleEhvRFNINUVHSFlHdTBvTFdCVTE3bnRkN0FVNEpNX2pabkk1eTE1bTQ4eWRpTVU5bU1rR3IxVjFROVdfRGtJN1VTMHlYQmpzOTZEQ0RRU3F1eVBndlpJdm5PRDI3Ti0tNnRV?oc=5",
+      "published": "03-Nov-2026 18:25 UTC",
+      "published_iso": "2026-11-03T18:25:50+00:00"
+    },
+    {
+      "category": "Economy",
+      "title": "ADB raises India\u2019s GDP growth forecast to 7pc on stronger-than-expected Q1 growth",
+      "source": "DD News",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSHMzaFlQRE9NZzRJTHU0VzZfWnpUU0JXcnAxeHZCRXlmRVlZemVkRThYT05vNVhhTUx6OGpNSnp4eGd0Z0syR05lclpPSWNyd2xGY1BIYnhEd3FoNTh5UDYwS21ZU1FtXzFETmd3dmFjT1JNVGlNeUotOF9NZGV1TlJNbU5yaEtJODQzMnBhd0hfTVlsTFpnUUlUZkRHQWc2dHduYWg3MWM0Zw?oc=5",
+      "published": "03-Nov-2026 18:19 UTC",
+      "published_iso": "2026-11-03T18:19:57+00:00"
     },
     {
       "category": "Geopolitics",
@@ -161,19 +369,11 @@
     },
     {
       "category": "Economy",
-      "title": "AI adoption could add up to $84 billion annually to India\u2019s GDP: Cognizant study",
-      "source": "The New Indian Express",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTDIzZE42a2EzQXlFVEFPU2hydThkelhNQ1FRNWFmdDV0eGNXZm02N2MxUTQyaXMwVUtPVFcyUzZ5aEcwR0Y5alBBMV8tUVFwYVdkSWR1b0ppZGQ0QzVYbl9rdXBvd3BRbUVLYzBFajc3NlhveDgtUTRJS05saWtDRkJBRjlwZHlJRHd3elk3Skw1Mi1tanVTeE81Ty1SS3FUbXlSbzVOcnhrWG9jNTAxWlpEQXZaTVpxRWpHcERKV3lzRjR6REVNeTdkONIB2AFBVV95cUxOLWVfMWdEeGM5WHowZUZkQUJuQy1kT0tBRkJwTUNqLUNDNFUtajdfOEVNY0ZydzJwbmh1YmlMS1RDTmc4T1hJVHRDNGRmN1FtRkt5NVIwWnVBMGFFZWZaT1lIdmdWRW5TTE43eU1RWWlPU0F2QU9iRndDc3JYZ1hTbGNjTjBLTm1YTldKeTNnUW9ndUh4VFJJcE1vb1NLclFnVmRGMS1GMTBUSzhkS25uQ0lLR0VoUDBhM0VUSjBnbXdCWGtlX2dWVlNXeExfOVQzWjM2MnNUUWY?oc=5",
-      "published": "03-Nov-2026 17:09 UTC",
-      "published_iso": "2026-11-03T17:09:46+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "India poised to become world\u2019s third-largest economy: Union Minister Athawale",
-      "source": "The Financial World",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNM0hmQWFNMzhYRlJpdXdhZ3QxVjJid2VDZTlId0JlZXUtSDNuc0pKUFRyQS1lckVqWElOMmZyNnVGVmUxeG13Nm5Bc3VxdjBvbF9GcXBFZXVlbTZEbUJaZkZjLThVeVZncUZXSE1LQUFMZ050MlRBMlQ1VVdFT19QMjdoTXRvZlZIZFBUOG1zX2xFcndjbC1DZzNUX25hTVRZWXE5VDRRbHBTcS1hUDRn?oc=5",
-      "published": "03-Nov-2026 16:15 UTC",
-      "published_iso": "2026-11-03T16:15:15+00:00"
+      "title": "Manufacturing Momentum:Building a Self-Reliant India",
+      "source": "\u092a\u0940\u0906\u0908\u092c\u0940",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvRmtvLV9MbC1nX2RudWdiZ2xQUnpCRmtTTU0xNkF2eV96Zi1kUUhkVjlrMWNGUkVKZzZXRUdEQjN0eGZRS3AxSm1BWC0tbnVHOXU2LUJDNlR1eDVpY1B0N09Ga01xUG9XSzVRejNpOHRvREdBS3c?oc=5",
+      "published": "03-Nov-2026 16:58 UTC",
+      "published_iso": "2026-11-03T16:58:44+00:00"
     },
     {
       "category": "Economy",
@@ -184,212 +384,12 @@
       "published_iso": "2026-11-03T16:02:16+00:00"
     },
     {
-      "category": "India",
-      "title": "Why India Cannot Rise With Weak State Capacity",
-      "source": "Time Magazine",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY3dkcmZXYzJRQVdveFZfME9zQVRRbmFYeXlQT0dXOFk1RzJyS2hKM3FObUIzSzBwa2lrazJhNGhxdXAwYjJ2MDFwQjQ1NXllNnJoUnZjM0lXRFVvVjBEeUVtOFhsM1IwaDZCSEVBOUtKN3R6RkpPMS1nbEd0Y0lZQjJxRzhBbENyd0E?oc=5",
-      "published": "03-Nov-2026 16:00 UTC",
-      "published_iso": "2026-11-03T16:00:00+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Religion as statecraft: What a decade of research reveals about the geopolitics of religious soft power",
-      "source": "Atlantic Council",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQblBrWG93T0ctaFBMOWdhUVk2NE44NmlyenBmUmFOR0ZfUjVRYk5tMlc5dXpoUk05OTVXYy16eWxYNVBpbEdhSFlEUzBJdmF3LTV5U0dtRE92WEJ1REdXNmtTYVBHeFVtSnB4R3dDMXpZVThPaGozOGUweHBFRTRhSEprZWhuWTdBenRHR0dXbWhaUWNHUXMtOWhkT0JuWVU3XzNVd1N4YVlUdGFkVmxFTU9uRU1Rb2dxcTV5M3U3T2k3TmNtUGFlV2Y4ejdlTlU4Wnk1WXNqVlBUWkdKcy03N1gwUzhkLWlNV2U2YUdBYm1xVVNiRHJUUjBGWnQ?oc=5",
-      "published": "03-Nov-2026 16:00 UTC",
-      "published_iso": "2026-11-03T16:00:00+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Climate diplomacy praises Indigenous knowledge but withholds power",
-      "source": "Lowy Institute",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOU0xKZWwwUHNvRF9rOGw5UGFKUWZrX0ZSSl8xNVYxYmZ1QjNxLXMtYnVrQ2NQbVIzRUhaYlplV3F6UTFMMVZ5RHVRMFJ2ZDI3a05lb3pCcUZreE9JYzJmSjJ3OEh4Y21YNmVNWXY0c3VXU196SFZfbUpLS1NYQWd6WWZXcFhaOXFNcmFDaWRoR0pGVnpoOHBHMlV2SkR1cXJqVTJmRmZvSUlrUGtwaEE1cDd3?oc=5",
-      "published": "03-Nov-2026 16:00 UTC",
-      "published_iso": "2026-11-03T16:00:00+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "UN recognizes ongoing restoration work inside Ethiopia\u2019s Desa\u2019a forest amid conflict - news",
-      "source": "Mongabay",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeUdqMW1lM3FJblFKVHNOZFQyQnp4MHZtSHNtTUREUzF0ZW82Y2RpWG9YYjNKS2JHcnZQMmRFZHVwUW1OLXd3Z1oya1BFUTI5aU4zVUhKWnBVdkJPblFyNXduS1MtbWZPcWszekNtZmw3dlNYc18yNUFOVnVRU09iVnp0Y0FQNlZjZWVJX09YdDhmeGR1aEpWUXU4Rko2NTM3S3hMSU51Rm5tVWxXSVRHcUJEMmZvM1dV0gG-AUFVX3lxTE1KZldsX2NmZzJ5YTVoS0Y0OGVwZ1ZNdDVaYW9KY1FNRlNoNVV1NDk5a0JCWmFsbUpQcWlxRTZwQXZ2SUhYa0ZrSWxjSThuRTRJbG5EeGR2RkJaSlVrT2F4VFVhakF3Z3gxbkQzX20wNDI0VVYtRS1XM3NQTDRiM3ZUSmFuYlpkXy1LTlBGSWJRX1E0MmpOTzJnZDBnOWpab0p0ZWcwV0tudXZFX05HYjkxSURUX0JtQU93T01YQkE?oc=5",
-      "published": "03-Nov-2026 15:40 UTC",
-      "published_iso": "2026-11-03T15:40:51+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "Mizoram aims to raise share in India\u2019s GDP to 1 pc by 2047: CM Lalduhoma",
-      "source": "ThePrint",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUDRERTRSQjctcUhtcVhwVjNfVzQyVFJDTUpCYzdvVFFBajk0MjBTQ1drRzdLLW10Z2c4QnVZWnJrU2daQ0FlQUt4N3R3X3BWYzk3Nmw3YjY1aEdMOF9iLUt6YzU1TG0wQVZnMXlscVBHaXlGTlEwM056MkZfSW5FdExlbGp3SFREUDVZRHZEdHRnb19TWV9tQ0pQeGFiVmRKaXNPa09WcUhVam1jdnfSAa4BQVVfeXFMTVA0REU0UkI3LXFIbXFYcFYzX1c0MlRSQ01KQmM3b1RRQWo5NDIwU0NXa0c3Sy1tdGdnOEJ1WVpya1NnWkNBZUFLeDd0d19wVmM5NzZsN2I2NWhHTDhfYi1LemM1NUxtMEFWZzF5bHFQR2l5Rk5RMDNOejJGX0luRXRMZWxqd0hURFA1WUR2RHR0Z29fU1lfbUNKUHhhYlZkSmlzT2tPVnFIVWptY3Z3?oc=5",
-      "published": "03-Nov-2026 14:49 UTC",
-      "published_iso": "2026-11-03T14:49:56+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "Sensex hits two-month high",
-      "source": "IndiaIPO",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lSk5KM3RqODMxUGw5U3QwMDQweUs0Vm9JRU9raHNLNHpsSEJPN2VpOTJSd1FKbnJUY3F2cDBwcjB3c2tFN0FfQzJzcE9OeUI1eVRwTkVKa2JkOGxESUdkZ2J3dFZxeVFnYzV3TmFkbw?oc=5",
-      "published": "03-Nov-2026 14:34 UTC",
-      "published_iso": "2026-11-03T14:34:06+00:00"
-    },
-    {
-      "category": "India",
-      "title": "Why Sri Lanka\u2019s recent blackout has lessons for India\u2019s rooftop solar push",
-      "source": "The Indian Express",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTHFLbVh3clRvY1FzTHdmYkhBc3VIeHhyZE4yN3NYYzBCY0ZHWG5NdWFoREp3WHFlX2RGVHFJSVdId3MwV0hxWk9fQl9lOVBUeks2MTEtNkZlR0hTbjdpRjRJV2ZOSEZRNjcyelZUanRmY2VhM3IwVFkyOFJhQUQ3N1NlejZXZlFqczQ4bnl3MU5BdWpyNmRUNjZxd183M0E2N0o5SldKNWw2YUh3ZVJSMVdzbDJULUlNZzF5LThnQ01QZVFlUUNMNUhIMUc0cTlf0gHXAUFVX3lxTE5RU19vUkNTOVhldVc5LXdQelFFRC13Y1RVb3dmNHJwSkhtbXJQTXRqNHlNR1E0TExuU2NOQXBkZVJod1NBalRNY3FvN0t1QUZ0Sko5c042RklJeEhuZHZPYVhCQVhzTk9xYTM2LVgyQkR4LVB5WXgwbFNVb0ptckR5YmtEZGptN1FNX2ZVUzBDVUEzNmJ6cExCeW5YeEJQcWJXd0QtLXh3cFFVcG9wUWNXaDlPV0NVc1RVN3E5eHFkbWhoQ3F0amRCaVhNZEhTdm9GdnZTSmdJ?oc=5",
-      "published": "03-Nov-2026 14:21 UTC",
-      "published_iso": "2026-11-03T14:21:00+00:00"
-    },
-    {
-      "category": "India",
-      "title": "Indian Sailor Killed In Drone Attack Off Coast Of Oman, 13 Rescued",
-      "source": "NDTV",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdV9KVlBORTZTbllxRkpON2k4bnlaay00eTRwWk9sT2I2VUtJUFNzNThDME5rcnlmeC1NYzB5S2hZZTZGRklSN1MzZF9LWEJ6TGxRdURkeE02X2tzSkwxZkVCUW5fZ1dlYk5xMU1RZ21JanNqUXNXWElaVy0zaEZEQ0J0aW5LbFRqZ2x1S3pTcnJvbUl4c01rSTZqY0l1QV9lYkoxRnpLUkJ5d9IBsgFBVV95cUxQMkZPUWExa3JwYi04MVZHLUY1TF9JN2tMbWVnaFk5dGhjYkNqdnJyZGUzMWNyWHlWSFk4ek51Z1BHdTlSLUVlM3FYRG1aS3VYcU9MMWhRbXdmWGZCbV9lVmxkbkR5eWt2TEppRE9MNndWWEN6RlVsRHhCRzlnQ0VIbjBXOGwzUndmcGFDTFVObWQtUl9aUW5lOXI3YXNfYV9Sa1UydnB4Q1NnSkducDF2ZVBR?oc=5",
-      "published": "03-Nov-2026 13:23 UTC",
-      "published_iso": "2026-11-03T13:23:15+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "The Pitfalls of Thailand\u2019s \u2018Bamboo Diplomacy\u2019",
-      "source": "The Diplomat \u2013 Asia-Pacific Current Affairs Magazine",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZ2JvVk53X3BpZWs4MzItOVhvUDRZbDF2ajZfanJxX0xrano5b2JEcVpUZ21HWkk5eUU0ZEF0WlQ1bllDUmpaUHlLRjJ2TjZRTjhielhBeFV6d0V6Mk50SzN4UnlkcDQtR0EwbklzSTJ3LW5IRmdhNEZoQjNpUEJMbg?oc=5",
-      "published": "03-Nov-2026 12:36 UTC",
-      "published_iso": "2026-11-03T12:36:44+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Asian Cup postponed due to 'exceptional circumstances' in host country Saudi Arabia",
-      "source": "DW.com",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNksxWU02TXRZUWpJWk8zVldEeG1xeUpaaEpRQ2dsQThsTmQ1bTV5ZWpIMlJqMDlFaU5TaWxOdnpNcVRoVEJHczJrQlF1X25vZC15d1VxSExvcmtZMzA1QlVpaFk2cUVrZG82U1ZFMkl3T0thNlVoX3JSVzdDYjhRUVhJUk5YN1HSAYcBQVVfeXFMTkN6NjZjSEgwZHZoVmVyYXRvdUx5dXY3LUNydi1yYUIwTVV1eGVyRWRfcjNLX3dGRFhlZXRrSWUyMkVYOXo0aGdVSjMyTkFFQ1JMbjV1bHRzTnRid25aQ1VFWW5fOUlQY2xfaUUzd0ViN0oxNjZGYmVCcGw1ckUwamlHdXZKS08w?oc=5",
-      "published": "03-Nov-2026 12:34 UTC",
-      "published_iso": "2026-11-03T12:34:46+00:00"
-    },
-    {
-      "category": "India",
-      "title": "Approval of India-made version of HIV-prevention shot raises hopes in low-income countries",
-      "source": "The Hindu",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQT2JzTUw4RVJlTGJhV3dOMWJCNGFmbjFkWm04X1ZhSE4wN3k4bjQtWllvM0VMMm9yd1hpSnhkb2FrZGFMRVE4bktjSVY0QTZRQy1xbGFPMDljWmtDUm1ZWEZVVEtnYl9CdTFrRGNabUV2amlHNGhIRnY4MnVjaTFKY1g2MTV1YzJMRnl4OVlvLTRKUkJsNXRkZV85ckpzOFhxNTJEYklDU3lNQWtQZWotaGR2UlF1bnhSUUJtWF9VUDFIOHRZYWY3OWplSzRWMjQ5NDlJenI1RS0tMkNIcG5xNzBLVGdOQQ?oc=5",
-      "published": "03-Nov-2026 12:03 UTC",
-      "published_iso": "2026-11-03T12:03:07+00:00"
-    },
-    {
-      "category": "India",
-      "title": "How India pulled 500 million people out of poverty as inequality deepens",
-      "source": "Al Jazeera",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkNzNW5uRmt6SFlmRVdWaUdMMEs2eG1aUWFnclBBbWxDX0w3UTBQaGVuS2hnbGlhTmZvbENUSUl2c0F3Q0dwMi0zbmRtTmV3bGR1TjRYNm5PTVpxQnZBdl9tWmFmcnhkNndHNjMya3ZHQ3dhUzNucTRaVk9YYVlHTFJtbmpVakp4RUhxTmpXSHNCNl9GY0I1VVptOW5pQ1JiQTZSOENZU2JPTnZyVTNhbThEONIBuAFBVV95cUxOTmNVWndRZ01oSU04WEpjb2Q5TFNaSlNMR09ZTFpRdl9aNTVuTlFXSXVlYWpUOHNwX1pMMmNXSVl0VW9aLVhtM3ZtYzM1T2h1ZnpIUkktNTdTUFFhTGJWc20teTZLOWpYRm5jYmxDcEpwYVFGSnk0MGRXdEFYNG40a2xTQzFUTnpXTERud3EzWHVhZXNnbnVUNFJ1NGhRWVhIQ1E0YzIxc2MzclRDMTN3NEpObzZLZmVZ?oc=5",
-      "published": "03-Nov-2026 11:36 UTC",
-      "published_iso": "2026-11-03T11:36:36+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "Sensex Nifty Today: Nifty ends the day at 23,810, Sensex trades past 76,900",
-      "source": "India Infoline",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTG9LQzQyMWVYbXZiVnNzTUNWci1qY2twcTE2MHZmY21zSUVlTFpsRzd3THNWbEdGWGluNG9jX3pqZ0U1NVZSYmZSU1VWaC0zb0NIOUx4SDJib3VUcXdPMmVFc3RzYmZTQTVsVk4zZ01NX0J2bXAzRlZsdDE5QnhWRHRMZU92bDZwVmNlYm1zOXdJOXphVjJtTXJDaVVGbEtmRHlOYUJtby1HYjVubHZaNTFEWGc?oc=5",
-      "published": "03-Nov-2026 11:17 UTC",
-      "published_iso": "2026-11-03T11:17:07+00:00"
-    },
-    {
-      "category": "India",
-      "title": "India's Defence Strength Powering National Security through Self-Reliance",
-      "source": "\u092a\u0940\u0906\u0908\u092c\u0940",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9pSFAtcXlILUJRaHdoSUwtVloydmVja21qQ3FlYVgzV3lrWHNYMjhYcjFtcEg0VTJRS3ZnTkt0c0g2cnRmTS1BR09RWWdOTTJ4dWs4ZHJfU0JtMnVJS0kyb0tuVVplRUNLc3Z6MUh1TXFCWTJ2dTNV?oc=5",
-      "published": "03-Nov-2026 10:52 UTC",
-      "published_iso": "2026-11-03T10:52:19+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "India stocks higher at close of trade; Nifty 50 up 1.58%",
-      "source": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMlhtYy1VOVhmRkVhN09iWmJ0RGVXZERqdlVJTndHcmpqQ2RINk1GbFdUYmF2MUlQU29pWjlmQkg5OUZlS2JyQTJCUno0cDNyU3YyVzBDQVNOZjJtME15YzZIT2g0M29yM2J3XzZxU09LTF8wOU85QmVjeDdGRVJleVNTYzEwNkp6YVVSY1VielE5U25xWXJRNUxJS2xCUUkxYjRUMk4yODc1dWwxVHZz?oc=5",
-      "published": "03-Nov-2026 10:46 UTC",
-      "published_iso": "2026-11-03T10:46:07+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "RBI, Ahmedabad Regional Office, convened the Second High-Level Review Meeting on Financial Inclusion and Economic Development in Dang district at Saputara",
-      "source": "\u092a\u0940\u0906\u0908\u092c\u0940",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UTUJfVU9KT0dHdlMxeGt6OTBaUGI0T0d5aXVGSUEwam5ZODcwVG10cjdSTVVZakJYY3V2dzJ1cnJ6RXkxb1ZONGNmR082ZkxveDJPN2xVNV9WcEwxUFhtNXZfQQ?oc=5",
-      "published": "03-Nov-2026 09:56 UTC",
-      "published_iso": "2026-11-03T09:56:00+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "Stock market today: BSE Sensex rises over 1,000 points, Nifty50 crosses 23,700; top 5 reasons for rally",
-      "source": "The Times of India",
-      "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOTHZOOFZKZXdIUTBNOFVFUXo3U0xyRktmN2NWNWZISk5JcF9FWVA3TFNDcFNHWWVQZGpEQmY3V2ZHYU4xQUc1TTlwaUh1dDFPcEdqTGVBTWpCRFpJRUIzN2hOY1o1bEJaZjI1OU9XODEycWJxY2FMLTFjU1RWMlk3cVN3b2pGekJRTmtFeFR5YkxQNGNFS21Ka0pvenVNRVp0ZGI4VFYyZVZLYzNHQkR4ajlLbllraGVhVkhGTEdvbjZ1WGRScEloM3lWQWotbnFfNkh0LS1qUHhIWXJNS2ZUcFNGYTBKcUtkc1I2ZDR4UEhxWTNkOHlDazFsZGVQMlhFMElqUG84X0toVEdjWTFOMjJ3bWxmaE11bF8zNWJRTEFpc2hjUmxNSkpQWDRjOHRFN3d5d1RR0gG7AkFVX3lxTE9QZ0dJNzdkYjI1WlFLcV8yT1NBNjRhdDRHUzhnZVVjMFZrdktFc3lRak5oNHRiT0FtTkJNelhsbWduWGhVSUt0eE9kdTZuTEV4ekUxSW15RmdueGpHcHVLSVFNR2Q3dExfdV9pNm9XcXJwNFZUTXVBa0xSZ0Zod1VURm9Tck1CZjdRcEFYUWVUSVJvbjlDV09YUmJDTXY4RklMMmZyR3l3d2JCRTNZcE9meU1HdU1JUS04c0puNnFsdWhlaVpBSHFjVjd6MXFWbldHcVJjV29QQ1ZsUGhqYTdBZFB3VjBYUUE2cWpUS2pBR1VCcEpEYU5KS3lvcTNsTjQtaE1DbnZiOC1YNHBQV0xZaVdaUGVaRjZBdlJNVVNlUU9pcEdtbDZ3OVY5SjBnaWFLZzdIYjVJWnpIOA?oc=5",
-      "published": "03-Nov-2026 08:07 UTC",
-      "published_iso": "2026-11-03T08:07:00+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "India is the fastest-growing economy and the fastest poverty reducer: PM Modi at Pune metro launch",
-      "source": "NarendraModi.in",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQZGhsTGFKS1NSOU5PU3NkeTBnaVFQNUxvbkpSTUtoZmVkTDBLdjdqSXBVelhpQURRejIwazZkWW9IQWtqYUVzWUkwT0FZNkdfcnB3Mjd1ckVDbzNvdWZFcEFxb1FhVjVyVm9kLVBxYTFoZ3RRYlEteVRBM2lNeTlPNjh1RzVRc0ZPZUJpbnM1b0p0OTl6REZGOHFBN1ZnbGNKUll2QXJVZmRHcGI0X0ZiYnExeUN0bzk2VjlISnY3b3hFRzZzcXpiOHRaWmQzMEVyZWs5UkJxeFBwSnB4ZzdUWmNsTF9Hek92N2tDckd2YTk0Rzl2S0c5TWp0blVOYXFvU3RBX1Z3?oc=5",
-      "published": "03-Nov-2026 07:40 UTC",
-      "published_iso": "2026-11-03T07:40:00+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "AI driven productivity could expand India\u2019s GDP: Cognizant",
-      "source": "BusinessLine",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTW9melNFSm1McmZlV2hnVFRFVnQwTTZ5X0V1YzJ1WV9lNEJSVFJXWFhjMU9EVjlYMS0tTjdvZXZTeHk3RTdKam1KTnBHaEh6SGNvcXg1SEJpQzYxdFEtdlhNS0UxVklZaVpSaExDYml0Q2JhNU9qc29lTFF2dnRYalV1MnlXSUNnekRZWnFoR3VYSkU4Y0ZaRVZrUTlWbDZHUlE4ckdseVN4YmQ0YTNtdm5ocUROS1ZPbXVJN3o0MlPSAccBQVVfeXFMTlBpZ21vQktWNlZKYUh3RmFQaExpcXB2a3FwUXQ2a0l5Ti1VTVItREhJS2tmOHh4NjJDVWxBc2dfOVFHV0JHeDVRRmduZnFPMlNYc25aX1BYWEJWeXF2Rzd4NnFOR2xwQ2E0eTdIZVZuYTl5MXV2aTFPNEZQUFJNbGNpc002b0JySzBEMDh5eVE5YWNOYkRKbzFuWGtvc1FFVkRxemtncTN2Tm9JdktCem5qT3V4X1M3WlFQUVpDZjJJUUZvVXZyTQ?oc=5",
-      "published": "03-Nov-2026 07:30 UTC",
-      "published_iso": "2026-11-03T07:30:06+00:00"
-    },
-    {
-      "category": "India",
-      "title": "India, New Zealand switch to World Cup prep at bouncy Eden Park",
-      "source": "Cricinfo",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNDBIVlJKRUVONHlUMjJ4UTRfZXhFd2FqRG1lQlZvd3pBUHROdzVPUUVFMU5vMEh6SkhudFFJLUQwV2c4a0RERHBBVFVsMGhoZ0JlcEpuOHUtVXhhRXFOVFc3UkxITFNpLW9IZTU2LU5abkw5MVBwNV95MDZfQkY3MkxJZ2dtYVl5VV81MVk4LTV4c2tsek5Xem1lR2lsdnFSa3ZlX2g3VjdHcDhoSzBsbC1pNERsSWJpYTI4?oc=5",
-      "published": "03-Nov-2026 07:19 UTC",
-      "published_iso": "2026-11-03T07:19:00+00:00"
-    },
-    {
       "category": "Economy",
       "title": "From grains to chicken and milk, India faces prolonged food inflation",
       "source": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORWNMZUNRMk9yWkZHQTk3Z09uRTRzWVNPMTFVTTBpZjRVNWlqUm5CeFU1ajhvbTlMb2M5Z2lsdFpkNWdvOS1ZS3NvOFRfMl9lYlV6b1I2cjY2WG1iZUtYb09VWTJrUlFLeWhmMnphcDlJQzE1ZHUtZkxsWk5USUZpbHp2NjVwUTUzcV94LTJvejhTQXVoTW44WWI2bFE2NzdBSHBvd3ZQNA?oc=5",
       "published": "03-Nov-2026 06:33 UTC",
       "published_iso": "2026-11-03T06:33:00+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "After 22 years, RBI reopens UCB licensing: can new audit rules ensure a safer banking sector? | Explained",
-      "source": "The Hindu",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNVnppYTVWQ24xZlNtS2JCUWk0dnB5X2lfWDMzenFSZVc1YTlRa2NLTkpYYlgxZU5pNHZLM0plcEtnbnVFLThnaEpXNHRoTXZtS2ZSNXF4MVRvd1JVcE55Q0NOTVdGTDN2TnVseU9wOG1EejRlTjJzTzBiblctanhuTDBVVHlnM0FPb01Jb280ZWxpVG9weVJHN19pNDNDY1RRajFyVk5oMHpVTGRQZ3hpbWxObWI4eXcteVZDZ0R0Z19ZWlNtV1pEQjNnUXAtNk5YWkdXdjBObTE3eVVvaTZHTV9hTWdWTGllN1RGZm5RV21jTjY00gH7AUFVX3lxTFBubGtZVGFVZTk2LWFmV2t5QXdpSGZTeG12RnB2MFJzeW9xTDFQUnYtM3FhbVZPZktuTHEwMlRCRS1PQ1ZIdEtKdXJnYlJYc0dQcGJvVTJ1NXJIcTVWOUluSU4zcDdqRTVDSXNVak9jd2ZnOTl5TGpIcmxueW5iYzNydHRUZ093NVRKYU90SzhSd0ZZOVpwa05OU0tNSnFvU1pndDRKRldLWWNEN0NiVVJYZk9uc3ZjSGJWY0RoOWhqRzhOcExUV3FuaW81eFByd05GelhHX0gzUFY2ZU1xS1FOQS1rXzhFMW1pSnJ1bnpENEg5U2VFX1dSd2gw?oc=5",
-      "published": "03-Nov-2026 06:29 UTC",
-      "published_iso": "2026-11-03T06:29:12+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "India VIX Rises 2.58% Even as Nifty, Sensex Extend Rally",
-      "source": "HDFC Sky",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSXV5WmdacXZBd3U1b3d3SUhqcXhZNWl3QmFRejZVQ05DdlRBRnNlZnY5VlRXQ0Nzaml6NTcxZHV1U2dKLVBwNG5mREFqTzh6SkZKbGRNcEw4UmFvNklGNjM1UDlVNXltZFJJZXdUR0ktbzRyNVQzZ280SXlxcGluUkpzeHZIc1R3Z0JsbXBfbEFLMldCaWd6WDdUYlVWNlVDaXl2R3hMdHRMcmx0?oc=5",
-      "published": "03-Nov-2026 04:51 UTC",
-      "published_iso": "2026-11-03T04:51:10+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "Sensex up 1,000 points: Why stock market is rising for the second straight day",
-      "source": "India Today",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWlctR0hSejBNb25hWG51MU44Sm5iaEZUM2NCcFl1aFZSSDg1Sm1TZlpYLUNBUW52Y3N3LV85S1F1MkRVX25oOFJXYVM4U2VfQmhjVTlLbE5OdU40MTRBSzJNRW92SlJ6cXk5cWIyNk1sa0lwckp0VmpBZWRVZXZtTW05bEoxV0hVY2JzLXh5RFhTLVpEMTVoMVlTcjJzZzRvZS1NLVpfdGJvbGdkUGpEekpVaHJEdWx4bXN6U2xRV1FYbUQ4clljMDVXM1hQNHNTdFFaRHhlVU5RNmdjeDhhZG03bHN0R3p2Nk53UWZHY0hWd9IB9wFBVV95cUxOaFhhVC1rNzRCakhkaHdsTHU3eThEMUVJTFRXV1hBSDRYaExCa0xvYXQxdi1JSlk3R0hHejFiSk4wVHpMd2NLQkdvS2JqenZTdFEtZ3lJeTEyRFdVT2twS3VUMG9EZ0J4YTZncmVldWtEOGRRbE5veFNES3RJQXllMF9SQ0lyalNydkFERjBBMUdGX0J6MTl3cnZFbzBzeEUxRHlQNVA0RUdvSkRubExBbkVVbTdkNXA2QzFXTzhGT19HbDNfeGxDZ0tPc240UDBFVFV1TFBlcmFsT29SMU5qdzgyNmJuY1FGb0E2MXUzb1ZOSktkWl9F?oc=5",
-      "published": "03-Nov-2026 04:17 UTC",
-      "published_iso": "2026-11-03T04:17:10+00:00"
-    },
-    {
-      "category": "Economy",
-      "title": "India will become the world\u2019s largest economy by end of the century, predicts top economist Jeffrey D Sach",
-      "source": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOMlhpczJWLVBwdUtRZzJENEs0RkpoMG1TNWVmR0NIMFN0RHQ3UkRSVEdJeXFtbmtiS1JLamRSTHlPSk5KRmhtOFFOYTZCVGJUUTZTYXg2T29lcnRHa2lZX1VYOWp4Z3U0c2ZzaHczbXY3UjZIdWRGZU94V0R0V19McFFxT2VOcmVEa1JpdndDRzlvaV96dTVlSTVXNlUwYXlFZmdocmtKTGxtNnRjT2ktNl9LRVJieWl6OGROdkkwUWJCOWdUbUdpV2RQMldBMl9XTFoydEF6ZmZUZ3RvNFk5R01PcFJobGtCeXBqaWphTXhUcWRKdGVaa3A5OG1XZlJRdjFFRm9kYl9sQjNZbmp5NdIBlgJBVV95cUxPWjVfbkJTWjI2cUpnc1JyQ29teVhNRnZEY3duVlpUcmFwY0J3UGVCdUpaZm9Da3BIOXpWNGN4WFdhZ2JTdjJJVHFrWVFIRHkxZERId25YaFA0Nm1BMmdNYUxLaDQ2NHFpcjRncWJBX3VQVVM5WDZCbW12UXFGaWVBeUNFUE1BRFNYWXllQzVCR3A3a2R3RkVzUE5RUThKODUyeGYzV1JpUEhwMEhYRWlhS2h3SzcwTVJ0SHpQbmxZV3pyM2prLWNlbEowaW1kRDU4Wk91SU1iYkVSNEJSZmR6SDEtWWhoOUtQUngtZXJkQWZGM25VaG4yVXN6Z3AxZkxFZHh4Wnd1UWdkUWZxdXVCZTRLZGh6UQ?oc=5",
-      "published": "03-Nov-2026 03:36 UTC",
-      "published_iso": "2026-11-03T03:36:13+00:00"
-    },
-    {
-      "category": "Finance & Markets",
-      "title": "Reliance earnings, lower oil prices power India's Sensex to near two-month high",
-      "source": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRV9nWF8tcV9tRkNYTENXRnRyTDhkcnRoZEJmMFJ1Wm1USDJwbDNxcEFuU0xNbE9JSnRJb2xScTBmWWVpZWJ5SmlhXzdBajNuSDhnOWdULWQ4UUZ2T3RRdjhpNWxZb08tcEQxR01tdks4dkhLTUN1WjJiZVFSa1JCbHBRdGVsZVZqNzFoQ2ZDdF9zbE9MeUlvRHhzZGRRM05SeGxlaFB1MFZjWVB3TVZjbTBfUlprRTZ2eTA3bFBFQVpLdw?oc=5",
-      "published": "02-Nov-2026 02:42 UTC",
-      "published_iso": "2026-11-02T02:42:00+00:00"
     }
   ]
 }
