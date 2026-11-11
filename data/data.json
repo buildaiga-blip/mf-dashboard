@@ -1,5 +1,5 @@
 {
-  "updated": "10-Nov-2026 20:02",
+  "updated": "11-Nov-2026 19:55",
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
     {
@@ -9,7 +9,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 7.65,
+      "avg": 7.64,
       "funds": [
         {
           "schemeCode": 120186,
@@ -26,14 +26,14 @@
         {
           "schemeCode": 118870,
           "fund": "Taurus Large Cap Fund - Direct Plan - Growth",
-          "1M": 8.86,
-          "3M": 7.06,
-          "6M": 16.82,
-          "1Y": 12.71,
-          "3Y": 16.24,
-          "5Y": 11.37,
-          "nav": 191.96,
-          "nav_date": "09-Nov-2026"
+          "1M": 10.19,
+          "3M": 8.41,
+          "6M": 19.22,
+          "1Y": 12.66,
+          "3Y": 16.46,
+          "5Y": 11.42,
+          "nav": 193.07,
+          "nav_date": "11-Nov-2026"
         },
         {
           "schemeCode": 120392,
@@ -664,7 +664,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 10.28,
+      "avg": 10.37,
       "funds": [
         {
           "schemeCode": 151379,
@@ -691,6 +691,18 @@
           "nav_date": "09-Nov-2026"
         },
         {
+          "schemeCode": 118883,
+          "fund": "Taurus Flexi Cap Fund - Direct Plan - Growth",
+          "1M": 6.96,
+          "3M": 6.84,
+          "6M": 17.08,
+          "1Y": 11.36,
+          "3Y": 13.55,
+          "5Y": 10.33,
+          "nav": 263.92,
+          "nav_date": "11-Nov-2026"
+        },
+        {
           "schemeCode": 152584,
           "fund": "TRUSTMF Flexi Cap Fund - Direct Plan - Growth",
           "1M": 5.03,
@@ -700,18 +712,6 @@
           "3Y": null,
           "5Y": null,
           "nav": 13.15,
-          "nav_date": "09-Nov-2026"
-        },
-        {
-          "schemeCode": 118883,
-          "fund": "Taurus Flexi Cap Fund - Direct Plan - Growth",
-          "1M": 5.49,
-          "3M": 5.19,
-          "6M": 14.01,
-          "1Y": 10.45,
-          "3Y": 13.29,
-          "5Y": 10.24,
-          "nav": 262.06,
           "nav_date": "09-Nov-2026"
         },
         {
