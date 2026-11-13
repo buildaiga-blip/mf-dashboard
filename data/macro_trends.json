@@ -1,46 +1,46 @@
 {
-  "updated": "12-Nov-2026 15:46",
+  "updated": "13-Nov-2026 15:07",
   "current_policy_rates": {
     "bank_rate": {
       "label": "Bank Rate",
       "value": 5.75,
-      "as_of": "2026-11-12",
+      "as_of": "2026-11-13",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "msf_rate": {
       "label": "Marginal Standing Facility (MSF) Rate",
       "value": 5.75,
-      "as_of": "2026-11-12",
+      "as_of": "2026-11-13",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "repo_rate": {
       "label": "Repo Rate",
       "value": 5.5,
-      "as_of": "2026-11-12",
+      "as_of": "2026-11-13",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "reverse_repo_rate": {
       "label": "Reverse Repo Rate",
       "value": 3.35,
-      "as_of": "2026-11-12",
+      "as_of": "2026-11-13",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     },
     "sdf_rate": {
       "label": "Standing Deposit Facility (SDF) Rate",
       "value": 5.25,
-      "as_of": "2026-11-12",
+      "as_of": "2026-11-13",
       "source_title": "RBI homepage 'Current Rates' panel (rbi.org.in)",
       "link": "https://www.rbi.org.in/home.aspx"
     }
   },
   "market_pulse": {
-    "sensex": 81879.4,
-    "nifty": 25255.05,
-    "as_of": "2026-11-12",
+    "sensex": 81911.01,
+    "nifty": 25299.35,
+    "as_of": "2026-11-13",
     "source": "RBI homepage (rbi.org.in)"
   },
   "indicators": {
@@ -5284,9 +5284,13 @@
         {
           "date": "2026-11-05",
           "value": 94.3996
+        },
+        {
+          "date": "2026-11-06",
+          "value": 94.1402
         }
       ],
-      "as_of": "2026-11-05"
+      "as_of": "2026-11-06"
     },
     "repo_rate": {
       "label": "RBI Repo Rate (from official RBI announcements)",
@@ -5667,9 +5671,14 @@
           "date": "2026-11-12",
           "value": 5.5,
           "note": "RBI homepage 'Current Rates' panel (rbi.org.in)"
+        },
+        {
+          "date": "2026-11-13",
+          "value": 5.5,
+          "note": "RBI homepage 'Current Rates' panel (rbi.org.in)"
         }
       ],
-      "as_of": "2026-11-12"
+      "as_of": "2026-11-13"
     },
     "wpi_yoy": {
       "label": "WPI (All Commodities Index)",
