@@ -1,107 +1,10 @@
 {
-  "updated": "19-Nov-2026 12:31",
+  "updated": "19-Nov-2026 22:55",
   "categories": [
     "India",
     "Finance & Markets",
     "Geopolitics",
     "Economy"
   ],
-  "items": [
-    {
-      "category": "Geopolitics",
-      "title": "Trump Leaves Iran Conflict\u2019s Future Uncertain, Signals Possible Shift After January 1",
-      "source": "Modern Diplomacy",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGxlUWZCSWlqNTYxaGxVQlU3ekNjS045d1lOcEpqMFRmYTU5SWlMcjZsbXl0aF94bjRGNGozekxDTmY5OUd1MF9GblJ1cmF0dnhSNmtDTWdZNnVpeUMtSTZjSThMeTdBWUtVU3ExaWR5WDJqeDhpaWVUUTBueDFaU2Ffb0NBRzA5a1ItOU9RRmg0ZE5QbEgySXBEa3Vtc3VIa3dyN1ZPUDVuMkh2UHdTaFlsVlJDM3NBYnJXbjlHTQ?oc=5",
-      "published": "19-Nov-2026 12:19 UTC",
-      "published_iso": "2026-11-19T12:19:24+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Oil futures: Crude steadies at lower levels, US-Iran diplomacy eyed",
-      "source": "Quantum Commodity Intelligence",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORDBKYXowTUZjUVZTMjFUbmFwUno5RU5xZWZmMUR2SHVhS1Q4Zi1UeXNLcW9TTjNDUS1tb3dlbTAzb09PdHN1WGoyalJyWkZKSDZPUHpBN1FnTlhhd0QzaDBZcFVaY2JqY1JxZjI5SkVQS3A3TFBFTk5LcG5MTWtMUm82RUVRaTF5cjZTSGVONzdqeFNmc2xNcUQ2SFNiRDFhZXBDT3dXWWRpTEJG?oc=5",
-      "published": "19-Nov-2026 11:04 UTC",
-      "published_iso": "2026-11-19T11:04:51+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Diplomacy, humour and avoidance \u2013 what we found when we investigated friendships across class divides",
-      "source": "The Conversation",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVVZkTTlfd2ZSOG9RNV90dzNkM3ZMYjhyMUt6b202UFdxR2hQMHZWTzF2Y092YnltWEc2aXkwTkhFNXF0UlV5Z3pydVBWUEk0QUQxNFdiemVVS3VYVzQ5M3hmTkZ4VGtTME50V29FWjU4d2pjQkJwUktoRGpQeFpBa2UxZ3BiV2w2UU5pT2p5U083OHhrZjNJUHoyR2FobmxiUDBNY0x5NnJQLXZwMmlzVDZ1a2VkR2ZyTllzNzRwTk5jdmttY3VIYlpTcXdrUQ?oc=5",
-      "published": "19-Nov-2026 10:28 UTC",
-      "published_iso": "2026-11-19T10:28:39+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Can the EU close Russia\u2019s sanctions loopholes?",
-      "source": "PubAffairs Bruxelles",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdEJkLXFBOXBmQjNKS0oxUk8tNGFRb3g5Rlk4TS1sY2FLeVYyWExFVE5teTF4VlNmQUR4TEdvaVRjWkI0bFpWTGVlLVJQMG5iYjgxd1N1NDRIVHdnejI4RGlscEJHT3VNSTJxZUdBQ25HbnlJcXIwcVduMEFkYjNMa0p5NFNHcWlwb19oOFhBR1FqbWk0dHphcXpvMC0?oc=5",
-      "published": "19-Nov-2026 10:26 UTC",
-      "published_iso": "2026-11-19T10:26:00+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Trump Says 'No Nukes for Iran' at Meet with Xi-Putin, Optimistic on Solution to Russia-Ukraine War",
-      "source": "Open Magazine",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRG10U3AtNUNGTE9majdVV0N0MWZxZ3RJajRHdFZQRlV3ajk4QnFWWHJlQUpkbXU3Uk5VS1dYZkFVdm1USHBPa3NNdFdjaGR5Y2daaW8tX1FQSWJpdm02MDI3azRpd256RmlJWG9VQWtqdWU5LUdzY3lWeGozU0dxa3BxSGpFZXJZOGs2TDhjNXJ1bkllSDhpZElBNmRjQlotcnFIcWZMZWFObExLcnFDSjF6clVEUXRMdGI2Mm5zRmJEamRCTXZOaw?oc=5",
-      "published": "19-Nov-2026 10:05 UTC",
-      "published_iso": "2026-11-19T10:05:56+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Europe tightens sanctions on Russia. America loosens them",
-      "source": "The Economist",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5",
-      "published": "19-Nov-2026 10:03 UTC",
-      "published_iso": "2026-11-19T10:03:23+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "IRDAI flags conflict in banks, auto dealers selling insurance",
-      "source": "The Times of India",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYXhFazdFZFJZSHJxN2VuZ2ZOeVlPYTBRaDQxRGQ4Mm9XYmM0bnF1U1o3dllrRzBoakRCaS1lTkRKUTMtWWJkNDZXellQTTIzSUIwMktQWFZLZDd4UUlXY3NCNGpZdVZ3WnJaYlhHV0U1MnNNTHNRdkcxUDB6aWJ0S0ZFN1NDTjdmNm9Cbkg3N0xEeC10NUdwdVlYa1ZONzZ1Nko3MGRMY0FGR2xkTm9meGdZcVRzWEdmaG1kdzFhSEJHNW5aU1JlLTRZS3o1UXNQRDlGMUg0VWlGOFZzMmlF0gHkAUFVX3lxTE4yenRNbklPR01mSG9qX2hqQjJ6dkZnVy02SU1XUmZ1ajNYVnFjMktxQjJ5NWZSeGpyYnNuVjk3cEhLOWJCR3JSbW03RnlXTDRGczQ1SGdLQjZVZm9EVjB4aDdkb2xpMm5kU2I2OEZTVXhLT1YwcHk0ZmtJdDlHT0ZyenBxVDAxd0dZNl9WMU16d0szWHpUc3BUbm5YRUgyZ1JqVWZYNlZ5VnNpUWVNNTZJbUNjdnF3aHcwT2JHYXJMRE1TZE5MVW1SUU5tWGItMWUzcGxzQkFSVGhpbEt6dVpZMDg0aw?oc=5",
-      "published": "19-Nov-2026 08:35 UTC",
-      "published_iso": "2026-11-19T08:35:00+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Gaza Syndrome: Why Israeli soldiers\u2019 trauma erases Palestinian victims",
-      "source": "Al Jazeera",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQm8tY2VXbVFuOVhOU0pKX2c2bDd2TzNzUGpfLVFjX1haT0ZuWWU5OG5hb3V1anhtMmM1cFNYdUZ1b2RXUTZXaFJIOW1VYl9zbXJSSmdrS2FmTnNlckQ4dkR4bjViVFd5dGRoYnBTSm9oVW9IWlJhaWtMODJiaTFoWWtPMEc1V2ZXSDBzRHRtcF9PSWh1Qmk1THlKMTN2TWU2Y2p1VjhSUjJoMHVVYXVtZFIyN1fSAboBQVVfeXFMTjRlUUszVFBoTFRlcXc3OXpfdHQ2NEdyS0RPc1BFWmJNQjNPUGtXeVdOVEpsQXRzUVYyWVhfUE5DODR6dGdUb0R6Z1pVSUYyOFpDRnpkV2l0OVhSOWNpVVVvMkY4WFhURk9ITjNPOG5kNC12VHNQOGZrSDBocEgyQXlySkROZHYtS2ZWQmFkLXdtTTNyR2NreXBic3R4WkJYS3VrSmVyWFJmQTdwWlNaTUZsZGxxSC1XeGNB?oc=5",
-      "published": "19-Nov-2026 07:55 UTC",
-      "published_iso": "2026-11-19T07:55:10+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "A record high of nearly one in four children now live in conflict zones - Save the Children report",
-      "source": "Save the Children",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMnl5YTRxclNkUGc2amdCZkhoeG5WSFNpWmdRcjQ3aUlDbXo1ekxnYl9xaFoxSVBBSHMtUm5aOWFsUXJ2bEFSQ2pacVpLckxNRWJDbVNoSnlOdFp3MjdNR0FKUk41MUZNc2VhMHUwV1dLa0lDQUFRVU5MMWJsWi1rd19seEFtRldGNDlXdjIzZFg2RzhEcE9WQmZYSVdpNHpWUk0tNF9kWHQzdE9Ld2daM3JFdGhkX2pkN0E?oc=5",
-      "published": "19-Nov-2026 07:22 UTC",
-      "published_iso": "2026-11-19T07:22:53+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Trilateral summit in Shenzhen focuses on international order and diplomacy - India Today",
-      "source": "India Today",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV2NNaHN1LWt1a0R3SU5sY1c4eXEwYWloaXRDVHhObzNtcm9JaVhDZ0dhUDRDM3JmM0RzT2x2NFBmeEZtOXVPb1RqRkJINnlsWWJpMTFLX3plb011Mm1lb0tvNU9hRVV1dmZON0haLW56U2cycWZKUlNaQ1gxMWtPdmlaWXhla3ZjV3FjUkF6UEc4OGNhSUg5ZVRHV3gzd0JrRFBJQy1qQmw4R3VwTGw5TVkxYjhRRl9KSUU3WVF3WVFhaDFRSC10WNIBzgFBVV95cUxNODB6WHZuR1ktV3dqREtmX3FfZjN5ZTBrd2dDcGs1RmlEQlhMTDNubUxWcUlDRUVvN1BaZ2hudzhfRGRXMGNaWk9fdGZDc21FSG4wX1ZQRzNfUmFRYXVZYzNydXg2TUlud1lYU0ZkbWVpYWhQWGdENVRyZTM3MnBMM2RXdUJNYWlfWms1c2UyejI0dDNFZWZObTlRRk03T1V5NmV2d3QzZTRmWmU0YWFxbGYtV1lyRVJJUFVVU2ltLXBmcVN4cHRLeU93NmlhZw?oc=5",
-      "published": "19-Nov-2026 07:09 UTC",
-      "published_iso": "2026-11-19T07:09:15+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "More children than ever live in conflict zones",
-      "source": "Peace Research Institute Oslo (PRIO)",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9iSU9acTMyS1JCbFdKc2dRU0hEMk1Bc19EdThPM2VUUDBnMTNneUxfQ1FuR3Naem1xNzVCYmhwaGV2M1dIX1htbFp3?oc=5",
-      "published": "19-Nov-2026 05:08 UTC",
-      "published_iso": "2026-11-19T05:08:22+00:00"
-    },
-    {
-      "category": "Geopolitics",
-      "title": "Test of Russia\u2019s Mediation Diplomacy in the Horn of Africa",
-      "source": "orfonline.org",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPY1FlSE9XQlhVcVBraUxuTDNLTnF4MkJXSTVFY2thMC1QQ0otNm5yVUNCZW9yazNiRHlvZ3AxRWhaRXM3RlY2UXNFeEMwVjViRnhtWGZrNXJzZ1c4eW5SZkdTcm1mYjF4YWNlTHQ1UVpOQnY3MDBLZXUteW5Yc0k5bFhEY0hmYVJXQTZoN3NmeDI1RTdjbW5BUzJFRERkdw?oc=5",
-      "published": "19-Nov-2026 04:31 UTC",
-      "published_iso": "2026-11-19T04:31:19+00:00"
-    }
-  ]
+  "items": []
 }
