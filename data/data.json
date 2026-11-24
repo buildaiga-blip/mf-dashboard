@@ -1,5 +1,5 @@
 {
-  "updated": "24-Nov-2026 00:21",
+  "updated": "24-Nov-2026 22:48",
   "source": "api.mfapi.in (AMFI NAV data), classified client-side",
   "categories": [
     {
@@ -9,19 +9,19 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 6.85,
+      "avg": 6.67,
       "funds": [
         {
           "schemeCode": 120186,
           "fund": "ICICI Prudential US Bluechip Equity Fund - Direct Plan - Growth",
-          "1M": -3.66,
-          "3M": -6.2,
-          "6M": 4.84,
-          "1Y": 17.25,
-          "3Y": 15.75,
-          "5Y": 11.86,
-          "nav": 87.97,
-          "nav_date": "20-Nov-2026"
+          "1M": -2.49,
+          "3M": -4.07,
+          "6M": 7.46,
+          "1Y": 17.42,
+          "3Y": 16.4,
+          "5Y": 12.52,
+          "nav": 90.17,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 118870,
@@ -72,30 +72,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 148353,
-          "fund": "ITI Large Cap Fund - Direct Plan - Growth Option",
-          "1M": 13.56,
-          "3M": 6.89,
-          "6M": 13.3,
-          "1Y": 4.93,
-          "3Y": 12.76,
-          "5Y": 10.16,
-          "nav": 21.0074,
-          "nav_date": "20-Nov-2026"
-        },
-        {
-          "schemeCode": 120465,
-          "fund": "Axis Large Cap Fund - Direct Plan - Growth Option",
-          "1M": 13.71,
-          "3M": 6.63,
-          "6M": 14.01,
-          "1Y": 4.49,
-          "3Y": 12.24,
-          "5Y": 7.31,
-          "nav": 75.46,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 118479,
           "fund": "BANDHAN LARGE CAP FUND - Direct Plan - Growth",
           "1M": 12.59,
@@ -105,6 +81,30 @@
           "3Y": 14.83,
           "5Y": 11.56,
           "nav": 96.261,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 148353,
+          "fund": "ITI Large Cap Fund - Direct Plan - Growth Option",
+          "1M": 13.62,
+          "3M": 5.42,
+          "6M": 9.73,
+          "1Y": 4.02,
+          "3Y": 12.08,
+          "5Y": 10.15,
+          "nav": 20.6565,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 120465,
+          "fund": "Axis Large Cap Fund - Direct Plan - Growth Option",
+          "1M": 12.7,
+          "3M": 5.26,
+          "6M": 10.83,
+          "1Y": 3.47,
+          "3Y": 11.72,
+          "5Y": 7.5,
+          "nav": 74.3,
           "nav_date": "23-Nov-2026"
         },
         {
@@ -140,7 +140,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 8.54,
+      "avg": 8.5,
       "funds": [
         {
           "schemeCode": 120357,
@@ -157,38 +157,38 @@
         {
           "schemeCode": 146772,
           "fund": "HSBC Large & Mid Cap Fund - Direct Plan - Growth",
-          "1M": 9.85,
-          "3M": 1.95,
-          "6M": 8.94,
-          "1Y": 11.49,
-          "3Y": 18.01,
-          "5Y": 14.92,
-          "nav": 34.0941,
-          "nav_date": "20-Nov-2026"
+          "1M": 11.5,
+          "3M": 0.94,
+          "6M": 6.65,
+          "1Y": 11.37,
+          "3Y": 17.52,
+          "5Y": 15.13,
+          "nav": 33.6948,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 120826,
           "fund": "Quant Large & Mid Cap Fund - Direct Plan - Growth Option",
-          "1M": 8.72,
-          "3M": 2.05,
-          "6M": 6.49,
-          "1Y": 11.0,
-          "3Y": 14.57,
-          "5Y": 15.17,
-          "nav": 142.1574,
-          "nav_date": "20-Nov-2026"
+          "1M": 10.41,
+          "3M": 1.56,
+          "6M": 3.88,
+          "1Y": 11.09,
+          "3Y": 14.1,
+          "5Y": 14.95,
+          "nav": 141.0718,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 145110,
           "fund": "Axis Large & Mid Cap Fund - Direct Plan - Growth Option",
-          "1M": 9.44,
-          "3M": 1.73,
-          "6M": 8.97,
-          "1Y": 7.88,
-          "3Y": 15.64,
-          "5Y": 12.03,
-          "nav": 40.1,
-          "nav_date": "20-Nov-2026"
+          "1M": 10.66,
+          "3M": 0.99,
+          "6M": 7.14,
+          "1Y": 7.96,
+          "3Y": 15.31,
+          "5Y": 12.2,
+          "nav": 39.76,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 119350,
@@ -215,18 +215,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 119436,
-          "fund": "Aditya Birla Sun Life Large & Mid Cap Fund - Direct Plan - GROWTH",
-          "1M": 9.85,
-          "3M": 0.34,
-          "6M": 8.49,
-          "1Y": 6.68,
-          "3Y": 12.24,
-          "5Y": 7.7,
-          "nav": 1095.07,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 152941,
           "fund": "Helios Large & Mid Cap Fund - Direct Plan - Growth",
           "1M": 12.96,
@@ -251,6 +239,18 @@
           "nav_date": "23-Nov-2026"
         },
         {
+          "schemeCode": 119436,
+          "fund": "Aditya Birla Sun Life Large & Mid Cap Fund - Direct Plan - GROWTH",
+          "1M": 10.89,
+          "3M": -0.74,
+          "6M": 5.94,
+          "1Y": 6.27,
+          "3Y": 11.65,
+          "5Y": 7.91,
+          "nav": 1080.63,
+          "nav_date": "23-Nov-2026"
+        },
+        {
           "schemeCode": 152226,
           "fund": "WhiteOak Capital Large & Mid Cap Fund - Direct Plan - Growth Option",
           "1M": 11.94,
@@ -271,19 +271,19 @@
       "rating": "Very High Risk",
       "horizon": "7+ Years",
       "rank_metric": "1Y",
-      "avg": 9.7,
+      "avg": 9.77,
       "funds": [
         {
           "schemeCode": 151036,
           "fund": "HSBC Midcap Fund - Direct Plan - Growth",
-          "1M": 7.9,
-          "3M": -1.52,
-          "6M": 7.54,
-          "1Y": 15.4,
-          "3Y": 21.45,
+          "1M": 10.53,
+          "3M": -1.89,
+          "6M": 6.27,
+          "1Y": 16.15,
+          "3Y": 21.01,
           "5Y": null,
-          "nav": 537.1111,
-          "nav_date": "20-Nov-2026"
+          "nav": 533.3698,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 120403,
@@ -402,7 +402,7 @@
       "rating": "Very High Risk",
       "horizon": "7+ Years",
       "rank_metric": "1Y",
-      "avg": 19.32,
+      "avg": 19.81,
       "funds": [
         {
           "schemeCode": 145678,
@@ -419,14 +419,14 @@
         {
           "schemeCode": 152939,
           "fund": "TRUSTMF SMALL CAP FUND - Direct Plan - Growth",
-          "1M": 4.62,
-          "3M": -1.07,
-          "6M": 14.8,
-          "1Y": 23.08,
+          "1M": 7.66,
+          "3M": -1.15,
+          "6M": 13.14,
+          "1Y": 25.16,
           "3Y": null,
           "5Y": null,
-          "nav": 13.81,
-          "nav_date": "20-Nov-2026"
+          "nav": 13.78,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 129649,
@@ -453,6 +453,30 @@
           "nav_date": "23-Nov-2026"
         },
         {
+          "schemeCode": 147919,
+          "fund": "ITI Small Cap Fund - Direct Plan - Growth Option",
+          "1M": 9.3,
+          "3M": -2.23,
+          "6M": 12.31,
+          "1Y": 19.39,
+          "3Y": 20.37,
+          "5Y": 18.61,
+          "nav": 37.7644,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 152237,
+          "fund": "Motilal Oswal Small Cap Fund - Direct Plan - Growth",
+          "1M": 7.52,
+          "3M": -1.15,
+          "6M": 14.49,
+          "1Y": 19.32,
+          "3Y": null,
+          "5Y": null,
+          "nav": 17.4081,
+          "nav_date": "23-Nov-2026"
+        },
+        {
           "schemeCode": 152004,
           "fund": "LIC MF Small Cap Fund - Direct Plan - Growth",
           "1M": 9.39,
@@ -463,30 +487,6 @@
           "5Y": null,
           "nav": 39.7541,
           "nav_date": "23-Nov-2026"
-        },
-        {
-          "schemeCode": 152237,
-          "fund": "Motilal Oswal Small Cap Fund - Direct Plan - Growth",
-          "1M": 5.23,
-          "3M": -0.65,
-          "6M": 16.12,
-          "1Y": 18.5,
-          "3Y": null,
-          "5Y": null,
-          "nav": 17.5112,
-          "nav_date": "20-Nov-2026"
-        },
-        {
-          "schemeCode": 147919,
-          "fund": "ITI Small Cap Fund - Direct Plan - Growth Option",
-          "1M": 5.82,
-          "3M": -2.05,
-          "6M": 13.77,
-          "1Y": 18.19,
-          "3Y": 20.45,
-          "5Y": 17.99,
-          "nav": 37.8883,
-          "nav_date": "20-Nov-2026"
         },
         {
           "schemeCode": 119556,
@@ -501,6 +501,18 @@
           "nav_date": "23-Nov-2026"
         },
         {
+          "schemeCode": 149019,
+          "fund": "PGIM India Small Cap Fund - Direct Plan - Direct Growth",
+          "1M": 10.16,
+          "3M": -0.88,
+          "6M": 11.75,
+          "1Y": 15.86,
+          "3Y": 14.73,
+          "5Y": 12.45,
+          "nav": 20.16,
+          "nav_date": "23-Nov-2026"
+        },
+        {
           "schemeCode": 150915,
           "fund": "Mahindra Manulife Small Cap Fund - Direct Plan - Growth",
           "1M": 9.06,
@@ -511,18 +523,6 @@
           "5Y": null,
           "nav": 23.6607,
           "nav_date": "23-Nov-2026"
-        },
-        {
-          "schemeCode": 149019,
-          "fund": "PGIM India Small Cap Fund - Direct Plan - Direct Growth",
-          "1M": 7.1,
-          "3M": -0.69,
-          "6M": 13.28,
-          "1Y": 15.02,
-          "3Y": 14.81,
-          "5Y": 12.3,
-          "nav": 20.22,
-          "nav_date": "20-Nov-2026"
         }
       ]
     },
@@ -533,19 +533,19 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 12.42,
+      "avg": 12.41,
       "funds": [
         {
           "schemeCode": 153034,
           "fund": "Groww Multicap Fund - Direct Plan - Growth",
-          "1M": 7.3,
-          "3M": 0.85,
-          "6M": 12.62,
-          "1Y": 16.58,
+          "1M": 9.12,
+          "3M": -0.05,
+          "6M": 9.78,
+          "1Y": 16.57,
           "3Y": null,
           "5Y": null,
-          "nav": 12.7527,
-          "nav_date": "20-Nov-2026"
+          "nav": 12.6101,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 153644,
@@ -664,7 +664,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 10.31,
+      "avg": 10.29,
       "funds": [
         {
           "schemeCode": 151379,
@@ -679,16 +679,16 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 148404,
-          "fund": "BANK OF INDIA FLEXI CAP FUND - Direct Plan - Growth",
-          "1M": 7.56,
-          "3M": 1.78,
-          "6M": 10.38,
-          "1Y": 11.4,
-          "3Y": 18.01,
-          "5Y": 16.45,
-          "nav": 43.4,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 152584,
+          "fund": "TRUSTMF Flexi Cap Fund - Direct Plan - Growth",
+          "1M": 11.2,
+          "3M": 1.92,
+          "6M": 12.9,
+          "1Y": 11.39,
+          "3Y": null,
+          "5Y": null,
+          "nav": 13.3,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 118883,
@@ -703,40 +703,40 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 152584,
-          "fund": "TRUSTMF Flexi Cap Fund - Direct Plan - Growth",
-          "1M": 9.57,
-          "3M": 2.6,
-          "6M": 15.22,
-          "1Y": 10.65,
-          "3Y": null,
-          "5Y": null,
-          "nav": 13.4,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 148404,
+          "fund": "BANK OF INDIA FLEXI CAP FUND - Direct Plan - Growth",
+          "1M": 8.97,
+          "3M": 0.42,
+          "6M": 7.29,
+          "1Y": 10.86,
+          "3Y": 17.21,
+          "5Y": 16.41,
+          "nav": 42.66,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 151796,
           "fund": "360 ONE Flexicap Fund - Direct Plan - GROWTH Option",
-          "1M": 8.39,
-          "3M": 2.56,
-          "6M": 14.15,
-          "1Y": 10.26,
-          "3Y": 17.99,
+          "1M": 9.73,
+          "3M": 1.83,
+          "6M": 11.56,
+          "1Y": 10.32,
+          "3Y": 17.4,
           "5Y": null,
-          "nav": 17.7455,
-          "nav_date": "20-Nov-2026"
+          "nav": 17.5483,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 120843,
           "fund": "Quant Flexi Cap Fund - Direct Plan - Growth Option",
-          "1M": 9.27,
-          "3M": 0.08,
-          "6M": 5.76,
-          "1Y": 9.85,
-          "3Y": 15.37,
-          "5Y": 14.42,
-          "nav": 123.3201,
-          "nav_date": "20-Nov-2026"
+          "1M": 11.25,
+          "3M": -0.44,
+          "6M": 2.78,
+          "1Y": 9.89,
+          "3Y": 14.99,
+          "5Y": 14.31,
+          "nav": 122.3171,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 143793,
@@ -753,14 +753,14 @@
         {
           "schemeCode": 151895,
           "fund": "Bajaj Finserv Flexi Cap Fund - Direct Plan - Growth",
-          "1M": 10.83,
-          "3M": 2.9,
-          "6M": 11.32,
-          "1Y": 8.52,
-          "3Y": 17.37,
+          "1M": 11.29,
+          "3M": 2.12,
+          "6M": 9.0,
+          "1Y": 8.3,
+          "3Y": 16.94,
           "5Y": null,
-          "nav": 17.022,
-          "nav_date": "20-Nov-2026"
+          "nav": 16.841,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 120564,
@@ -775,16 +775,16 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 153543,
-          "fund": "UNIFI FLEXI CAP FUND - Direct Plan - GROWTH",
-          "1M": 6.29,
-          "3M": 4.07,
-          "6M": 11.02,
-          "1Y": 8.13,
-          "3Y": null,
+          "schemeCode": 149763,
+          "fund": "Invesco India Flexi Cap Fund - Direct Plan - Growth",
+          "1M": 13.15,
+          "3M": 3.11,
+          "6M": 12.17,
+          "1Y": 7.85,
+          "3Y": 17.97,
           "5Y": null,
-          "nav": 11.2542,
-          "nav_date": "20-Nov-2026"
+          "nav": 21.85,
+          "nav_date": "23-Nov-2026"
         }
       ]
     },
@@ -795,7 +795,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 11.82,
+      "avg": 11.88,
       "funds": [
         {
           "schemeCode": 122389,
@@ -812,14 +812,14 @@
         {
           "schemeCode": 148481,
           "fund": "Invesco India Focused Fund - Direct Plan - Growth",
-          "1M": 13.98,
-          "3M": 6.91,
-          "6M": 22.48,
-          "1Y": 15.83,
-          "3Y": 22.58,
-          "5Y": 15.99,
-          "nav": 34.98,
-          "nav_date": "20-Nov-2026"
+          "1M": 15.56,
+          "3M": 6.6,
+          "6M": 19.62,
+          "1Y": 16.3,
+          "3Y": 22.14,
+          "5Y": 15.9,
+          "nav": 34.75,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 152358,
@@ -848,14 +848,14 @@
         {
           "schemeCode": 119727,
           "fund": "SBI FOCUSED FUND - Direct Plan - Growth",
-          "1M": 7.93,
-          "3M": 2.05,
-          "6M": 8.15,
-          "1Y": 10.31,
-          "3Y": 16.07,
-          "5Y": 10.88,
-          "nav": 467.4556,
-          "nav_date": "20-Nov-2026"
+          "1M": 9.51,
+          "3M": 1.23,
+          "6M": 6.33,
+          "1Y": 10.51,
+          "3Y": 16.08,
+          "5Y": 10.84,
+          "nav": 465.2669,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 148411,
@@ -906,16 +906,16 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 118950,
-          "fund": "HDFC Focused Fund - Direct Plan - Growth Option",
-          "1M": 13.21,
-          "3M": 7.2,
-          "6M": 14.66,
-          "1Y": 5.69,
-          "3Y": 17.83,
-          "5Y": 18.46,
-          "nav": 289.462,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 119564,
+          "fund": "Aditya Birla Sun Life Focused Fund - Direct Plan - GROWTH",
+          "1M": 12.27,
+          "3M": 3.78,
+          "6M": 9.06,
+          "1Y": 5.61,
+          "3Y": 15.04,
+          "5Y": 11.84,
+          "nav": 176.2262,
+          "nav_date": "23-Nov-2026"
         }
       ]
     },
@@ -926,7 +926,7 @@
       "rating": "High Risk",
       "horizon": "5+ Years",
       "rank_metric": "1Y",
-      "avg": 7.06,
+      "avg": 7.02,
       "funds": [
         {
           "schemeCode": 152018,
@@ -941,18 +941,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 149166,
-          "fund": "Axis Value Fund - Direct Plan - Growth Option",
-          "1M": 10.25,
-          "3M": 3.2,
-          "6M": 12.39,
-          "1Y": 9.82,
-          "3Y": 18.73,
-          "5Y": 16.57,
-          "nav": 22.58,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 148595,
           "fund": "DSP Value Fund - Direct Plan - Growth",
           "1M": 8.91,
@@ -963,6 +951,18 @@
           "5Y": 14.04,
           "nav": 25.853,
           "nav_date": "20-Nov-2026"
+        },
+        {
+          "schemeCode": 149166,
+          "fund": "Axis Value Fund - Direct Plan - Growth Option",
+          "1M": 10.9,
+          "3M": 2.06,
+          "6M": 9.75,
+          "1Y": 9.37,
+          "3Y": 18.4,
+          "5Y": 16.61,
+          "nav": 22.29,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 149335,
@@ -1067,7 +1067,7 @@
       "rating": "High Risk",
       "horizon": "3 Yr Lock-in",
       "rank_metric": "1Y",
-      "avg": 5.87,
+      "avg": 5.78,
       "funds": [
         {
           "schemeCode": 120847,
@@ -1154,30 +1154,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 118620,
-          "fund": "Edelweiss ELSS Tax Saver Fund - Direct Plan - Growth",
-          "1M": 9.9,
-          "3M": 1.77,
-          "6M": 8.03,
-          "1Y": 4.82,
-          "3Y": 15.01,
-          "5Y": 12.6,
-          "nav": 144.55,
-          "nav_date": "20-Nov-2026"
-        },
-        {
-          "schemeCode": 119773,
-          "fund": "Kotak ELSS Tax Saver Fund - Direct Plan - Growth",
-          "1M": 11.3,
-          "3M": 3.86,
-          "6M": 11.97,
-          "1Y": 4.79,
-          "3Y": 13.26,
-          "5Y": 12.28,
-          "nav": 146.408,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 120503,
           "fund": "Axis ELSS- Tax Saver Fund - Direct Plan - Growth Option",
           "1M": 12.47,
@@ -1187,6 +1163,30 @@
           "3Y": 12.33,
           "5Y": 7.16,
           "nav": 116.4062,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 118620,
+          "fund": "Edelweiss ELSS Tax Saver Fund - Direct Plan - Growth",
+          "1M": 10.83,
+          "3M": 0.93,
+          "6M": 5.58,
+          "1Y": 4.47,
+          "3Y": 14.64,
+          "5Y": 12.67,
+          "nav": 142.91,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 118285,
+          "fund": "Canara Robeco ELSS - Tax Saver Fund - Direct Plan - GROWTH OPTION",
+          "1M": 11.89,
+          "3M": 3.02,
+          "6M": 6.79,
+          "1Y": 4.21,
+          "3Y": 12.88,
+          "5Y": 11.02,
+          "nav": 210.37,
           "nav_date": "23-Nov-2026"
         }
       ]
@@ -1198,7 +1198,7 @@
       "rating": "Moderately High Risk",
       "horizon": "3-5 Years",
       "rank_metric": "1Y",
-      "avg": 8.01,
+      "avg": 7.95,
       "funds": [
         {
           "schemeCode": 139527,
@@ -1239,26 +1239,26 @@
         {
           "schemeCode": 120819,
           "fund": "Quant Aggressive Hybrid Fund - Direct Plan - Growth Option",
-          "1M": 7.93,
-          "3M": 1.58,
-          "6M": 5.07,
-          "1Y": 8.79,
-          "3Y": 14.14,
-          "5Y": 12.7,
-          "nav": 521.8138,
-          "nav_date": "20-Nov-2026"
+          "1M": 9.05,
+          "3M": 1.13,
+          "6M": 2.46,
+          "1Y": 8.5,
+          "3Y": 13.87,
+          "5Y": 12.51,
+          "nav": 517.8113,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 129200,
           "fund": "HSBC Aggressive Hybrid Active FOF (erstwhile HSBC Managed Solutions India - Growth fund) - Direct Plan - Growth",
-          "1M": 7.06,
-          "3M": 1.32,
-          "6M": 8.41,
-          "1Y": 8.16,
-          "3Y": 12.45,
-          "5Y": 10.83,
-          "nav": 46.8308,
-          "nav_date": "20-Nov-2026"
+          "1M": 8.35,
+          "3M": 0.63,
+          "6M": 6.69,
+          "1Y": 8.13,
+          "3Y": 12.15,
+          "5Y": 10.94,
+          "nav": 46.4648,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 151122,
@@ -1275,38 +1275,38 @@
         {
           "schemeCode": 134813,
           "fund": "Mirae Asset Aggressive Hybrid Fund - Direct Plan - Growth",
-          "1M": 9.31,
-          "3M": 4.1,
-          "6M": 8.46,
-          "1Y": 6.4,
-          "3Y": 13.02,
-          "5Y": 10.75,
-          "nav": 41.513,
-          "nav_date": "20-Nov-2026"
+          "1M": 9.82,
+          "3M": 3.16,
+          "6M": 6.36,
+          "1Y": 5.95,
+          "3Y": 12.69,
+          "5Y": 10.79,
+          "nav": 41.099,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 119767,
           "fund": "Kotak Aggressive Hybrid Fund - Direct Plan - Growth",
-          "1M": 8.01,
-          "3M": 1.43,
-          "6M": 6.67,
-          "1Y": 5.56,
-          "3Y": 13.66,
-          "5Y": 12.05,
-          "nav": 48.812,
-          "nav_date": "20-Nov-2026"
+          "1M": 9.16,
+          "3M": 0.49,
+          "6M": 4.63,
+          "1Y": 5.64,
+          "3Y": 13.31,
+          "5Y": 12.14,
+          "nav": 48.382,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 133035,
           "fund": "Kotak Aggressive Hybrid Fund - Direct Plan - Growth",
-          "1M": 8.01,
-          "3M": 1.43,
-          "6M": 6.67,
-          "1Y": 5.56,
-          "3Y": 13.66,
-          "5Y": 12.05,
-          "nav": 79.627,
-          "nav_date": "20-Nov-2026"
+          "1M": 9.16,
+          "3M": 0.49,
+          "6M": 4.63,
+          "1Y": 5.64,
+          "3Y": 13.31,
+          "5Y": 12.14,
+          "nav": 78.925,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 148592,
@@ -1329,20 +1329,8 @@
       "rating": "Moderate Risk",
       "horizon": "3-5 Years",
       "rank_metric": "1Y",
-      "avg": 6.76,
+      "avg": 6.54,
       "funds": [
-        {
-          "schemeCode": 131670,
-          "fund": "Aditya Birla Sun Life Balanced Advantage Fund - Direct Plan - GROWTH",
-          "1M": 7.63,
-          "3M": 3.01,
-          "6M": 9.41,
-          "1Y": 8.79,
-          "3Y": 13.31,
-          "5Y": 11.15,
-          "nav": 135.77,
-          "nav_date": "20-Nov-2026"
-        },
         {
           "schemeCode": 153376,
           "fund": "UNIFI DYNAMIC ASSET ALLOCATION FUND - Direct Plan - GROWTH",
@@ -1356,16 +1344,16 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 118615,
-          "fund": "Edelweiss Balanced Advantage Fund - Direct Plan - Growth",
-          "1M": 7.99,
-          "3M": 3.75,
-          "6M": 8.6,
-          "1Y": 6.83,
-          "3Y": 12.15,
-          "5Y": 10.28,
-          "nav": 64.17,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 131670,
+          "fund": "Aditya Birla Sun Life Balanced Advantage Fund - Direct Plan - GROWTH",
+          "1M": 8.08,
+          "3M": 2.06,
+          "6M": 7.45,
+          "1Y": 8.15,
+          "3Y": 12.9,
+          "5Y": 11.06,
+          "nav": 134.35,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 126393,
@@ -1380,28 +1368,16 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 131355,
-          "fund": "BANDHAN Balanced Advantage Fund - Direct Plan - Growth",
-          "1M": 6.39,
-          "3M": 2.98,
-          "6M": 7.65,
-          "1Y": 6.47,
-          "3Y": 10.99,
-          "5Y": 8.68,
-          "nav": 30.778,
-          "nav_date": "20-Nov-2026"
-        },
-        {
-          "schemeCode": 150470,
-          "fund": "Mirae Asset Balanced Advantage Fund - Direct Plan - Growth",
-          "1M": 7.06,
-          "3M": 3.28,
-          "6M": 7.3,
-          "1Y": 6.41,
-          "3Y": 11.5,
-          "5Y": null,
-          "nav": 16.156,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 118615,
+          "fund": "Edelweiss Balanced Advantage Fund - Direct Plan - Growth",
+          "1M": 8.09,
+          "3M": 2.5,
+          "6M": 6.5,
+          "1Y": 6.23,
+          "3Y": 11.69,
+          "5Y": 10.23,
+          "nav": 63.44,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 149406,
@@ -1425,6 +1401,30 @@
           "3Y": 12.84,
           "5Y": 11.57,
           "nav": 29.3699,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 150470,
+          "fund": "Mirae Asset Balanced Advantage Fund - Direct Plan - Growth",
+          "1M": 7.39,
+          "3M": 2.56,
+          "6M": 5.74,
+          "1Y": 6.06,
+          "3Y": 11.24,
+          "5Y": null,
+          "nav": 16.035,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 131355,
+          "fund": "BANDHAN Balanced Advantage Fund - Direct Plan - Growth",
+          "1M": 6.55,
+          "3M": 2.21,
+          "6M": 5.94,
+          "1Y": 5.86,
+          "3Y": 10.56,
+          "5Y": 8.65,
+          "nav": 30.492,
           "nav_date": "23-Nov-2026"
         },
         {
@@ -1460,31 +1460,31 @@
       "rating": "Moderate Risk",
       "horizon": "3-5 Years",
       "rank_metric": "1Y",
-      "avg": 8.07,
+      "avg": 8.11,
       "funds": [
         {
           "schemeCode": 152380,
           "fund": "HSBC Multi Asset Allocation Fund - Direct Plan - Growth",
-          "1M": 5.79,
-          "3M": -0.98,
-          "6M": 2.84,
-          "1Y": 9.44,
+          "1M": 6.96,
+          "3M": -1.82,
+          "6M": 1.2,
+          "1Y": 9.26,
           "3Y": null,
           "5Y": null,
-          "nav": 14.491,
-          "nav_date": "20-Nov-2026"
+          "nav": 14.3632,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 129193,
           "fund": "HSBC Multi Asset Active FOF (erstwhile HSBC Managed Solutions India - Moderate Fund) - Direct Plan - Growth",
-          "1M": 4.21,
-          "3M": -2.48,
-          "6M": 2.22,
-          "1Y": 8.76,
-          "3Y": 14.29,
-          "5Y": 11.62,
-          "nav": 44.3472,
-          "nav_date": "20-Nov-2026"
+          "1M": 5.94,
+          "3M": -3.22,
+          "6M": 0.75,
+          "1Y": 8.96,
+          "3Y": 14.02,
+          "5Y": 11.7,
+          "nav": 44.0344,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 151307,
@@ -1499,18 +1499,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 131865,
-          "fund": "Aditya Birla Sun Life Multi Asset Omni FoF - Direct Plan - GROWTH",
-          "1M": 4.86,
-          "3M": -2.15,
-          "6M": 4.2,
-          "1Y": 8.12,
-          "3Y": 16.09,
-          "5Y": 12.98,
-          "nav": 40.8046,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 153465,
           "fund": "Canara Robeco Multi Asset Allocation Fund - Direct Plan - Growth",
           "1M": 7.1,
@@ -1523,63 +1511,75 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 152344,
-          "fund": "Mirae Asset Multi Asset Allocation Fund - Direct Plan - Growth",
-          "1M": 5.04,
-          "3M": -0.13,
-          "6M": 3.45,
-          "1Y": 7.98,
-          "3Y": null,
-          "5Y": null,
-          "nav": 14.308,
-          "nav_date": "20-Nov-2026"
-        },
-        {
-          "schemeCode": 152064,
-          "fund": "Kotak Multi Asset Allocation Fund - Direct Plan - Growth Option",
-          "1M": 3.42,
-          "3M": -3.76,
-          "6M": -0.73,
-          "1Y": 7.78,
-          "3Y": 16.64,
-          "5Y": null,
-          "nav": 16.268,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 131865,
+          "fund": "Aditya Birla Sun Life Multi Asset Omni FoF - Direct Plan - GROWTH",
+          "1M": 6.08,
+          "3M": -2.89,
+          "6M": 2.68,
+          "1Y": 7.97,
+          "3Y": 15.82,
+          "5Y": 13.06,
+          "nav": 40.5215,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 152056,
           "fund": "DSP Multi Asset Allocation Fund - Direct Plan - Growth",
-          "1M": 3.6,
-          "3M": -2.73,
-          "6M": -0.34,
-          "1Y": 7.77,
-          "3Y": 17.31,
+          "1M": 4.32,
+          "3M": -2.99,
+          "6M": -0.77,
+          "1Y": 7.97,
+          "3Y": 17.04,
           "5Y": null,
-          "nav": 16.6407,
-          "nav_date": "20-Nov-2026"
+          "nav": 16.5684,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 152064,
+          "fund": "Kotak Multi Asset Allocation Fund - Direct Plan - Growth Option",
+          "1M": 5.65,
+          "3M": -4.22,
+          "6M": -2.11,
+          "1Y": 7.84,
+          "3Y": 16.39,
+          "5Y": null,
+          "nav": 16.17,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 152344,
+          "fund": "Mirae Asset Multi Asset Allocation Fund - Direct Plan - Growth",
+          "1M": 5.65,
+          "3M": -0.91,
+          "6M": 1.98,
+          "1Y": 7.73,
+          "3Y": null,
+          "5Y": null,
+          "nav": 14.207,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 120821,
           "fund": "Quant Multi Asset Allocation Fund - Direct Plan - Growth Option",
-          "1M": -0.25,
-          "3M": -4.54,
-          "6M": -1.65,
-          "1Y": 7.25,
-          "3Y": 19.25,
-          "5Y": 17.4,
-          "nav": 176.3602,
-          "nav_date": "20-Nov-2026"
+          "1M": 0.74,
+          "3M": -4.8,
+          "6M": -3.25,
+          "1Y": 7.47,
+          "3Y": 18.89,
+          "5Y": 17.53,
+          "nav": 175.6086,
+          "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 152443,
-          "fund": "Mahindra Manulife Multi Asset Allocation Fund - Direct Plan - Growth",
-          "1M": 4.57,
-          "3M": -2.07,
-          "6M": 2.74,
-          "1Y": 7.18,
+          "schemeCode": 152324,
+          "fund": "BANDHAN MULTI ASSET ALLOCATION FUND - Direct Plan - Growth",
+          "1M": 2.79,
+          "3M": -4.2,
+          "6M": -1.2,
+          "1Y": 7.46,
           "3Y": null,
           "5Y": null,
-          "nav": 14.3771,
+          "nav": 14.4459,
           "nav_date": "23-Nov-2026"
         }
       ]
@@ -1591,20 +1591,8 @@
       "rating": "Moderate Risk",
       "horizon": "2-4 Years",
       "rank_metric": "1Y",
-      "avg": 6.61,
+      "avg": 6.56,
       "funds": [
-        {
-          "schemeCode": 151060,
-          "fund": "HSBC Equity Savings Fund - Direct Plan - Growth",
-          "1M": 4.67,
-          "3M": 2.4,
-          "6M": 6.19,
-          "1Y": 9.61,
-          "3Y": 13.13,
-          "5Y": null,
-          "nav": 42.3703,
-          "nav_date": "20-Nov-2026"
-        },
         {
           "schemeCode": 153705,
           "fund": "quant Equity Savings Fund - Direct Plan - Growth Option",
@@ -1618,16 +1606,28 @@
           "nav_date": "23-Nov-2026"
         },
         {
+          "schemeCode": 151060,
+          "fund": "HSBC Equity Savings Fund - Direct Plan - Growth",
+          "1M": 4.83,
+          "3M": 1.84,
+          "6M": 5.12,
+          "1Y": 9.47,
+          "3Y": 12.94,
+          "5Y": null,
+          "nav": 42.1218,
+          "nav_date": "23-Nov-2026"
+        },
+        {
           "schemeCode": 140347,
           "fund": "Edelweiss Equity Savings Fund - Direct Plan - Growth",
-          "1M": 3.19,
-          "3M": 1.91,
-          "6M": 6.18,
-          "1Y": 8.13,
-          "3Y": 11.43,
-          "5Y": 9.84,
-          "nav": 31.1903,
-          "nav_date": "20-Nov-2026"
+          "1M": 3.37,
+          "3M": 1.23,
+          "6M": 5.24,
+          "1Y": 7.91,
+          "3Y": 11.23,
+          "5Y": 9.82,
+          "nav": 31.0421,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 145693,
@@ -1702,16 +1702,16 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 144466,
-          "fund": "Franklin India Equity Savings Fund - Direct Plan - Growth",
-          "1M": 2.99,
-          "3M": 2.21,
-          "6M": 4.7,
-          "1Y": 4.78,
-          "3Y": 7.82,
-          "5Y": 7.23,
-          "nav": 19.237,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 118477,
+          "fund": "BANDHAN EQUITY SAVINGS FUND - Direct Plan - Growth",
+          "1M": 2.26,
+          "3M": 1.29,
+          "6M": 3.69,
+          "1Y": 4.67,
+          "3Y": 7.47,
+          "5Y": 6.95,
+          "nav": 37.05,
+          "nav_date": "23-Nov-2026"
         }
       ]
     },
@@ -1739,14 +1739,14 @@
         {
           "schemeCode": 150206,
           "fund": "BARODA BNP PARIBAS CONSERVATIVE HYBRID FUND - Direct Plan - Growth Option",
-          "1M": 2.58,
-          "3M": 1.09,
-          "6M": 4.23,
-          "1Y": 4.64,
-          "3Y": 8.55,
+          "1M": 3.01,
+          "3M": 0.92,
+          "6M": 3.6,
+          "1Y": 4.68,
+          "3Y": 8.5,
           "5Y": null,
-          "nav": 58.517,
-          "nav_date": "20-Nov-2026"
+          "nav": 58.402,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 118491,
@@ -1853,7 +1853,7 @@
       "rating": "Low Risk",
       "horizon": "0.5-2 Years",
       "rank_metric": "1Y",
-      "avg": 6.91,
+      "avg": 6.85,
       "funds": [
         {
           "schemeCode": 153426,
@@ -1904,42 +1904,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 145724,
-          "fund": "Tata Arbitrage Fund - Direct Plan - Growth Option",
-          "1M": 0.5,
-          "3M": 1.54,
-          "6M": 3.47,
-          "1Y": 6.8,
-          "3Y": 7.46,
-          "5Y": 6.94,
-          "nav": 16.5358,
-          "nav_date": "20-Nov-2026"
-        },
-        {
-          "schemeCode": 148401,
-          "fund": "Mirae Asset Arbitrage Fund - Direct Plan - Growth",
-          "1M": 0.46,
-          "3M": 1.63,
-          "6M": 3.54,
-          "1Y": 6.77,
-          "3Y": 7.4,
-          "5Y": 6.86,
-          "nav": 14.78,
-          "nav_date": "20-Nov-2026"
-        },
-        {
-          "schemeCode": 119771,
-          "fund": "Kotak Arbitrage Fund - Direct Plan - Growth",
-          "1M": 0.47,
-          "3M": 1.54,
-          "6M": 3.5,
-          "1Y": 6.76,
-          "3Y": 7.46,
-          "5Y": 7.01,
-          "nav": 43.7929,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 120401,
           "fund": "Invesco India Arbitrage Fund - Direct Plan - Growth",
           "1M": 0.36,
@@ -1964,16 +1928,52 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 130206,
-          "fund": "Edelweiss Arbitrage Fund - Direct Plan - Growth",
-          "1M": 0.52,
-          "3M": 1.53,
-          "6M": 3.5,
-          "1Y": 6.7,
-          "3Y": 7.42,
-          "5Y": 6.96,
-          "nav": 22.7361,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 145724,
+          "fund": "Tata Arbitrage Fund - Direct Plan - Growth Option",
+          "1M": 0.35,
+          "3M": 1.36,
+          "6M": 3.32,
+          "1Y": 6.64,
+          "3Y": 7.38,
+          "5Y": 6.9,
+          "nav": 16.5205,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 119526,
+          "fund": "ADITYA BIRLA SUN LIFE ARBITRAGE FUND - Direct Plan - GROWTH",
+          "1M": 0.38,
+          "3M": 1.43,
+          "6M": 3.42,
+          "1Y": 6.6,
+          "3Y": 7.35,
+          "5Y": 6.86,
+          "nav": 31.2996,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 119771,
+          "fund": "Kotak Arbitrage Fund - Direct Plan - Growth",
+          "1M": 0.33,
+          "3M": 1.39,
+          "6M": 3.35,
+          "1Y": 6.6,
+          "3Y": 7.38,
+          "5Y": 6.97,
+          "nav": 43.7548,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 118585,
+          "fund": "Nippon India Arbitrage Fund - Direct Plan - Growth Option",
+          "1M": 0.36,
+          "3M": 1.4,
+          "6M": 3.38,
+          "1Y": 6.59,
+          "3Y": 7.25,
+          "5Y": 6.83,
+          "nav": 31.3321,
+          "nav_date": "23-Nov-2026"
         }
       ]
     },
@@ -1989,38 +1989,98 @@
         {
           "schemeCode": 147531,
           "fund": "Canara Robeco Overnight Fund - Direct Plan - GROWTH OPTION",
-          "1M": 0.52,
+          "1M": 0.5,
           "3M": 1.35,
           "6M": 2.66,
           "1Y": 5.28,
           "3Y": 5.93,
-          "5Y": 5.74,
-          "nav": 1438.1759,
-          "nav_date": "23-Nov-2026"
+          "5Y": 5.75,
+          "nav": 1438.3964,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 151849,
           "fund": "Bajaj Finserv Overnight Fund - Direct Plan - Growth",
-          "1M": 0.48,
+          "1M": 0.46,
           "3M": 1.35,
           "6M": 2.66,
           "1Y": 5.36,
           "3Y": 6.02,
           "5Y": null,
-          "nav": 1222.4802,
-          "nav_date": "23-Nov-2026"
+          "nav": 1222.671,
+          "nav_date": "24-Nov-2026"
+        },
+        {
+          "schemeCode": 147883,
+          "fund": "Invesco India Overnight Fund - Direct Plan - Growth",
+          "1M": 0.46,
+          "3M": 1.33,
+          "6M": 2.64,
+          "1Y": 5.3,
+          "3Y": 5.99,
+          "5Y": 5.8,
+          "nav": 1407.5448,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 154413,
           "fund": "Choice Overnight Fund - Direct Plan - Growth",
-          "1M": 0.51,
+          "1M": 0.47,
           "3M": 1.33,
           "6M": null,
           "1Y": null,
           "3Y": null,
           "5Y": null,
-          "nav": 102.057,
-          "nav_date": "23-Nov-2026"
+          "nav": 102.0732,
+          "nav_date": "24-Nov-2026"
+        },
+        {
+          "schemeCode": 145486,
+          "fund": "ADITYA BIRLA SUN LIFE OVERNIGHT FUND - Direct Plan - GROWTH",
+          "1M": 0.46,
+          "3M": 1.32,
+          "6M": 2.62,
+          "1Y": 5.28,
+          "3Y": 5.98,
+          "5Y": 5.8,
+          "nav": 1506.4938,
+          "nav_date": "24-Nov-2026"
+        },
+        {
+          "schemeCode": 145810,
+          "fund": "Nippon India Overnight Fund - Direct Plan - Growth Option",
+          "1M": 0.46,
+          "3M": 1.32,
+          "6M": 2.62,
+          "1Y": 5.29,
+          "3Y": 6.01,
+          "5Y": 5.82,
+          "nav": 149.6452,
+          "nav_date": "24-Nov-2026"
+        },
+        {
+          "schemeCode": 146062,
+          "fund": "DSP Overnight Fund - Direct Plan - Growth",
+          "1M": 0.46,
+          "3M": 1.32,
+          "6M": 2.62,
+          "1Y": 5.28,
+          "3Y": 5.99,
+          "5Y": 5.81,
+          "nav": 1492.0437,
+          "nav_date": "24-Nov-2026"
+        },
+        {
+          "schemeCode": 146141,
+          "fund": "Kotak Overnight Fund - Direct Plan - Growth",
+          "1M": 0.46,
+          "3M": 1.32,
+          "6M": 2.62,
+          "1Y": 5.3,
+          "3Y": 6.0,
+          "5Y": 5.81,
+          "nav": 1486.25,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 146191,
@@ -2031,80 +2091,20 @@
           "1Y": 5.28,
           "3Y": 5.99,
           "5Y": 5.8,
-          "nav": 1485.4033,
-          "nav_date": "23-Nov-2026"
+          "nav": 1485.6345,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 146675,
           "fund": "Axis Overnight Fund - Direct Plan - Growth Option",
-          "1M": 0.48,
+          "1M": 0.46,
           "3M": 1.32,
           "6M": 2.63,
           "1Y": 5.31,
           "3Y": 6.02,
           "5Y": 5.83,
-          "nav": 1474.4404,
-          "nav_date": "23-Nov-2026"
-        },
-        {
-          "schemeCode": 146980,
-          "fund": "Tata Overnight Fund - Direct Plan - Growth Option",
-          "1M": 0.48,
-          "3M": 1.32,
-          "6M": 2.64,
-          "1Y": 5.31,
-          "3Y": 6.02,
-          "5Y": 5.82,
-          "nav": 1470.5088,
-          "nav_date": "23-Nov-2026"
-        },
-        {
-          "schemeCode": 147196,
-          "fund": "Baroda BNP Paribas Overnight Fund - Direct Plan - Growth Option",
-          "1M": 0.48,
-          "3M": 1.32,
-          "6M": 2.63,
-          "1Y": 5.32,
-          "3Y": 6.0,
-          "5Y": 5.8,
-          "nav": 1462.8476,
-          "nav_date": "22-Nov-2026"
-        },
-        {
-          "schemeCode": 147214,
-          "fund": "Franklin India Overnight Fund - Direct Plan - Growth",
-          "1M": 0.48,
-          "3M": 1.32,
-          "6M": 2.64,
-          "1Y": 5.34,
-          "3Y": 5.99,
-          "5Y": 5.77,
-          "nav": 1453.17,
-          "nav_date": "23-Nov-2026"
-        },
-        {
-          "schemeCode": 147883,
-          "fund": "Invesco India Overnight Fund - Direct Plan - Growth",
-          "1M": 0.46,
-          "3M": 1.32,
-          "6M": 2.63,
-          "1Y": 5.31,
-          "3Y": 5.99,
-          "5Y": 5.79,
-          "nav": 1407.1066,
-          "nav_date": "22-Nov-2026"
-        },
-        {
-          "schemeCode": 147951,
-          "fund": "BANK OF INDIA OVERNIGHT FUND - Direct Plan - Growth",
-          "1M": 0.49,
-          "3M": 1.32,
-          "6M": 2.63,
-          "1Y": 5.5,
-          "3Y": 6.13,
-          "5Y": 5.92,
-          "nav": 1417.0258,
-          "nav_date": "23-Nov-2026"
+          "nav": 1474.6718,
+          "nav_date": "24-Nov-2026"
         }
       ]
     },
@@ -2120,26 +2120,26 @@
         {
           "schemeCode": 118577,
           "fund": "Franklin India Liquid Fund - Direct Plan - Super Institutional Growth",
-          "1M": 0.61,
+          "1M": 0.59,
           "3M": 1.57,
           "6M": 3.36,
-          "1Y": 6.61,
+          "1Y": 6.62,
           "3Y": 6.95,
           "5Y": 6.48,
-          "nav": 4324.2417,
-          "nav_date": "23-Nov-2026"
+          "nav": 4325.0583,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 119135,
           "fund": "Groww Liquid Fund - Direct Plan - Growth",
-          "1M": 0.61,
+          "1M": 0.59,
           "3M": 1.57,
           "6M": 3.29,
-          "1Y": 6.57,
+          "1Y": 6.58,
           "3Y": 6.94,
-          "5Y": 6.38,
-          "nav": 2787.8646,
-          "nav_date": "23-Nov-2026"
+          "5Y": 6.39,
+          "nav": 2788.368,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 139538,
@@ -2156,38 +2156,38 @@
         {
           "schemeCode": 119369,
           "fund": "BANK OF INDIA LIQUID FUND - Direct Plan - Growth",
-          "1M": 0.61,
+          "1M": 0.58,
           "3M": 1.56,
-          "6M": 3.29,
+          "6M": 3.3,
           "1Y": 6.57,
           "3Y": 6.93,
           "5Y": 6.49,
-          "nav": 3311.7305,
-          "nav_date": "23-Nov-2026"
+          "nav": 3312.336,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 153883,
           "fund": "The Wealth Company Liquid Fund - Direct Plan - Growth",
-          "1M": 0.6,
+          "1M": 0.58,
           "3M": 1.56,
-          "6M": 3.3,
-          "1Y": 6.6,
+          "6M": 3.31,
+          "1Y": 6.61,
           "3Y": null,
           "5Y": null,
-          "nav": 1073.6216,
-          "nav_date": "23-Nov-2026"
+          "nav": 1073.819,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 118701,
           "fund": "Nippon India Liquid Fund - Direct Plan - Growth Option",
-          "1M": 0.61,
+          "1M": 0.59,
           "3M": 1.55,
           "6M": 3.31,
           "1Y": 6.59,
-          "3Y": 6.93,
-          "5Y": 6.48,
-          "nav": 7040.1696,
-          "nav_date": "23-Nov-2026"
+          "3Y": 6.94,
+          "5Y": 6.49,
+          "nav": 7041.4542,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 120304,
@@ -2196,34 +2196,34 @@
           "3M": 1.55,
           "6M": -89.67,
           "1Y": -89.34,
-          "3Y": -50.37,
+          "3Y": -50.38,
           "5Y": -32.82,
-          "nav": 471.4342,
-          "nav_date": "23-Nov-2026"
+          "nav": 471.52,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 120389,
           "fund": "Axis Liquid Fund - Direct Plan - Growth Option",
-          "1M": 0.61,
+          "1M": 0.59,
           "3M": 1.55,
           "6M": 3.31,
           "1Y": 6.63,
           "3Y": 6.96,
           "5Y": 6.51,
-          "nav": 3199.6776,
-          "nav_date": "23-Nov-2026"
+          "nav": 3200.258,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 138299,
           "fund": "PGIM India Liquid Fund - Direct Plan - Direct Growth",
-          "1M": 0.58,
+          "1M": 0.57,
           "3M": 1.55,
           "6M": 3.3,
-          "1Y": 6.58,
-          "3Y": 6.93,
+          "1Y": 6.59,
+          "3Y": 6.94,
           "5Y": 6.49,
-          "nav": 375.2219,
-          "nav_date": "23-Nov-2026"
+          "nav": 375.2917,
+          "nav_date": "24-Nov-2026"
         },
         {
           "schemeCode": 140196,
@@ -2234,8 +2234,8 @@
           "1Y": 6.59,
           "3Y": 6.96,
           "5Y": 6.5,
-          "nav": 3717.3461,
-          "nav_date": "23-Nov-2026"
+          "nav": 3718.0193,
+          "nav_date": "24-Nov-2026"
         }
       ]
     },
@@ -2297,18 +2297,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 120746,
-          "fund": "UTI Ultra Short Term Fund - Direct Plan - Growth",
-          "1M": 0.59,
-          "3M": 1.56,
-          "6M": 3.59,
-          "1Y": 6.54,
-          "3Y": 7.26,
-          "5Y": 6.7,
-          "nav": 4969.3172,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 119828,
           "fund": "SBI ULTRA SHORT TERM FUND - Direct Plan - Growth",
           "1M": 0.65,
@@ -2318,6 +2306,18 @@
           "3Y": 7.11,
           "5Y": 6.56,
           "nav": 6633.8514,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 120746,
+          "fund": "UTI Ultra Short Term Fund - Direct Plan - Growth",
+          "1M": 0.67,
+          "3M": 1.55,
+          "6M": 3.59,
+          "1Y": 6.58,
+          "3Y": 7.26,
+          "5Y": 6.7,
+          "nav": 4971.8211,
           "nav_date": "23-Nov-2026"
         },
         {
@@ -2474,18 +2474,6 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 120299,
-          "fund": "UTI - Money Market Fund - Direct Plan - Growth",
-          "1M": 0.59,
-          "3M": 1.54,
-          "6M": 3.73,
-          "1Y": 6.42,
-          "3Y": 7.31,
-          "5Y": 6.81,
-          "nav": 3410.4555,
-          "nav_date": "20-Nov-2026"
-        },
-        {
           "schemeCode": 140237,
           "fund": "Edelweiss Money Market Fund - Direct Plan - Growth",
           "1M": 0.65,
@@ -2507,6 +2495,18 @@
           "3Y": 7.24,
           "5Y": null,
           "nav": 30.2486,
+          "nav_date": "23-Nov-2026"
+        },
+        {
+          "schemeCode": 119746,
+          "fund": "Kotak Money Market Fund - Direct Plan - (Growth)",
+          "1M": 0.65,
+          "3M": 1.53,
+          "6M": 3.76,
+          "1Y": 6.52,
+          "3Y": 7.31,
+          "5Y": 6.79,
+          "nav": 4956.9026,
           "nav_date": "23-Nov-2026"
         }
       ]
@@ -2936,14 +2936,14 @@
         {
           "schemeCode": 144646,
           "fund": "DSP Corporate Bond Fund - Direct Plan - Growth",
-          "1M": 0.57,
-          "3M": 1.47,
-          "6M": 3.61,
-          "1Y": 5.81,
-          "3Y": 7.38,
+          "1M": 0.64,
+          "3M": 1.44,
+          "6M": 3.58,
+          "1Y": 5.85,
+          "3Y": 7.42,
           "5Y": 6.12,
-          "nav": 17.6584,
-          "nav_date": "20-Nov-2026"
+          "nav": 17.666,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 150237,
@@ -2984,14 +2984,14 @@
         {
           "schemeCode": 151320,
           "fund": "TRUSTMF CORPORATE BOND FUND - Direct Plan - Growth",
-          "1M": 0.61,
-          "3M": 0.77,
-          "6M": 3.16,
-          "1Y": 4.11,
-          "3Y": 6.71,
+          "1M": 0.81,
+          "3M": 0.76,
+          "6M": 3.02,
+          "1Y": 4.08,
+          "3Y": 6.72,
           "5Y": null,
-          "nav": 1283.965,
-          "nav_date": "20-Nov-2026"
+          "nav": 1284.3617,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 141588,
@@ -3008,26 +3008,26 @@
         {
           "schemeCode": 133791,
           "fund": "Kotak Corporate Bond Fund - Direct Plan - Growth Option",
-          "1M": 0.86,
-          "3M": 0.73,
-          "6M": 3.33,
-          "1Y": 4.33,
-          "3Y": 7.23,
+          "1M": 1.05,
+          "3M": 0.72,
+          "6M": 3.19,
+          "1Y": 4.38,
+          "3Y": 7.25,
           "5Y": 6.45,
-          "nav": 4227.8422,
-          "nav_date": "20-Nov-2026"
+          "nav": 4228.7013,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 148755,
           "fund": "Mirae Asset Corporate Bond Fund - Direct Plan - Growth",
-          "1M": 0.78,
+          "1M": 1.03,
           "3M": 0.72,
-          "6M": 3.45,
-          "1Y": 4.31,
-          "3Y": 7.03,
+          "6M": 3.25,
+          "1Y": 4.36,
+          "3Y": 7.05,
           "5Y": 6.1,
-          "nav": 13.9234,
-          "nav_date": "20-Nov-2026"
+          "nav": 13.9266,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 119621,
@@ -3163,14 +3163,14 @@
         {
           "schemeCode": 151045,
           "fund": "HSBC Credit Risk Fund - Direct Plan - Growth",
-          "1M": 0.72,
-          "3M": 1.11,
-          "6M": 3.78,
-          "1Y": 6.04,
+          "1M": 0.96,
+          "3M": 1.08,
+          "6M": 3.64,
+          "1Y": 6.08,
           "3Y": 11.65,
           "5Y": null,
-          "nav": 38.0887,
-          "nav_date": "20-Nov-2026"
+          "nav": 38.0961,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 120764,
@@ -3234,14 +3234,14 @@
         {
           "schemeCode": 121279,
           "fund": "Bandhan Banking and PSU Debt Fund - Direct Plan - Growth",
-          "1M": 0.6,
+          "1M": 0.74,
           "3M": 0.91,
-          "6M": 3.67,
-          "1Y": 5.26,
-          "3Y": 7.03,
+          "6M": 3.55,
+          "1Y": 5.3,
+          "3Y": 7.05,
           "5Y": 6.3,
-          "nav": 27.3099,
-          "nav_date": "20-Nov-2026"
+          "nav": 27.3204,
+          "nav_date": "23-Nov-2026"
         },
         {
           "schemeCode": 129008,
@@ -3435,16 +3435,16 @@
           "nav_date": "23-Nov-2026"
         },
         {
-          "schemeCode": 138472,
-          "fund": "PGIM India Gilt Fund - Direct Plan - Direct Growth",
-          "1M": 1.82,
-          "3M": 0.03,
-          "6M": 3.26,
-          "1Y": 2.75,
-          "3Y": 6.19,
-          "5Y": 5.57,
-          "nav": 33.6872,
-          "nav_date": "20-Nov-2026"
+          "schemeCode": 151014,
+          "fund": "HSBC Gilt Fund - Direct Plan - Growth",
+          "1M": 1.47,
+          "3M": -0.01,
+          "6M": 3.08,
+          "1Y": 2.65,
+          "3Y": 5.87,
+          "5Y": null,
+          "nav": 77.7376,
+          "nav_date": "23-Nov-2026"
         }
       ]
     },
